@@ -1,0 +1,8 @@
+|mux_2x1_structural
+a => o.IN0
+b => o.IN0
+sel => o.IN1
+sel => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
