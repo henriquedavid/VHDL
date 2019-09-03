@@ -2,7 +2,7 @@ ENTITY mux_2x1_behavior IS
 	PORT( a, b : IN BIT;	-- data input
 			sel : IN BIT;	-- selector
 			o : OUT BIT);	-- output
-END mux_2x1_structural;
+END mux_2x1_behavior;
 
 ARCHITECTURE behavior OF mux_2x1_behavior IS
 BEGIN

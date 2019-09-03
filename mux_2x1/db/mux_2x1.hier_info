@@ -1,8 +1,8 @@
-|mux_2x1_structural
-a => o.IN0
-b => o.IN0
-sel => o.IN1
-sel => o.IN1
-o <= o.DB_MAX_OUTPUT_PORT_TYPE
+|mux_2x1
+out_mux2x1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+B => inst1.IN0
+sel => inst1.IN1
+sel => inst4.IN0
+A => inst.IN0
 
 

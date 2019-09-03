@@ -1,7 +1,7 @@
-Fitter Status : Successful - Thu Aug 29 08:30:42 2019
+Fitter Status : Successful - Tue Sep  3 08:37:42 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : mux_2x1
-Top-level Entity Name : mux_2x1_structural
+Top-level Entity Name : mux_2x1
 Family : Cyclone V
 Device : 5CGXFC7C7F23C8
 Timing Models : Final
