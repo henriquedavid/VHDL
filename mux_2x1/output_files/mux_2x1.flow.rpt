@@ -1,5 +1,5 @@
 Flow report for mux_2x1
-Tue Sep  3 08:38:28 2019
+Thu Sep  5 08:15:53 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,29 +37,29 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Sep  3 08:38:28 2019       ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                   ; mux_2x1                                     ;
-; Top-level Entity Name           ; mux_2x1                                     ;
-; Family                          ; Cyclone V                                   ;
-; Device                          ; 5CGXFC7C7F23C8                              ;
-; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 1 / 56,480 ( < 1 % )                        ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 4 / 268 ( 1 % )                             ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                       ;
-; Total DSP Blocks                ; 0 / 156 ( 0 % )                             ;
-; Total HSSI RX PCSs              ; 0 / 6 ( 0 % )                               ;
-; Total HSSI PMA RX Deserializers ; 0 / 6 ( 0 % )                               ;
-; Total HSSI TX PCSs              ; 0 / 6 ( 0 % )                               ;
-; Total HSSI PMA TX Serializers   ; 0 / 6 ( 0 % )                               ;
-; Total PLLs                      ; 0 / 13 ( 0 % )                              ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
-+---------------------------------+---------------------------------------------+
++----------------------------------------------------------------------------------------+
+; Flow Summary                                                                           ;
++---------------------------------+------------------------------------------------------+
+; Flow Status                     ; EDA Netlist Writer Failed - Thu Sep  5 08:15:53 2019 ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition          ;
+; Revision Name                   ; mux_2x1                                              ;
+; Top-level Entity Name           ; mux_2x1                                              ;
+; Family                          ; Cyclone V                                            ;
+; Device                          ; 5CGXFC7C7F23C8                                       ;
+; Timing Models                   ; Final                                                ;
+; Logic utilization (in ALMs)     ; 1 / 56,480 ( < 1 % )                                 ;
+; Total registers                 ; 0                                                    ;
+; Total pins                      ; 4 / 268 ( 1 % )                                      ;
+; Total virtual pins              ; 0                                                    ;
+; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                                ;
+; Total DSP Blocks                ; 0 / 156 ( 0 % )                                      ;
+; Total HSSI RX PCSs              ; 0 / 6 ( 0 % )                                        ;
+; Total HSSI PMA RX Deserializers ; 0 / 6 ( 0 % )                                        ;
+; Total HSSI TX PCSs              ; 0 / 6 ( 0 % )                                        ;
+; Total HSSI PMA TX Serializers   ; 0 / 6 ( 0 % )                                        ;
+; Total PLLs                      ; 0 / 13 ( 0 % )                                       ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                        ;
++---------------------------------+------------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/03/2019 08:36:29 ;
+; Start date & time ; 09/05/2019 08:13:36 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mux_2x1             ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 277170158653759.156751058908087        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 277170158653759.156768201605403        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -96,12 +96,13 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 1034 MB             ; 00:00:42                           ;
-; Fitter               ; 00:00:53     ; 1.0                     ; 2487 MB             ; 00:01:21                           ;
-; Assembler            ; 00:00:23     ; 1.0                     ; 974 MB              ; 00:00:13                           ;
-; Timing Analyzer      ; 00:00:12     ; 1.0                     ; 1213 MB             ; 00:00:07                           ;
+; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 1033 MB             ; 00:00:41                           ;
+; Fitter               ; 00:01:03     ; 1.0                     ; 2487 MB             ; 00:01:24                           ;
+; Assembler            ; 00:00:19     ; 1.0                     ; 972 MB              ; 00:00:13                           ;
+; Timing Analyzer      ; 00:00:09     ; 1.0                     ; 1203 MB             ; 00:00:07                           ;
 ; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 1146 MB             ; 00:00:02                           ;
-; Total                ; 00:01:49     ; --                      ; --                  ; 00:02:25                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1132 MB             ; 00:00:01                           ;
+; Total                ; 00:01:56     ; --                      ; --                  ; 00:02:28                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -115,6 +116,7 @@ refer to the applicable agreement for further details.
 ; Assembler            ; A104-21L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
 ; Timing Analyzer      ; A104-21L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
 ; EDA Netlist Writer   ; A104-21L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; EDA Netlist Writer   ; A104-21L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
 +----------------------+------------------+----------------+------------+----------------+
 
 
@@ -126,6 +128,7 @@ quartus_fit --read_settings_files=off --write_settings_files=off mux_2x1 -c mux_
 quartus_asm --read_settings_files=off --write_settings_files=off mux_2x1 -c mux_2x1
 quartus_sta mux_2x1 -c mux_2x1
 quartus_eda --read_settings_files=off --write_settings_files=off mux_2x1 -c mux_2x1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off mux_2x1 -c mux_2x1 --vector_source=/home/henriquedavid/Documentos/circuitos/Circuitos/mux_2x1/Waveform.vwf --testbench_file=/home/henriquedavid/Documentos/circuitos/Circuitos/mux_2x1/simulation/qsim/Waveform.vwf.vht
 
 
 

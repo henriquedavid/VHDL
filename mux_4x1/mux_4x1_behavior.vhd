@@ -1,4 +1,4 @@
-ENTITY mux_4x1_behaviorIS
+ENTITY mux_4x1_behavior IS
 	PORT( a, b, c, d : IN BIT;	-- data input
 			sel : IN BIT_VECTOR( 1 DOWNTO 0 );	-- selector
 			o : OUT BIT);	-- output

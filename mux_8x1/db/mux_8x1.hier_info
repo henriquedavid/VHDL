@@ -1,0 +1,64 @@
+|mux_8x1
+S <= mux_2x1:inst5.out_mux2x1
+sel_C => mux_2x1:inst5.sel
+A => mux_4x1:inst2.A
+B => mux_4x1:inst2.B
+C => mux_4x1:inst2.C
+D => mux_4x1:inst2.D
+sel_A => mux_4x1:inst2.SEL1
+sel_A => mux_2x1:inst4.sel
+sel_B => mux_4x1:inst2.SEL2
+sel_B => mux_2x1:inst.sel
+sel_B => mux_2x1:inst3.sel
+E => mux_2x1:inst.A
+F => mux_2x1:inst.B
+G => mux_2x1:inst3.A
+H => mux_2x1:inst3.B
+
+
+|mux_8x1|mux_2x1:inst5
+out_mux2x1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+B => inst1.IN0
+sel => inst1.IN1
+sel => inst4.IN0
+A => inst.IN0
+
+
+|mux_8x1|mux_4x1:inst2
+pin_name1 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+SEL1 => inst7.IN0
+SEL1 => inst2.IN0
+SEL1 => inst4.IN0
+SEL2 => inst8.IN0
+SEL2 => inst2.IN1
+SEL2 => inst4.IN1
+A => inst9.IN1
+C => inst11.IN1
+D => inst12.IN1
+B => inst10.IN1
+
+
+|mux_8x1|mux_2x1:inst4
+out_mux2x1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+B => inst1.IN0
+sel => inst1.IN1
+sel => inst4.IN0
+A => inst.IN0
+
+
+|mux_8x1|mux_2x1:inst
+out_mux2x1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+B => inst1.IN0
+sel => inst1.IN1
+sel => inst4.IN0
+A => inst.IN0
+
+
+|mux_8x1|mux_2x1:inst3
+out_mux2x1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+B => inst1.IN0
+sel => inst1.IN1
+sel => inst4.IN0
+A => inst.IN0
+
+

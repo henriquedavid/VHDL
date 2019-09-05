@@ -2,6 +2,7 @@ vendor_name = ModelSim
 source_file = 1, /home/henriquedavid/Documentos/circuitos/Circuitos/mux_2x1/mux_2x1.bdf
 source_file = 1, /home/henriquedavid/Documentos/circuitos/Circuitos/mux_2x1/mux_2x1_structural.vhd
 source_file = 1, /home/henriquedavid/Documentos/circuitos/Circuitos/mux_2x1/mux_2x1_behavior.vhd
+source_file = 1, /home/henriquedavid/Documentos/circuitos/Circuitos/mux_2x1/Waveform_mux_2x1_squematic.vwf
 source_file = 1, /opt/intelFPGA_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, /opt/intelFPGA_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, /opt/intelFPGA_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
