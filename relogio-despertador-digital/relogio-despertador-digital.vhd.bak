@@ -1,0 +1,24 @@
+ENTITY codificadordeteclado IS
+	PORT ( a, b, c, d : IN BIT;
+			 o 			: OUT BIT_VECTOR( 11 DOWNTO 0 ));
+END codificadordeteclado;
+
+ARCHITECTURE codificador OF codificadordeteclado IS
+BEGIN
+	o(0) <= (NOT a AND NOT b AND NOT c AND NOT d) OR
+			  (NOT a AND NOT b AND NOT c AND     d) OR
+			  (NOT a AND NOT b AND     c AND NOT d) OR
+			  (NOT a AND NOT b AND     c AND     d) OR
+			  (NOT a AND     b AND NOT c AND NOT d) OR
+			  (NOT a AND     b AND NOT c AND     d) OR
+			  (NOT a AND     b AND     c AND NOT d) OR
+			  (NOT a AND     b AND     c AND     d) OR
+			  (    a AND NOT b AND NOT c AND NOT d) OR
+			  (    a AND NOT b AND NOT c AND 	 d) OR
+			  (	 a AND NOT b AND 	   c AND NOT d) OR
+			  (	 a AND NOT b AND 		c AND 	 d) OR
+			  (	 a AND 	  b AND NOT c AND NOT d) OR
+			  (	 a AND 	  b AND NOT c AND 	 d) OR
+			  (	 a AND 	  b AND 		c AND NOT d) OR
+			  ( 	 a AND 	  b AND 		c AND 	 d);
+END codificador;
