@@ -1,33 +1,32 @@
-ENTITY relogio-despertador IS
+ENTITY relogiodespertador IS
 	PORT ( a, b, c, d				  	 :  IN BIT;
 			 switch						 :  IN BIT_VECTOR( 1 DOWNTO 0);
 			 o 							 : OUT BIT_VECTOR(  6 DOWNTO 0 );
-			 a1							 :  IN BIT_VECTOR( 9 DOWNTO 0);
-END relogio-despertador;
+			 a1							 :  IN BIT_VECTOR( 9 DOWNTO 0));
+END relogiodespertador;
 
-ARCHITECTURE configuracao OF relogio-despertador IS
+ARCHITECTURE configuracao OF relogiodespertador IS
 	COMPONENT decodificadorDecimaltoBits
 		PORT ( SIGNAL a, b, c, d    :  IN BIT;
 				 SIGNAL o 				 : OUT BIT_VECTOR( 6 DOWNTO 0 ));
 	END COMPONENT;
 	
-	COMPONENT codificador
+	COMPONENT codificadordeteclado
 		PORT ( SIGNAL a1 				 :  IN BIT_VECTOR( 9 DOWNTO 0);
 				 SIGNAL o1      		 : OUT BIT_VECTOR( 3 DOWNTO 0 ));
 	END COMPONENT;
 	
 	COMPONENT mux_4x1_structural2
-		PORT( SIGNAL a, b, c, d : IN BIT_VECTOR(3 DOWNTO 0);	-- data input
+		PORT( SIGNAL a : IN BIT_VECTOR(3 DOWNTO 0);	-- data input
 				SIGNAL sel :  IN BIT_VECTOR( 1 DOWNTO 0 );	-- selector
-				SIGNAL o   : OUT BIT_VECTOR( 3 DOWNTO 0 );	-- output
-	END COMPONENT
+				SIGNAL o1, o2, o3, o4   : OUT BIT_VECTOR( 3 DOWNTO 0 ));	-- output
+	END COMPONENT;
 	
-	SIGNAL x, w 	: BIT_VECTOR( 3 DOWNTO 0);
+	SIGNAL x, w1, w2, w3, w4 	: BIT_VECTOR( 3 DOWNTO 0);
 	
 BEGIN
-	p1 : codificador PORT MAP (a1, w);
-	p2 : mux_4x1_structural2(w(0), w(1), w(2), w(3), switch(0), switch(1), x)
-	p3 : decodificadorDecimalToBits(x(0), x(1), x(3), x);
-
+	p1 : codificadordeteclado PORT MAP (a1, w1); -- entra o numero que o usuarios clicou e sai o valor em 4 bits
+	p2 : mux_4x1_structural2 PORT MAP(w1, switch, w1, w2, w3, w4);
+	p3 : decodificadorDecimalToBits PORT MAP(w1(0), w1(1), w1(2), w1(3), o);
 	
-END codificador;
+END configuracao;
