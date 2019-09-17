@@ -8,31 +8,31 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/simulation/modelsim
-Ecodificadordeteclado
-Z1 w1568716279
+Emux_4x1
+Z1 w1568715879
 R0
-Z2 8/home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/codificadordeteclado.vhd
-Z3 F/home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/codificadordeteclado.vhd
+Z2 8/home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/mux_4x1.vhd
+Z3 F/home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/mux_4x1.vhd
 l0
 L1
-VSJ4_95EWIRn;WZm_4Z=]S0
-!s100 FXO7YDi5`@8mBOh7:@OB41
+VzU<C`]7Z2m`Ffm4YbOW]l1
+!s100 znn^nPVAda9NB[h6aknJ=3
 Z4 OV;C;10.5b;63
 31
-Z5 !s110 1568716739
+Z5 !s110 1568717861
 !i10b 1
-Z6 !s108 1568716739.000000
-Z7 !s90 -reportprogress|300|-93|-work|work|/home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/codificadordeteclado.vhd|
-Z8 !s107 /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/codificadordeteclado.vhd|
+Z6 !s108 1568717861.000000
+Z7 !s90 -reportprogress|300|-93|-work|work|/home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/mux_4x1.vhd|
+Z8 !s107 /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/mux_4x1.vhd|
 !i113 1
 Z9 o-93 -work work
 Z10 tExplicit 1 CvgOpt 0
-Acodificador
-DEx4 work 20 codificadordeteclado 0 22 SJ4_95EWIRn;WZm_4Z=]S0
-l7
-L6
-VozjEe4A@]aOdhO^K5?kJ13
-!s100 g0IhKWmEA6E1DBfNM9c9U1
+Astructural
+DEx4 work 7 mux_4x1 0 22 zU<C`]7Z2m`Ffm4YbOW]l1
+l8
+L7
+VR?h6;7HL>88T8G_@kURl20
+!s100 Dzd__dILG7NE?TOZ6`Q5Y3
 R4
 31
 R5
