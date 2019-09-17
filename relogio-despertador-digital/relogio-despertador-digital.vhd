@@ -6,7 +6,7 @@ ENTITY relogiodespertador IS
 END relogiodespertador;
 
 ARCHITECTURE configuracao OF relogiodespertador IS
-	COMPONENT decodificadorDecimaltoBits
+	COMPONENT decodificador
 		PORT ( SIGNAL a, b, c, d    :  IN BIT;
 				 SIGNAL o 				 : OUT BIT_VECTOR( 6 DOWNTO 0 ));
 	END COMPONENT;
@@ -27,6 +27,6 @@ ARCHITECTURE configuracao OF relogiodespertador IS
 BEGIN
 	p1 : codificadordeteclado PORT MAP (a1, w1); -- entra o numero que o usuarios clicou e sai o valor em 4 bits
 	p2 : mux_4x1 PORT MAP(w1, switch, w1, w2, w3, w4);
-	p3 : decodificadorDecimalToBits PORT MAP(w1(0), w1(1), w1(2), w1(3), o);
+	p3 : decodificador PORT MAP(w1(0), w1(1), w1(2), w1(3), o);
 	
 END configuracao;
