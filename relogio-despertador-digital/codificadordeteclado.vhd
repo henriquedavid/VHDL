@@ -1,5 +1,5 @@
 ENTITY codificadordeteclado IS
-	PORT ( a : IN BIT_VECTOR(9 DOWNTO 0);
+	PORT ( a : IN BIT_VECTOR(8 DOWNTO 0);
 			 o1      		 : OUT BIT_VECTOR( 3 DOWNTO 0 ));
 END codificadordeteclado;
 

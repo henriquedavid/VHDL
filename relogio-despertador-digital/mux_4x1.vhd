@@ -1,12 +1,12 @@
-ENTITY mux_4x1_structural2 IS
+ENTITY mux_4x1 IS
 	PORT( a : IN BIT_VECTOR(3 DOWNTO 0);	-- data input
 			sel : IN BIT_VECTOR( 1 DOWNTO 0 );	-- selector
 			o1, o2, o3, o4 : OUT BIT_VECTOR(3 DOWNTO 0));	-- output
-END mux_4x1_structural2;
+END mux_4x1;
 
-ARCHITECTURE structural OF mux_4x1_structural2 IS
+ARCHITECTURE structural OF mux_4x1 IS
 BEGIN
-	o1(0) <= ( NOT sel(1) AND NOT sel(0) AND a(0);
+	o1(0) <= ( NOT sel(1) AND NOT sel(0) AND a(0));
 	o1(1) <= ( NOT sel(1) AND NOT sel(0) AND a(1));
 	o1(2) <= ( NOT sel(1) AND NOT sel(0) AND a(2));
 	o1(3) <= ( NOT sel(1) AND NOT sel(0) AND a(3));

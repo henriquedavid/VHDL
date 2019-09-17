@@ -1,0 +1,79 @@
+# do relogio-despertador-digital_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /opt/intelFPGA_lite/18.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/codificadordeteclado.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:38:59 on Sep 17,2019
+# vcom -reportprogress 300 -93 -work work /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/codificadordeteclado.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity codificadordeteclado
+# -- Compiling architecture codificador of codificadordeteclado
+# End time: 07:38:59 on Sep 17,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vsim work.codificadordeteclado
+# vsim work.codificadordeteclado 
+# Start time: 07:39:02 on Sep 17,2019
+# Loading std.standard
+# Loading work.codificadordeteclado(codificador)
+# A bookmark named "bookmark0" has been added for window "Objects"
+# Bookmarks will be automatically saved and restored
+add wave -position end  sim:/codificadordeteclado/a
+add wave -position end  sim:/codificadordeteclado/o1
+# WARNING: No extended dataflow license exists
+vsim work.codificadordeteclado
+# Bookmarks have been exported for window "Objects" to: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/simulation/modelsim/bookmarks.do
+# End time: 07:41:03 on Sep 17,2019, Elapsed time: 0:02:01
+# Errors: 0, Warnings: 1
+# vsim work.codificadordeteclado 
+# Start time: 07:41:03 on Sep 17,2019
+# Loading std.standard
+# Loading work.codificadordeteclado(codificador)
+# A bookmarks file was found in the current directory with 1 bookmark
+# Bookmark(s) were restored for window "Objects"
+add wave -position end sim:/codificadordeteclado/line__9/*
+# (vish-4014) No objects found matching '/codificadordeteclado/line__9/*'.
+add wave -position end sim:/codificadordeteclado/*
+force -freeze sim:/codificadordeteclado/a(7) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/codificadordeteclado/a(7) 1 2, 0 {52 ps} -r 100
+vsim work.codificadordeteclado
+# No bookmark changes exist in window "Objects"
+# End time: 07:43:55 on Sep 17,2019, Elapsed time: 0:02:52
+# Errors: 1, Warnings: 0
+# vsim work.codificadordeteclado 
+# Start time: 07:43:55 on Sep 17,2019
+# Loading std.standard
+# Loading work.codificadordeteclado(codificador)
+# A bookmarks file was found in the current directory with 1 bookmark
+# Bookmark(s) were restored for window "Objects"
+run
+add wave -position insertpoint  \
+sim:/codificadordeteclado/a(4)
+add wave -position end  sim:/codificadordeteclado/a
+run
+add wave -position end  sim:/codificadordeteclado/o1
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/codificadordeteclado/a(4)
+# WARNING: No extended dataflow license exists
+force -freeze sim:/codificadordeteclado/a 000000100 0
+run
+force -freeze sim:/codificadordeteclado/a 1 0, 0 {25 ps} -r 50
+# Value length (1) does not equal array index length (9).
+# 
+# ** Error: (vsim-4011) Invalid force value: 1 0, 0 {25 ps}.
+# 
+noforce sim:/codificadordeteclado/a

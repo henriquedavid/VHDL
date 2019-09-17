@@ -1,5 +1,5 @@
 Flow report for relogio-despertador-digital
-Thu Sep 12 08:29:56 2019
+Tue Sep 17 07:55:37 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,24 +37,29 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Flow Failed - Thu Sep 12 08:29:56 2019      ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name               ; relogio-despertador-digital                 ;
-; Top-level Entity Name       ; codificadordeteclado                        ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CGXFC7C7F23C8                              ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Tue Sep 17 07:55:37 2019       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; relogio-despertador-digital                 ;
+; Top-level Entity Name           ; mux_4x1                                     ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CGXFC7C7F23C8                              ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 22                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +-------------------------------------------------+
@@ -62,29 +67,29 @@ refer to the applicable agreement for further details.
 +-------------------+-----------------------------+
 ; Option            ; Setting                     ;
 +-------------------+-----------------------------+
-; Start date & time ; 09/12/2019 08:29:40         ;
+; Start date & time ; 09/17/2019 07:55:19         ;
 ; Main task         ; Compilation                 ;
 ; Revision Name     ; relogio-despertador-digital ;
 +-------------------+-----------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                   ;
-+-------------------------------------+----------------------------------------+-----------------------------+----------------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value               ; Entity Name          ; Section Id     ;
-+-------------------------------------+----------------------------------------+-----------------------------+----------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 277170158653759.156828778025712        ; --                          ; --                   ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --                          ; --                   ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>                      ; --                   ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --                          ; --                   ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                          ; --                   ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                          ; --                   ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                          ; codificadordeteclado ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                          ; codificadordeteclado ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                          ; codificadordeteclado ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                          ; --                   ; --             ;
-; TOP_LEVEL_ENTITY                    ; codificadordeteclado                   ; relogio-despertador-digital ; --                   ; --             ;
-+-------------------------------------+----------------------------------------+-----------------------------+----------------------+----------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                          ;
++-------------------------------------+----------------------------------------+-----------------------------+-------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value               ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------+-----------------------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 277170158653759.156871771911512        ; --                          ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --                          ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>                      ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --                          ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                          ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                          ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                          ; mux_4x1     ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                          ; mux_4x1     ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                          ; mux_4x1     ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                          ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; mux_4x1                                ; relogio-despertador-digital ; --          ; --             ;
++-------------------------------------+----------------------------------------+-----------------------------+-------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -92,8 +97,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 1023 MB             ; 00:00:40                           ;
-; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:40                           ;
+; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 1036 MB             ; 00:00:41                           ;
+; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:41                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
