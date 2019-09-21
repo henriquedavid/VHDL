@@ -1,18 +1,18 @@
-ENTITY relogiodespertador IS
+ENTITY relogiodespertador2 IS
 	PORT ( a, b, c, d				  	 :  IN BIT;
 			 switch						 :  IN BIT_VECTOR( 1 DOWNTO 0);
 			 o 							 : OUT BIT_VECTOR(  6 DOWNTO 0 );
 			 a1							 :  IN BIT_VECTOR( 9 DOWNTO 0));
-END relogiodespertador;
+END relogiodespertador2;
 
-ARCHITECTURE configuracao OF relogiodespertador IS
+ARCHITECTURE configuracao OF relogiodespertador2 IS
 	COMPONENT decodificador
 		PORT ( SIGNAL a, b, c, d    :  IN BIT;
 				 SIGNAL o 				 : OUT BIT_VECTOR( 6 DOWNTO 0 ));
 	END COMPONENT;
 	
 	COMPONENT codificadordeteclado
-		PORT ( SIGNAL a1 				 :  IN BIT_VECTOR( 9 DOWNTO 0);
+		PORT ( SIGNAL a1 				 :  IN BIT_VECTOR( 8 DOWNTO 0);
 				 SIGNAL o1      		 : OUT BIT_VECTOR( 3 DOWNTO 0 ));
 	END COMPONENT;
 	

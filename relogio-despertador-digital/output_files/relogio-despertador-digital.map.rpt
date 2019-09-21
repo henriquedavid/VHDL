@@ -1,5 +1,5 @@
 Analysis & Synthesis report for relogio-despertador-digital
-Tue Sep 17 08:38:07 2019
+Sat Sep 21 15:13:20 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,13 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -33,22 +39,27 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Tue Sep 17 08:38:07 2019           ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name               ; relogio-despertador-digital                 ;
-; Top-level Entity Name       ; decodificador                               ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sat Sep 21 15:13:20 2019       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; relogio-despertador-digital                 ;
+; Top-level Entity Name           ; relogiodespertador                          ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 41                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------+
@@ -57,7 +68,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value               ;
 +---------------------------------------------------------------------------------+--------------------+-----------------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                             ;
-; Top-level entity name                                                           ; decodificador      ; relogio-despertador-digital ;
+; Top-level entity name                                                           ; relogiodespertador ; relogio-despertador-digital ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V                   ;
 ; Use smart compilation                                                           ; Off                ; Off                         ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                          ;
@@ -144,7 +155,7 @@ refer to the applicable agreement for further details.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -154,37 +165,151 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                           ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                    ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
+; codificadordeteclado.vhd         ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd ;         ;
+; mux_4x1.vhd                      ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/mux_4x1.vhd              ;         ;
+; relogiodespertador.vhd           ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd   ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimate of Logic utilization (ALMs needed) ; 15              ;
+;                                             ;                 ;
+; Combinational ALUT usage for logic          ; 26              ;
+;     -- 7 input functions                    ; 0               ;
+;     -- 6 input functions                    ; 4               ;
+;     -- 5 input functions                    ; 4               ;
+;     -- 4 input functions                    ; 18              ;
+;     -- <=3 input functions                  ; 0               ;
+;                                             ;                 ;
+; Dedicated logic registers                   ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 41              ;
+;                                             ;                 ;
+; Total DSP Blocks                            ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; switch[0]~input ;
+; Maximum fan-out                             ; 16              ;
+; Total fan-out                               ; 173             ;
+; Average fan-out                             ; 1.60            ;
++---------------------------------------------+-----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                       ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name          ; Library Name ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+----------------------+--------------+
+; |relogiodespertador          ; 26 (0)              ; 0 (0)                     ; 0                 ; 0          ; 41   ; 0            ; |relogiodespertador                         ; relogiodespertador   ; work         ;
+;    |codificadordeteclado:p1| ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|codificadordeteclado:p1 ; codificadordeteclado ; work         ;
+;    |mux_4x1:p2|              ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|mux_4x1:p2              ; mux_4x1              ; work         ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 26                          ;
+;     normal            ; 26                          ;
+;         4 data inputs ; 18                          ;
+;         5 data inputs ; 4                           ;
+;         6 data inputs ; 4                           ;
+; boundary_port         ; 41                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.95                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Sep 17 08:37:47 2019
+    Info: Processing started: Sat Sep 21 15:12:29 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio-despertador-digital -c relogio-despertador-digital
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file relogio-despertador-digital.vhd
-    Info (12022): Found design unit 1: relogiodespertador-configuracao File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/relogio-despertador-digital.vhd Line: 8
-    Info (12023): Found entity 1: relogiodespertador File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/relogio-despertador-digital.vhd Line: 1
-Error (10500): VHDL syntax error at decodificador.vhd(8) near text "OR";  expecting ")", or "," File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/decodificador.vhd Line: 8
-Error (10500): VHDL syntax error at decodificador.vhd(16) near text "OR";  expecting ")", or "," File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/decodificador.vhd Line: 16
-Error (10500): VHDL syntax error at decodificador.vhd(26) near text "OR";  expecting ")", or "," File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/decodificador.vhd Line: 26
-Error (10500): VHDL syntax error at decodificador.vhd(36) near text "OR";  expecting ")", or "," File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/decodificador.vhd Line: 36
-Error (10500): VHDL syntax error at decodificador.vhd(43) near text "OR";  expecting ")", or "," File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/decodificador.vhd Line: 43
-Error (10500): VHDL syntax error at decodificador.vhd(48) near text "OR";  expecting ")", or "," File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/decodificador.vhd Line: 48
-Error (10500): VHDL syntax error at decodificador.vhd(54) near text "OR";  expecting ")", or "," File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/decodificador.vhd Line: 54
-Info (12021): Found 0 design units, including 0 entities, in source file decodificador.vhd
+    Info (12022): Found design unit 1: relogiodespertador2-configuracao File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogio-despertador-digital.vhd Line: 8
+    Info (12023): Found entity 1: relogiodespertador2 File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogio-despertador-digital.vhd Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file decodificador.vhd
+    Info (12022): Found design unit 1: decodificador-decod File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/decodificador.vhd Line: 6
+    Info (12023): Found entity 1: decodificador File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/decodificador.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file codificadordeteclado.vhd
-    Info (12022): Found design unit 1: codificadordeteclado-codificador File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/codificadordeteclado.vhd Line: 6
-    Info (12023): Found entity 1: codificadordeteclado File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/codificadordeteclado.vhd Line: 1
+    Info (12022): Found design unit 1: codificadordeteclado-codificador File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd Line: 6
+    Info (12023): Found entity 1: codificadordeteclado File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file mux_4x1.vhd
-    Info (12022): Found design unit 1: mux_4x1-structural File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/mux_4x1.vhd Line: 7
-    Info (12023): Found entity 1: mux_4x1 File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/mux_4x1.vhd Line: 1
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 7 errors, 1 warning
-    Error: Peak virtual memory: 1021 megabytes
-    Error: Processing ended: Tue Sep 17 08:38:07 2019
-    Error: Elapsed time: 00:00:20
-    Error: Total CPU time (on all processors): 00:00:43
+    Info (12022): Found design unit 1: mux_4x1-structural File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/mux_4x1.vhd Line: 7
+    Info (12023): Found entity 1: mux_4x1 File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/mux_4x1.vhd Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file relogiodespertador.vhd
+    Info (12022): Found design unit 1: relogiodespertador-configuracao File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 10
+    Info (12023): Found entity 1: relogiodespertador File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 1
+Info (12127): Elaborating entity "relogiodespertador" for the top level hierarchy
+Info (12128): Elaborating entity "codificadordeteclado" for hierarchy "codificadordeteclado:p1" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 30
+Info (12128): Elaborating entity "mux_4x1" for hierarchy "mux_4x1:p2" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 31
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 14 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "b[0]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 3
+    Warning (15610): No output dependent on input pin "b[1]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 3
+    Warning (15610): No output dependent on input pin "b[2]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 3
+    Warning (15610): No output dependent on input pin "b[3]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 3
+    Warning (15610): No output dependent on input pin "a1[0]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 6
+    Warning (15610): No output dependent on input pin "a1[1]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 6
+    Warning (15610): No output dependent on input pin "a1[2]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 6
+    Warning (15610): No output dependent on input pin "a1[3]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 6
+    Warning (15610): No output dependent on input pin "a1[4]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 6
+    Warning (15610): No output dependent on input pin "a1[5]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 6
+    Warning (15610): No output dependent on input pin "a1[6]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 6
+    Warning (15610): No output dependent on input pin "a1[7]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 6
+    Warning (15610): No output dependent on input pin "a1[8]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 6
+    Warning (15610): No output dependent on input pin "a1[9]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 6
+Info (21057): Implemented 67 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 25 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 26 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4869 megabytes
+    Info: Processing ended: Sat Sep 21 15:13:20 2019
+    Info: Elapsed time: 00:00:51
+    Info: Total CPU time (on all processors): 00:01:16
 
 
