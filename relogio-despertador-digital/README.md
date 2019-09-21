@@ -3,6 +3,9 @@
 This project is from Logic Circuit subject, using VHDL.
 
 ## Input:
+
+The fitst input it's the digit that you want to place.
+
 | NÚMERO | ENTRADA (a) |
 |---|------------|
 | 0 | 1000000000 |
@@ -29,3 +32,5 @@ On the above table the upper case it's the place where you want the digit.
 
 ## Tests
 All the tests were make on the ModelSim - Intel FPGA
+
+
