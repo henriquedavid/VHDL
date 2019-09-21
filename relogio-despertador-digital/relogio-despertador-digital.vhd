@@ -22,11 +22,11 @@ ARCHITECTURE configuracao OF relogiodespertador IS
 				SIGNAL o1, o2, o3, o4   : OUT BIT_VECTOR( 3 DOWNTO 0 ));	-- output
 	END COMPONENT;
 	
-	SIGNAL x, w1, w2, w3, w4 	: BIT_VECTOR( 3 DOWNTO 0);
+	SIGNAL w0, w1, w2, w3, w4	: BIT_VECTOR( 3 DOWNTO 0);
 	
 BEGIN
-	p1 : codificadordeteclado PORT MAP (a1, w1); -- entra o numero que o usuarios clicou e sai o valor em 4 bits
-	p2 : mux_4x1 PORT MAP(w1, switch, w1, w2, w3, w4);
+	p1 : codificadordeteclado PORT MAP (a1, w0); -- entra o numero que o usuarios clicou e sai o valor em 4 bits
+	p2 : mux_4x1 PORT MAP(w0, switch, w1, w2, w3, w4);
 	p3 : decodificador PORT MAP(w1(0), w1(1), w1(2), w1(3), o);
 	
 END configuracao;
