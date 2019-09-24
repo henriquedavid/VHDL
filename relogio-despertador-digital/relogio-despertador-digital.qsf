@@ -65,3 +65,4 @@ set_global_assignment -name BDF_FILE codificadorteclado_esq.bdf
 set_global_assignment -name BDF_FILE mux_4x1_esq.bdf
 set_global_assignment -name BDF_FILE mux4x1_4bits.bdf
 set_global_assignment -name BDF_FILE decodificador_esq.bdf
+set_global_assignment -name BDF_FILE completo.bdf
