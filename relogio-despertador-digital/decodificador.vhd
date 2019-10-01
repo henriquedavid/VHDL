@@ -11,14 +11,14 @@ BEGIN
 				(NOT a AND     b AND NOT c AND     d) OR
 				(NOT a AND     b AND     c AND     d) OR
 				(    a AND NOT b AND NOT c AND NOT d) OR
-				(    a AND NOT b AND NOT c AND     d));
+				(    a AND NOT b AND NOT c AND     d) OR
+				(NOT a AND     b AND     c AND NOT d));
 					 
 	l(1) <= ((NOT a AND NOT b AND NOT c AND NOT d) OR
 			   (NOT a AND NOT b AND NOT c AND     d) OR
 				(NOT a AND NOT b AND     c AND NOT d) OR
 				(NOT a AND NOT b AND     c AND     d) OR
 				(NOT a AND     b AND NOT c AND NOT d) OR
-				(NOT a AND     b AND     c AND NOT d) OR
 				(NOT a AND     b AND     c AND     d) OR
 				(    a AND NOT b AND NOT c AND NOT d) OR
 			   (    a AND NOT b AND NOT c AND     d));
@@ -38,7 +38,7 @@ BEGIN
 				(NOT a AND NOT b AND     c AND     d) OR
 				(NOT a AND     b AND NOT c AND     d) OR
 				(NOT a AND     b AND     c AND NOT d) OR
-				(NOT a AND     b AND     c AND     d));
+				(    a AND NOT b AND NOT c AND NOT d));
 					 
 	l(4) <= ((NOT a AND NOT b AND NOT c AND NOT d) OR
 			   (NOT a AND NOT b AND     c AND NOT d) OR
@@ -49,13 +49,16 @@ BEGIN
 			   (NOT a AND     b AND NOT c AND NOT d) OR
 				(NOT a AND     b AND NOT c AND     d) OR
 				(    a AND NOT b AND NOT c AND NOT d) OR
-			   (    a AND NOT b AND NOT c AND     d));
+			   (    a AND NOT b AND NOT c AND     d) OR
+			   ( NOT a AND    b AND NOT c AND     d) OR
+				(NOT a AND     b AND     c AND NOT d));
 					 
 	l(6) <= ((NOT a AND NOT b AND     c AND NOT d) OR
 				(NOT a AND NOT b AND     c AND     d) OR
 				(NOT a AND     b AND NOT c AND NOT d) OR
 				(NOT a AND     b AND     c AND NOT d) OR
 				(    a AND NOT b AND NOT c AND NOT d) OR
-				(    a AND NOT b AND NOT c AND     d));					 
+				(    a AND NOT b AND NOT c AND     d) OR
+				(NOT a AND     b AND NOT c AND     d));					 
 					 
 END decod;
