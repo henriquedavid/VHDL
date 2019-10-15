@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "10/10/2019 08:21:13"
+-- DATE "10/15/2019 07:28:18"
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -41,7 +41,7 @@ ENTITY 	fftipod IS
 	clk : IN std_logic;
 	clrn : IN std_logic;
 	ena : IN std_logic;
-	q : OUT STD.STANDARD.bit
+	q : BUFFER std_logic
 	);
 END fftipod;
 
@@ -87,7 +87,7 @@ ww_d <= d;
 ww_clk <= clk;
 ww_clrn <= clrn;
 ww_ena <= ena;
-q <= IEEE.STD_LOGIC_1164.TO_BIT(ww_q);
+q <= ww_q;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;

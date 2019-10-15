@@ -1,5 +1,5 @@
 Analysis & Synthesis report for relogio-despertador-digital
-Thu Oct 10 08:19:47 2019
+Tue Oct 15 07:26:15 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 10 08:19:47 2019       ;
+; Analysis & Synthesis Status     ; Successful - Tue Oct 15 07:26:15 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; relogio-despertador-digital                 ;
 ; Top-level Entity Name           ; fftipod                                     ;
@@ -166,13 +166,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                      ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                               ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------+---------+
-; fftipod.vhd                      ; yes             ; User VHDL File  ; /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/fftipod.vhd ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; fftipod.vhd                      ; yes             ; User VHDL File  ; /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------+
@@ -249,7 +249,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -259,25 +259,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Oct 10 08:19:27 2019
+    Info: Processing started: Tue Oct 15 07:25:49 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio-despertador-digital -c relogio-despertador-digital
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file relogio-despertador-digital.vhd
-    Info (12022): Found design unit 1: relogiodespertador2-configuracao File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/relogio-despertador-digital.vhd Line: 8
-    Info (12023): Found entity 1: relogiodespertador2 File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/relogio-despertador-digital.vhd Line: 1
+    Info (12022): Found design unit 1: relogiodespertador2-configuracao File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogio-despertador-digital.vhd Line: 8
+    Info (12023): Found entity 1: relogiodespertador2 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogio-despertador-digital.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file decodificador.vhd
-    Info (12022): Found design unit 1: decodificador-decod File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/decodificador.vhd Line: 6
-    Info (12023): Found entity 1: decodificador File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/decodificador.vhd Line: 1
+    Info (12022): Found design unit 1: decodificador-decod File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd Line: 6
+    Info (12023): Found entity 1: decodificador File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file codificadordeteclado.vhd
-    Info (12022): Found design unit 1: codificadordeteclado-codificador File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/codificadordeteclado.vhd Line: 6
-    Info (12023): Found entity 1: codificadordeteclado File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/codificadordeteclado.vhd Line: 1
+    Info (12022): Found design unit 1: codificadordeteclado-codificador File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd Line: 6
+    Info (12023): Found entity 1: codificadordeteclado File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file mux_4x1.vhd
-    Info (12022): Found design unit 1: mux_4x1-structural File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/mux_4x1.vhd Line: 7
-    Info (12023): Found entity 1: mux_4x1 File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/mux_4x1.vhd Line: 1
+    Info (12022): Found design unit 1: mux_4x1-structural File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd Line: 7
+    Info (12023): Found entity 1: mux_4x1 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file relogiodespertador.vhd
-    Info (12022): Found design unit 1: relogiodespertador-configuracao File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/relogiodespertador.vhd Line: 9
-    Info (12023): Found entity 1: relogiodespertador File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/relogiodespertador.vhd Line: 1
+    Info (12022): Found design unit 1: relogiodespertador-configuracao File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 9
+    Info (12023): Found entity 1: relogiodespertador File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file codificadorteclado_esq.bdf
     Info (12023): Found entity 1: codificadorteclado_esq
 Info (12021): Found 1 design units, including 1 entities, in source file mux_4x1_esq.bdf
@@ -289,11 +289,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file decodif
 Info (12021): Found 1 design units, including 1 entities, in source file completo.bdf
     Info (12023): Found entity 1: completo
 Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
-    Info (12022): Found design unit 1: registrador-arq_reg File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/registrador.vhd Line: 10
-    Info (12023): Found entity 1: registrador File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/registrador.vhd Line: 1
+    Info (12022): Found design unit 1: registrador-arq_reg File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 10
+    Info (12023): Found entity 1: registrador File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file fftipod.vhd
-    Info (12022): Found design unit 1: fftipod-arq_ff_d File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/fftipod.vhd Line: 9
-    Info (12023): Found entity 1: fftipod File: /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/fftipod.vhd Line: 1
+    Info (12022): Found design unit 1: fftipod-arq_ff_d File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd Line: 9
+    Info (12023): Found entity 1: fftipod File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd Line: 1
 Info (12127): Elaborating entity "fftipod" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -303,9 +303,9 @@ Info (21057): Implemented 6 device resources after synthesis - the final resourc
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1075 megabytes
-    Info: Processing ended: Thu Oct 10 08:19:47 2019
-    Info: Elapsed time: 00:00:20
+    Info: Peak virtual memory: 1066 megabytes
+    Info: Processing ended: Tue Oct 15 07:26:15 2019
+    Info: Elapsed time: 00:00:26
     Info: Total CPU time (on all processors): 00:00:43
 
 

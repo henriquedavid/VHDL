@@ -1,5 +1,3 @@
-# A bookmarks file was found in the current directory with 1 bookmark
-# Bookmark(s) were restored for window "Objects"
 # do relogio-despertador-digital_run_msim_rtl_vhdl.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -11,33 +9,122 @@
 # Copying /opt/intelFPGA_lite/18.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {/home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/decodificador.vhd}
+# vcom -93 -work work {/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:04:18 on Sep 17,2019
-# vcom -reportprogress 300 -93 -work work /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/decodificador.vhd 
+# Start time: 07:35:38 on Oct 15,2019
+# vcom -reportprogress 300 -93 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd 
 # -- Loading package STANDARD
-# -- Compiling entity decodificador
-# -- Compiling architecture decod of decodificador
-# End time: 08:04:18 on Sep 17,2019, Elapsed time: 0:00:00
+# -- Compiling entity fftipod
+# -- Compiling architecture arq_ff_d of fftipod
+# End time: 07:35:39 on Oct 15,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # 
 # stdin: <EOF>
-vsim work.decodificador
-# vsim work.decodificador 
-# Start time: 08:05:44 on Sep 17,2019
+vsim work.fftipod
+# vsim work.fftipod 
+# Start time: 07:36:27 on Oct 15,2019
 # Loading std.standard
-# Loading work.decodificador(decod)
-# Bookmark "bookmark0" already exists with that definition in window "Objects", ignoring
-# A bookmarks file was found in the current directory with 1 bookmark
-add wave -position end  sim:/decodificador/a
-add wave -position end  sim:/decodificador/b
-add wave -position end  sim:/decodificador/c
-add wave -position end  sim:/decodificador/d
-add wave -position end  sim:/decodificador/o
+# Loading work.fftipod(arq_ff_d)
+add wave -position insertpoint  \
+sim:/fftipod/d \
+sim:/fftipod/clk \
+sim:/fftipod/clrn \
+sim:/fftipod/ena \
+sim:/fftipod/q
+force -freeze sim:/fftipod/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/fftipod/clk 1 0, 0 {2500 ps} -r 5000
+force -freeze sim:/fftipod/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/fftipod/clk 1 0
+force -freeze sim:/fftipod/clk 1 0
+noforce sim:/fftipod/ena
+force -freeze sim:/fftipod/ena 1 0
+force -freeze sim:/fftipod/ena 1 01
+force -drive sim:/fftipod/ena 1 0
+# ** Error: (vsim-3461) Cannot use 'force -drive' on unresolved signal 'sim:/fftipod/ena'.
+# 
+force -deposit sim:/fftipod/ena 1 0
+force -freeze sim:/fftipod/ena 1 0
+force -freeze sim:/fftipod/ena 1 0
+force -freeze sim:/fftipod/ena 1 0
+force -freeze sim:/fftipod/ena 1 0
+force -freeze sim:/fftipod/ena 1 1, 0 {51 ps} -r 100
+force -freeze sim:/fftipod/ena 1 0
+force -freeze sim:/fftipod/ena 1 1, 0 {51 ps} -r 100
+vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:40:39 on Oct 15,2019
+# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity fftipod
+# -- Compiling architecture arq_ff_d of fftipod
+# End time: 07:40:39 on Oct 15,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+force -freeze sim:/fftipod/clk 1 0
+force -freeze sim:/fftipod/clk 1 0, 0 {50 ps} -r 100
 run
-force -freeze sim:/decodificador/a 1 0
+force -freeze sim:/fftipod/clk 1 0, 0 {50 ps} -r 100
 run
-force -freeze sim:/decodificador/a 0 0
-force -freeze sim:/decodificador/a 0 0
+force -freeze sim:/fftipod/clk 1 0, 0 {50 ps} -r 100
+run
+force -freeze sim:/fftipod/clk 1 0, 0 {100 ps} -r 200
+run
+run
+run
+run
+run
+force -freeze sim:/fftipod/ena 1 0
+run
+# WARNING: No extended dataflow license exists
+force -freeze sim:/fftipod/d 1 0
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/fftipod/ena 1 0
+run
+run
+run
+run
+run
+quit -sim
+# End time: 07:43:55 on Oct 15,2019, Elapsed time: 0:07:28
+# Errors: 1, Warnings: 1
+vsim work.fftipod
+# vsim work.fftipod 
+# Start time: 07:43:57 on Oct 15,2019
+# Loading std.standard
+# Loading work.fftipod(arq_ff_d)
+add wave -position insertpoint  \
+sim:/fftipod/d \
+sim:/fftipod/clk \
+sim:/fftipod/clrn \
+sim:/fftipod/ena \
+sim:/fftipod/q
+run
+run
+force -freeze sim:/fftipod/ena 1 0
+run
+force -freeze sim:/fftipod/clk 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+run
+force -freeze sim:/fftipod/clrn 1 0
+run
+run
+run
+force -freeze sim:/fftipod/d 1 0
+run
+run
+run
+force -freeze sim:/fftipod/clrn 0 0
+run
+run
+force -freeze sim:/fftipod/clrn 1 0
+run
 run

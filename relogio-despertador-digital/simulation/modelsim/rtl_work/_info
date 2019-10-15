@@ -7,34 +7,34 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/simulation/modelsim
-Edecodificador
-Z1 w1568718106
+Z0 d/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/modelsim
+Efftipod
+Z1 w1571134910
 R0
-Z2 8/home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/decodificador.vhd
-Z3 F/home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/decodificador.vhd
+Z2 8/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd
+Z3 F/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd
 l0
 L1
-V_1IKF:^]SgVa:@k6[<G1;3
-!s100 E4:nBjN5=P2:I`SoB<PRJ3
+V<=Tj:_V226NQXaQd2jCZh2
+!s100 fh@OKhRgc:>?=VVfjWXPf3
 Z4 OV;C;10.5b;63
-31
-Z5 !s110 1568718258
+32
+Z5 !s110 1571136039
 !i10b 1
-Z6 !s108 1568718258.000000
-Z7 !s90 -reportprogress|300|-93|-work|work|/home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/decodificador.vhd|
-Z8 !s107 /home/henriquedavid/Documentos/circuitos/Circuitos/relogio-despertador-digital/decodificador.vhd|
+Z6 !s108 1571136039.000000
+Z7 !s90 -reportprogress|300|-work|work|/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd|
+Z8 !s107 /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd|
 !i113 1
-Z9 o-93 -work work
+Z9 o-work work
 Z10 tExplicit 1 CvgOpt 0
-Adecod
-DEx4 work 13 decodificador 0 22 _1IKF:^]SgVa:@k6[<G1;3
-l7
-L6
-VhbIh7>dH>hl09Ggn`mj@>2
-!s100 Ik^F^1iX;@M9imkAEmO;d3
+Aarq_ff_d
+DEx4 work 7 fftipod 0 22 <=Tj:_V226NQXaQd2jCZh2
+l10
+L9
+Vc5EVC^:;8B3A[^2ZBJ00L0
+Z11 !s100 Vc04gAaQk^oQH8UejITBG2
 R4
-31
+32
 R5
 !i10b 1
 R6
