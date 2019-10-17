@@ -1,8 +1,33 @@
-|fftipod
-d => q~reg0.DATAIN
-clk => q~reg0.CLK
-clrn => q~reg0.ACLR
-ena => q~reg0.ENA
-q << q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|counterwbits
+d[0] => q.DATAB
+d[1] => q.DATAB
+d[2] => q.DATAB
+d[3] => q.DATAB
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clrn => q[0]~reg0.ACLR
+clrn => q[1]~reg0.ACLR
+clrn => q[2]~reg0.ACLR
+clrn => q[3]~reg0.ACLR
+ena => q[0]~reg0.ENA
+ena => q[3]~reg0.ENA
+ena => q[2]~reg0.ENA
+ena => q[1]~reg0.ENA
+load => q.OUTPUTSELECT
+load => q.OUTPUTSELECT
+load => q.OUTPUTSELECT
+load => q.OUTPUTSELECT
+iden[0] => Equal0.IN3
+iden[0] => Equal2.IN3
+iden[0] => Equal4.IN3
+iden[1] => Equal0.IN2
+iden[1] => Equal2.IN2
+iden[1] => Equal4.IN2
+q[0] << q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] << q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] << q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] << q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
