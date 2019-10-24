@@ -1,8 +1,12 @@
 ENTITY relogiodespertador IS
 	PORT ( a				  	 :  IN BIT_VECTOR( 9 DOWNTO 0);
-			 switch						 :  IN BIT_VECTOR( 1 DOWNTO 0);
-			 o1,o2,o3,o4 							 : OUT BIT_VECTOR(  6 DOWNTO 0 );
-			 a1							 :  IN BIT_VECTOR( 9 DOWNTO 0));
+			 switch			 :  IN BIT_VECTOR( 1 DOWNTO 0);
+			 clrn				 :  IN BIT;
+			 clk				 :	 IN BIT;
+			 ena				 :  IN BIT;
+			 alarme			 :  IN BIT;
+			 o1,o2,o3,o4 	 :  OUT BIT_VECTOR(  6 DOWNTO 0 );
+			 a1				 :  IN BIT_VECTOR( 9 DOWNTO 0));
 			 
 END relogiodespertador;
 
@@ -23,10 +27,22 @@ ARCHITECTURE configuracao OF relogiodespertador IS
 				SIGNAL o1, o2, o3, o4   : OUT BIT_VECTOR( 3 DOWNTO 0 ));	-- output
 	END COMPONENT;
 	
+	COMPONENT counterwbits
+		GENERIC(W : NATURAL := 4);
+		PORT(d	:	IN STD_LOGIC_VECTOR(W-1 DOWNTO 0);
+		  clk	:	IN BIT;
+		  clrn:	IN BIT;
+		  ena	:	IN BIT;
+		  load:	IN BIT;
+		  iden:	IN STD_LOGIC_VECTOR(1 DOWNTO 0);	--identificador do local do numero
+		  q	:	BUFFER STD_LOGIC_VECTOR(W-1 DOWNTO 0));
+	END COMPONENT;
+	
 	SIGNAL w0, w1, w2, w3, w4	: BIT_VECTOR( 3 DOWNTO 0);
 	
 BEGIN
 	p1 : codificadordeteclado PORT MAP (a, w0); -- entra o numero que o usuarios clicou e sai o valor em 4 bits
+	p2 : counterwbits PORT MAP(
 	p2 : mux_4x1 PORT MAP (w0, switch, w1, w2, w3, w4);
 	p3 : decodificador PORT MAP (w1(3), w1(2), w1(1), w1(0), o1);
 	p4 : decodificador PORT MAP (w2(3), w2(2), w2(1), w2(0), o2);
