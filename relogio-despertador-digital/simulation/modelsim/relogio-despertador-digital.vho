@@ -16,7 +16,11 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
+<<<<<<< HEAD
 -- DATE "09/26/2019 17:23:13"
+=======
+-- DATE "10/15/2019 07:28:18"
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 
 -- 
 -- Device: Altera 5CGXFC7C7F23C8 Package FBGA484
@@ -26,15 +30,18 @@
 -- This VHDL file should be used for ModelSim-Altera (VHDL) only
 -- 
 
+LIBRARY ALTERA;
 LIBRARY ALTERA_LNSIM;
 LIBRARY CYCLONEV;
 LIBRARY IEEE;
+USE ALTERA.ALTERA_PRIMITIVES_COMPONENTS.ALL;
 USE ALTERA_LNSIM.ALTERA_LNSIM_COMPONENTS.ALL;
 USE CYCLONEV.CYCLONEV_COMPONENTS.ALL;
 USE IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY 	relogiodespertador IS
+ENTITY 	fftipod IS
     PORT (
+<<<<<<< HEAD
 	a : IN STD.STANDARD.bit_vector(9 DOWNTO 0);
 	switch : IN STD.STANDARD.bit_vector(1 DOWNTO 0);
 	o1 : OUT STD.STANDARD.bit_vector(6 DOWNTO 0);
@@ -42,10 +49,18 @@ ENTITY 	relogiodespertador IS
 	o3 : OUT STD.STANDARD.bit_vector(6 DOWNTO 0);
 	o4 : OUT STD.STANDARD.bit_vector(6 DOWNTO 0);
 	a1 : IN STD.STANDARD.bit_vector(9 DOWNTO 0)
+=======
+	d : IN std_logic;
+	clk : IN std_logic;
+	clrn : IN std_logic;
+	ena : IN std_logic;
+	q : BUFFER std_logic
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 	);
-END relogiodespertador;
+END fftipod;
 
 -- Design Ports Information
+<<<<<<< HEAD
 -- o1[0]	=>  Location: PIN_T17,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- o1[1]	=>  Location: PIN_Y22,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- o1[2]	=>  Location: PIN_T20,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -96,9 +111,16 @@ END relogiodespertador;
 -- a[0]	=>  Location: PIN_R16,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- switch[0]	=>  Location: PIN_R14,	 I/O Standard: 2.5 V,	 Current Strength: Default
 -- switch[1]	=>  Location: PIN_Y20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+=======
+-- q	=>  Location: PIN_L18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- d	=>  Location: PIN_M18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- ena	=>  Location: PIN_M22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- clk	=>  Location: PIN_L22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- clrn	=>  Location: PIN_N19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 
 
-ARCHITECTURE structure OF relogiodespertador IS
+ARCHITECTURE structure OF fftipod IS
 SIGNAL gnd : std_logic := '0';
 SIGNAL vcc : std_logic := '1';
 SIGNAL unknown : std_logic := 'X';
@@ -108,6 +130,7 @@ SIGNAL devpor : std_logic := '1';
 SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
+<<<<<<< HEAD
 SIGNAL ww_a : std_logic_vector(9 DOWNTO 0);
 SIGNAL ww_switch : std_logic_vector(1 DOWNTO 0);
 SIGNAL ww_o1 : std_logic_vector(6 DOWNTO 0);
@@ -308,6 +331,43 @@ PORT MAP (
 
 -- Location: IOOBUF_X66_Y0_N93
 \o1[1]~output\ : cyclonev_io_obuf
+=======
+SIGNAL ww_d : std_logic;
+SIGNAL ww_clk : std_logic;
+SIGNAL ww_clrn : std_logic;
+SIGNAL ww_ena : std_logic;
+SIGNAL ww_q : std_logic;
+SIGNAL \~QUARTUS_CREATED_GND~I_combout\ : std_logic;
+SIGNAL \clk~input_o\ : std_logic;
+SIGNAL \d~input_o\ : std_logic;
+SIGNAL \ena~input_o\ : std_logic;
+SIGNAL \q~0_combout\ : std_logic;
+SIGNAL \q~reg0feeder_combout\ : std_logic;
+SIGNAL \clrn~input_o\ : std_logic;
+SIGNAL \q~reg0_q\ : std_logic;
+SIGNAL \ALT_INV_ena~input_o\ : std_logic;
+SIGNAL \ALT_INV_d~input_o\ : std_logic;
+SIGNAL \ALT_INV_q~0_combout\ : std_logic;
+SIGNAL \ALT_INV_q~reg0_q\ : std_logic;
+
+BEGIN
+
+ww_d <= d;
+ww_clk <= clk;
+ww_clrn <= clrn;
+ww_ena <= ena;
+q <= ww_q;
+ww_devoe <= devoe;
+ww_devclrn <= devclrn;
+ww_devpor <= devpor;
+\ALT_INV_ena~input_o\ <= NOT \ena~input_o\;
+\ALT_INV_d~input_o\ <= NOT \d~input_o\;
+\ALT_INV_q~0_combout\ <= NOT \q~0_combout\;
+\ALT_INV_q~reg0_q\ <= NOT \q~reg0_q\;
+
+-- Location: IOOBUF_X89_Y38_N22
+\q~output\ : cyclonev_io_obuf
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -315,6 +375,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
+<<<<<<< HEAD
 	i => \p3|l[1]~5_combout\,
 	devoe => ww_devoe,
 	o => ww_o1(1));
@@ -581,6 +642,14 @@ PORT MAP (
 
 -- Location: IOOBUF_X89_Y35_N79
 \o4[1]~output\ : cyclonev_io_obuf
+=======
+	i => \q~reg0_q\,
+	devoe => ww_devoe,
+	o => ww_q);
+
+-- Location: IOIBUF_X89_Y36_N55
+\clk~input\ : cyclonev_io_ibuf
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -588,12 +657,20 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
+<<<<<<< HEAD
 	i => \p6|l[1]~1_combout\,
 	devoe => ww_devoe,
 	o => ww_o4(1));
 
 -- Location: IOOBUF_X66_Y0_N42
 \o4[2]~output\ : cyclonev_io_obuf
+=======
+	i => ww_clk,
+	o => \clk~input_o\);
+
+-- Location: IOIBUF_X89_Y36_N21
+\d~input\ : cyclonev_io_ibuf
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -601,12 +678,20 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
+<<<<<<< HEAD
 	i => \p6|l[2]~2_combout\,
 	devoe => ww_devoe,
 	o => ww_o4(2));
 
 -- Location: IOOBUF_X89_Y6_N56
 \o4[3]~output\ : cyclonev_io_obuf
+=======
+	i => ww_d,
+	o => \d~input_o\);
+
+-- Location: IOIBUF_X89_Y36_N38
+\ena~input\ : cyclonev_io_ibuf
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 -- pragma translate_off
 GENERIC MAP (
 	bus_hold => "false",
@@ -614,6 +699,7 @@ GENERIC MAP (
 	shift_series_termination_control => "false")
 -- pragma translate_on
 PORT MAP (
+<<<<<<< HEAD
 	i => \p6|l\(3),
 	devoe => ww_devoe,
 	o => ww_o4(3));
@@ -630,11 +716,21 @@ PORT MAP (
 	i => \p6|ALT_INV_l[4]~3_combout\,
 	devoe => ww_devoe,
 	o => ww_o4(4));
+=======
+	i => ww_ena,
+	o => \ena~input_o\);
+
+-- Location: LABCELL_X88_Y36_N51
+\q~0\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \q~0_combout\ = ( \q~reg0_q\ & ( (!\ena~input_o\) # (\d~input_o\) ) ) # ( !\q~reg0_q\ & ( (\d~input_o\ & \ena~input_o\) ) )
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 
 -- Location: IOOBUF_X72_Y0_N36
 \o4[5]~output\ : cyclonev_io_obuf
 -- pragma translate_off
 GENERIC MAP (
+<<<<<<< HEAD
 	bus_hold => "false",
 	open_drain_output => "false",
 	shift_series_termination_control => "false")
@@ -711,11 +807,28 @@ GENERIC MAP (
 PORT MAP (
 	i => ww_a(8),
 	o => \a[8]~input_o\);
+=======
+	extended_lut => "off",
+	lut_mask => "0000010100000101000001010000010111110101111101011111010111110101",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataa => \ALT_INV_d~input_o\,
+	datac => \ALT_INV_ena~input_o\,
+	dataf => \ALT_INV_q~reg0_q\,
+	combout => \q~0_combout\);
+
+-- Location: LABCELL_X88_Y36_N42
+\q~reg0feeder\ : cyclonev_lcell_comb
+-- Equation(s):
+-- \q~reg0feeder_combout\ = ( \q~0_combout\ )
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 
 -- Location: IOIBUF_X89_Y9_N38
 \a[9]~input\ : cyclonev_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
+<<<<<<< HEAD
 	bus_hold => "false",
 	simulate_z_as => "z")
 -- pragma translate_on
@@ -1773,6 +1886,18 @@ PORT MAP (
 -- \p6|l[2]~2_combout\ = ( \p3|l~1_combout\ & ( \p2|o3~2_combout\ ) ) # ( !\p3|l~1_combout\ & ( \p2|o3~2_combout\ & ( (!\p1|WideOr0~0_combout\ & (((\p1|WideOr2~combout\)) # (\p1|o1\(3)))) # (\p1|WideOr0~0_combout\ & ((!\p1|WideOr1~2_combout\ & 
 -- ((\p1|WideOr2~combout\))) # (\p1|WideOr1~2_combout\ & (!\p1|o1\(3))))) ) ) ) # ( \p3|l~1_combout\ & ( !\p2|o3~2_combout\ ) ) # ( !\p3|l~1_combout\ & ( !\p2|o3~2_combout\ ) )
 
+=======
+	extended_lut => "off",
+	lut_mask => "0000000000000000000000000000000011111111111111111111111111111111",
+	shared_arith => "off")
+-- pragma translate_on
+PORT MAP (
+	dataf => \ALT_INV_q~0_combout\,
+	combout => \q~reg0feeder_combout\);
+
+-- Location: IOIBUF_X89_Y36_N4
+\clrn~input\ : cyclonev_io_ibuf
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 -- pragma translate_off
 GENERIC MAP (
 	extended_lut => "off",
@@ -1780,6 +1905,7 @@ GENERIC MAP (
 	shared_arith => "off")
 -- pragma translate_on
 PORT MAP (
+<<<<<<< HEAD
 	dataa => \p1|ALT_INV_o1\(3),
 	datab => \p1|ALT_INV_WideOr0~0_combout\,
 	datac => \p1|ALT_INV_WideOr2~combout\,
@@ -1975,12 +2101,31 @@ PORT MAP (
 GENERIC MAP (
 	bus_hold => "false",
 	simulate_z_as => "z")
+=======
+	i => ww_clrn,
+	o => \clrn~input_o\);
+
+-- Location: FF_X88_Y36_N44
+\q~reg0\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 -- pragma translate_on
 PORT MAP (
-	i => ww_a1(9),
-	o => \a1[9]~input_o\);
+	clk => \clk~input_o\,
+	d => \q~reg0feeder_combout\,
+	clrn => \clrn~input_o\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \q~reg0_q\);
 
+<<<<<<< HEAD
 -- Location: MLABCELL_X87_Y26_N0
+=======
+-- Location: MLABCELL_X8_Y74_N3
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 \~QUARTUS_CREATED_GND~I\ : cyclonev_lcell_comb
 -- Equation(s):
 

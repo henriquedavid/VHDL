@@ -1,5 +1,9 @@
 Analysis & Synthesis report for relogio-despertador-digital
+<<<<<<< HEAD
 Thu Sep 26 17:18:45 2019
+=======
+Thu Oct 17 08:24:12 2019
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,9 +18,11 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |counterwbits
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -42,14 +48,23 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis Status     ; Successful - Thu Sep 26 17:18:44 2019       ;
+=======
+; Analysis & Synthesis Status     ; Successful - Thu Oct 17 08:24:12 2019       ;
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; relogio-despertador-digital                 ;
-; Top-level Entity Name           ; relogiodespertador                          ;
+; Top-level Entity Name           ; counterwbits                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
+<<<<<<< HEAD
 ; Total registers                 ; 0                                           ;
 ; Total pins                      ; 50                                          ;
+=======
+; Total registers                 ; 4                                           ;
+; Total pins                      ; 14                                          ;
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -68,7 +83,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value               ;
 +---------------------------------------------------------------------------------+--------------------+-----------------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                             ;
-; Top-level entity name                                                           ; relogiodespertador ; relogio-despertador-digital ;
+; Top-level entity name                                                           ; counterwbits       ; relogio-despertador-digital ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V                   ;
 ; Use smart compilation                                                           ; Off                ; Off                         ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                          ;
@@ -155,16 +170,18 @@ refer to the applicable agreement for further details.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
+<<<<<<< HEAD
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                                                                                           ;
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
@@ -217,6 +234,51 @@ refer to the applicable agreement for further details.
 ;    |decodificador:p6|        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|decodificador:p6        ; decodificador        ; work         ;
 ;    |mux_4x1:p2|              ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|mux_4x1:p2              ; mux_4x1              ; work         ;
 +------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+----------------------+--------------+
+=======
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; counterwbits.vhd                 ; yes             ; User VHDL File  ; /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 8         ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 11        ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 5         ;
+;     -- 5 input functions                    ; 2         ;
+;     -- 4 input functions                    ; 2         ;
+;     -- <=3 input functions                  ; 2         ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 4         ;
+;                                             ;           ;
+; I/O pins                                    ; 14        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; q[0]~reg0 ;
+; Maximum fan-out                             ; 10        ;
+; Total fan-out                               ; 88        ;
+; Average fan-out                             ; 2.05      ;
++---------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
+; |counterwbits              ; 11 (11)             ; 4 (4)                     ; 0                 ; 0          ; 14   ; 0            ; |counterwbits       ; counterwbits ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -225,14 +287,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 4     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 4     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |counterwbits|q[0]~reg0    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |counterwbits ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; W              ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -240,6 +321,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
+<<<<<<< HEAD
 ; arriav_lcell_comb     ; 59                          ;
 ;     normal            ; 59                          ;
 ;         1 data inputs ; 4                           ;
@@ -252,6 +334,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
 ; Average LUT depth     ; 4.49                        ;
+=======
+; arriav_ff             ; 4                           ;
+;     ENA CLR           ; 4                           ;
+; arriav_lcell_comb     ; 11                          ;
+;     normal            ; 11                          ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 2                           ;
+;         5 data inputs ; 2                           ;
+;         6 data inputs ; 5                           ;
+; boundary_port         ; 14                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.76                        ;
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 +-----------------------+-----------------------------+
 
 
@@ -270,25 +366,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Thu Sep 26 17:16:05 2019
+=======
+    Info: Processing started: Thu Oct 17 08:23:52 2019
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio-despertador-digital -c relogio-despertador-digital
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file relogio-despertador-digital.vhd
-    Info (12022): Found design unit 1: relogiodespertador2-configuracao File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogio-despertador-digital.vhd Line: 8
-    Info (12023): Found entity 1: relogiodespertador2 File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogio-despertador-digital.vhd Line: 1
+    Info (12022): Found design unit 1: relogiodespertador2-configuracao File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogio-despertador-digital.vhd Line: 8
+    Info (12023): Found entity 1: relogiodespertador2 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogio-despertador-digital.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file decodificador.vhd
-    Info (12022): Found design unit 1: decodificador-decod File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/decodificador.vhd Line: 6
-    Info (12023): Found entity 1: decodificador File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/decodificador.vhd Line: 1
+    Info (12022): Found design unit 1: decodificador-decod File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd Line: 6
+    Info (12023): Found entity 1: decodificador File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file codificadordeteclado.vhd
-    Info (12022): Found design unit 1: codificadordeteclado-codificador File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd Line: 6
-    Info (12023): Found entity 1: codificadordeteclado File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd Line: 1
+    Info (12022): Found design unit 1: codificadordeteclado-codificador File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd Line: 6
+    Info (12023): Found entity 1: codificadordeteclado File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file mux_4x1.vhd
-    Info (12022): Found design unit 1: mux_4x1-structural File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/mux_4x1.vhd Line: 7
-    Info (12023): Found entity 1: mux_4x1 File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/mux_4x1.vhd Line: 1
+    Info (12022): Found design unit 1: mux_4x1-structural File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd Line: 7
+    Info (12023): Found entity 1: mux_4x1 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file relogiodespertador.vhd
+<<<<<<< HEAD
     Info (12022): Found design unit 1: relogiodespertador-configuracao File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 9
     Info (12023): Found entity 1: relogiodespertador File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 1
+=======
+    Info (12022): Found design unit 1: relogiodespertador-configuracao File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 9
+    Info (12023): Found entity 1: relogiodespertador File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 1
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 Info (12021): Found 1 design units, including 1 entities, in source file codificadorteclado_esq.bdf
     Info (12023): Found entity 1: codificadorteclado_esq
 Info (12021): Found 1 design units, including 1 entities, in source file mux_4x1_esq.bdf
@@ -299,6 +404,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file decodif
     Info (12023): Found entity 1: decodificador_esq
 Info (12021): Found 1 design units, including 1 entities, in source file completo.bdf
     Info (12023): Found entity 1: completo
+<<<<<<< HEAD
 Info (12127): Elaborating entity "relogiodespertador" for the top level hierarchy
 Info (12128): Elaborating entity "codificadordeteclado" for hierarchy "codificadordeteclado:p1" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 29
 Info (12128): Elaborating entity "mux_4x1" for hierarchy "mux_4x1:p2" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 30
@@ -326,5 +432,29 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
     Info: Processing ended: Thu Sep 26 17:18:46 2019
     Info: Elapsed time: 00:02:41
     Info: Total CPU time (on all processors): 00:01:20
+=======
+Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
+    Info (12022): Found design unit 1: registrador-arq_reg File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 10
+    Info (12023): Found entity 1: registrador File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file fftipod.vhd
+    Info (12022): Found design unit 1: fftipod-arq_ff_d File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd Line: 9
+    Info (12023): Found entity 1: fftipod File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file counterwbits.vhd
+    Info (12022): Found design unit 1: counterwbits-arch_1 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd Line: 16
+    Info (12023): Found entity 1: counterwbits File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd Line: 5
+Info (12127): Elaborating entity "counterwbits" for the top level hierarchy
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 4 output pins
+    Info (21061): Implemented 11 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 1066 megabytes
+    Info: Processing ended: Thu Oct 17 08:24:12 2019
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:42
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 
 

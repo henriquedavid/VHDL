@@ -1,4 +1,5 @@
 vendor_name = ModelSim
+<<<<<<< HEAD
 source_file = 1, C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogio-despertador-digital.vhd
 source_file = 1, C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/decodificador.vhd
 source_file = 1, C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd
@@ -121,3 +122,35 @@ instance = comp, \a1[7]~input\, a1[7]~input, relogiodespertador, 1
 instance = comp, \a1[8]~input\, a1[8]~input, relogiodespertador, 1
 instance = comp, \a1[9]~input\, a1[9]~input, relogiodespertador, 1
 instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, relogiodespertador, 1
+=======
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogio-despertador-digital.vhd
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4_1.vwf
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificador.vwf
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vwf
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadorteclado_esq.bdf
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1_esq.bdf
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux4x1_4bits.bdf
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador_esq.bdf
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/completo.bdf
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd
+source_file = 1, /opt/intelFPGA_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /opt/intelFPGA_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /opt/intelFPGA_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /opt/intelFPGA_lite/18.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/db/relogio-despertador-digital.cbx.xml
+design_name = fftipod
+instance = comp, \q~output\, q~output, fftipod, 1
+instance = comp, \clk~input\, clk~input, fftipod, 1
+instance = comp, \d~input\, d~input, fftipod, 1
+instance = comp, \ena~input\, ena~input, fftipod, 1
+instance = comp, \q~0\, q~0, fftipod, 1
+instance = comp, \q~reg0feeder\, q~reg0feeder, fftipod, 1
+instance = comp, \clrn~input\, clrn~input, fftipod, 1
+instance = comp, \q~reg0\, q~reg0, fftipod, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, fftipod, 1
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153

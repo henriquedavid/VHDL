@@ -1,13 +1,23 @@
+<<<<<<< HEAD
 Fitter Status : Successful - Thu Sep 26 17:21:34 2019
+=======
+Fitter Status : Successful - Tue Oct 15 07:27:33 2019
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : relogio-despertador-digital
-Top-level Entity Name : relogiodespertador
+Top-level Entity Name : fftipod
 Family : Cyclone V
 Device : 5CGXFC7C7F23C8
 Timing Models : Final
+<<<<<<< HEAD
 Logic utilization (in ALMs) : 35 / 56,480 ( < 1 % )
 Total registers : 0
 Total pins : 50 / 268 ( 19 % )
+=======
+Logic utilization (in ALMs) : 1 / 56,480 ( < 1 % )
+Total registers : 1
+Total pins : 5 / 268 ( 2 % )
+>>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 Total virtual pins : 0
 Total block memory bits : 0 / 7,024,640 ( 0 % )
 Total RAM Blocks : 0 / 686 ( 0 % )
