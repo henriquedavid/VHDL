@@ -1,7 +1,11 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.std_logic_unsigned.ALL;
+
 ENTITY mux_4x1 IS
-	PORT( a : IN BIT_VECTOR(3 DOWNTO 0);	-- data input
-			sel : IN BIT_VECTOR( 1 DOWNTO 0 );	-- selector
-			o1, o2, o3, o4 : OUT BIT_VECTOR(3 DOWNTO 0));	-- output
+	PORT( a : IN STD_LOGIC_VECTOR(3 DOWNTO 0);	-- data input
+			sel : IN STD_LOGIC_VECTOR( 1 DOWNTO 0 );	-- selector
+			o1, o2, o3, o4 : OUT STD_LOGIC_VECTOR(3 DOWNTO 0));	-- output
 END mux_4x1;
 
 ARCHITECTURE structural OF mux_4x1 IS

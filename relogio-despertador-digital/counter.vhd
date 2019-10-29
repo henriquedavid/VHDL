@@ -2,7 +2,7 @@ LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.std_logic_unsigned.ALL;
 
-ENTITY counterwbits IS
+ENTITY counterwbits2 IS
 	GENERIC(W : NATURAL := 4);
 	PORT(d	:	IN STD_LOGIC_VECTOR(W-1 DOWNTO 0);
 		  clk	:	IN BIT;
@@ -11,9 +11,9 @@ ENTITY counterwbits IS
 		  load:	IN BIT;
 		  iden:	IN STD_LOGIC_VECTOR(1 DOWNTO 0);	--identificador do local do numero
 		  q	:	BUFFER STD_LOGIC_VECTOR(W-1 DOWNTO 0));
-END counterwbits;
+END counterwbits2;
 
-ARCHITECTURE arch_1 OF counterwbits IS
+ARCHITECTURE arch_1 OF counterwbits2 IS
 BEGIN
 	PROCESS(clk, clrn, iden)
 	BEGIN

@@ -1,9 +1,5 @@
 Flow report for relogio-despertador-digital
-<<<<<<< HEAD
-Thu Sep 26 17:23:13 2019
-=======
-Thu Oct 17 08:24:12 2019
->>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
+Tue Oct 29 10:37:55 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -44,35 +40,25 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-<<<<<<< HEAD
-; Flow Status                     ; Successful - Thu Sep 26 17:23:13 2019       ;
-=======
-; Flow Status                     ; Successful - Thu Oct 17 08:24:12 2019       ;
->>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
+; Flow Status                     ; Successful - Tue Oct 29 10:37:55 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; relogio-despertador-digital                 ;
-; Top-level Entity Name           ; counterwbits                                ;
+; Top-level Entity Name           ; relogiodespertador                          ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
-<<<<<<< HEAD
-; Logic utilization (in ALMs)     ; 35 / 56,480 ( < 1 % )                       ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 50 / 268 ( 19 % )                           ;
-=======
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 4                                           ;
-; Total pins                      ; 14                                          ;
->>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
+; Logic utilization (in ALMs)     ; 19 / 56,480 ( < 1 % )                       ;
+; Total registers                 ; 12                                          ;
+; Total pins                      ; 55 / 268 ( 21 % )                           ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
+; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 156 ( 0 % )                             ;
+; Total HSSI RX PCSs              ; 0 / 6 ( 0 % )                               ;
+; Total HSSI PMA RX Deserializers ; 0 / 6 ( 0 % )                               ;
+; Total HSSI TX PCSs              ; 0 / 6 ( 0 % )                               ;
+; Total HSSI PMA TX Serializers   ; 0 / 6 ( 0 % )                               ;
+; Total PLLs                      ; 0 / 13 ( 0 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
 +---------------------------------+---------------------------------------------+
 
 
@@ -81,23 +67,18 @@ refer to the applicable agreement for further details.
 +-------------------+-----------------------------+
 ; Option            ; Setting                     ;
 +-------------------+-----------------------------+
-<<<<<<< HEAD
-; Start date & time ; 09/26/2019 17:16:08         ;
-=======
-; Start date & time ; 10/17/2019 08:23:53         ;
->>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
+; Start date & time ; 10/29/2019 10:32:01         ;
 ; Main task         ; Compilation                 ;
 ; Revision Name     ; relogio-despertador-digital ;
 +-------------------+-----------------------------+
 
 
-<<<<<<< HEAD
 +--------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Flow Non-Default Global Settings                                                                                                                 ;
 +-------------------------------------+----------------------------------------+-----------------------------+--------------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value               ; Entity Name        ; Section Id     ;
 +-------------------------------------+----------------------------------------+-----------------------------+--------------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 255332403068681.156952896703488        ; --                          ; --                 ; --             ;
+; COMPILER_SIGNATURE_ID               ; 277170158653750.157235592105153        ; --                          ; --                 ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --                          ; --                 ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>                      ; --                 ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --                          ; --                 ; eda_simulation ;
@@ -109,25 +90,6 @@ refer to the applicable agreement for further details.
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                          ; --                 ; --             ;
 ; TOP_LEVEL_ENTITY                    ; relogiodespertador                     ; relogio-despertador-digital ; --                 ; --             ;
 +-------------------------------------+----------------------------------------+-----------------------------+--------------------+----------------+
-=======
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                           ;
-+-------------------------------------+----------------------------------------+-----------------------------+--------------+----------------+
-; Assignment Name                     ; Value                                  ; Default Value               ; Entity Name  ; Section Id     ;
-+-------------------------------------+----------------------------------------+-----------------------------+--------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 277170158649660.157131143211464        ; --                          ; --           ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --                          ; --           ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>                      ; --           ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --                          ; --           ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                          ; --           ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                          ; --           ; --             ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                          ; counterwbits ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                          ; counterwbits ; Top            ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                          ; counterwbits ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                          ; --           ; --             ;
-; TOP_LEVEL_ENTITY                    ; counterwbits                           ; relogio-despertador-digital ; --           ; --             ;
-+-------------------------------------+----------------------------------------+-----------------------------+--------------+----------------+
->>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -135,17 +97,16 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-<<<<<<< HEAD
-; Analysis & Synthesis ; 00:02:07     ; 1.0                     ; 4867 MB             ; 00:01:19                           ;
-; Fitter               ; 00:02:32     ; 1.0                     ; 6337 MB             ; 00:02:14                           ;
-; Assembler            ; 00:00:39     ; 1.0                     ; 4835 MB             ; 00:00:18                           ;
-; Timing Analyzer      ; 00:00:23     ; 1.0                     ; 5155 MB             ; 00:00:16                           ;
-; EDA Netlist Writer   ; 00:00:05     ; 1.0                     ; 4744 MB             ; 00:00:05                           ;
-; Total                ; 00:05:46     ; --                      ; --                  ; 00:04:12                           ;
-=======
-; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 1027 MB             ; 00:00:42                           ;
-; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:42                           ;
->>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 1035 MB             ; 00:00:42                           ;
+; Fitter               ; 00:00:58     ; 1.0                     ; 2509 MB             ; 00:01:46                           ;
+; Assembler            ; 00:00:13     ; 1.0                     ; 975 MB              ; 00:00:12                           ;
+; Timing Analyzer      ; 00:00:08     ; 1.1                     ; 1216 MB             ; 00:00:08                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 1152 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 1132 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1140 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 1132 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 1154 MB             ; 00:00:02                           ;
+; Total                ; 00:01:46     ; --                      ; --                  ; 00:02:56                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -154,7 +115,15 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+----------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
 +----------------------+------------------+----------------+------------+----------------+
-; Analysis & Synthesis ; A104-16L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; Analysis & Synthesis ; A309-04L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; Fitter               ; A309-04L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; Assembler            ; A309-04L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; Timing Analyzer      ; A309-04L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; EDA Netlist Writer   ; A309-04L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; EDA Netlist Writer   ; A309-04L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; EDA Netlist Writer   ; A309-04L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; EDA Netlist Writer   ; A309-04L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; EDA Netlist Writer   ; A309-04L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
 +----------------------+------------------+----------------+------------+----------------+
 
 
@@ -162,6 +131,14 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off relogio-despertador-digital -c relogio-despertador-digital
+quartus_fit --read_settings_files=off --write_settings_files=off relogio-despertador-digital -c relogio-despertador-digital
+quartus_asm --read_settings_files=off --write_settings_files=off relogio-despertador-digital -c relogio-despertador-digital
+quartus_sta relogio-despertador-digital -c relogio-despertador-digital
+quartus_eda --read_settings_files=off --write_settings_files=off relogio-despertador-digital -c relogio-despertador-digital
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off relogio-despertador-digital -c relogio-despertador-digital --vector_source=/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/Waveform.vwf --testbench_file=/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim/ relogio-despertador-digital -c relogio-despertador-digital
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off relogio-despertador-digital -c relogio-despertador-digital --vector_source=/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/Waveform.vwf --testbench_file=/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory=/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim/ relogio-despertador-digital -c relogio-despertador-digital
 
 
 

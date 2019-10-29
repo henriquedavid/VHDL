@@ -4,7 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-<<<<<<< HEAD
 					"name" : "o1[0]",
 					"strict" : false
 				},
@@ -33,91 +32,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "o2[0]",
+					"name" : "sel",
 					"strict" : false
 				},
 				{
-					"name" : "o2[1]",
+					"name" : "switch[0]",
 					"strict" : false
 				},
 				{
-					"name" : "o2[2]",
+					"name" : "switch[1]",
 					"strict" : false
 				},
 				{
-					"name" : "o2[3]",
+					"name" : "a[9]",
 					"strict" : false
 				},
 				{
-					"name" : "o2[4]",
+					"name" : "a[5]",
 					"strict" : false
 				},
 				{
-					"name" : "o2[5]",
+					"name" : "a[7]",
 					"strict" : false
 				},
 				{
-					"name" : "o2[6]",
+					"name" : "a[6]",
 					"strict" : false
 				},
 				{
-					"name" : "o3[0]",
-					"strict" : false
-				},
-				{
-					"name" : "o3[1]",
-					"strict" : false
-				},
-				{
-					"name" : "o3[2]",
-					"strict" : false
-				},
-				{
-					"name" : "o3[3]",
-					"strict" : false
-				},
-				{
-					"name" : "o3[4]",
-					"strict" : false
-				},
-				{
-					"name" : "o3[5]",
-					"strict" : false
-				},
-				{
-					"name" : "o3[6]",
-					"strict" : false
-				},
-				{
-					"name" : "o4[0]",
-					"strict" : false
-				},
-				{
-					"name" : "o4[1]",
-					"strict" : false
-				},
-				{
-					"name" : "o4[2]",
-					"strict" : false
-				},
-				{
-					"name" : "o4[3]",
-					"strict" : false
-				},
-				{
-					"name" : "o4[4]",
-					"strict" : false
-				},
-				{
-					"name" : "o4[5]",
-					"strict" : false
-				},
-				{
-					"name" : "o4[6]",
-					"strict" : false
-				},
-				{
-					"name" : "a[3]",
+					"name" : "a[8]",
 					"strict" : false
 				},
 				{
@@ -133,53 +76,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "a[9]",
+					"name" : "a[3]",
 					"strict" : false
 				},
 				{
-					"name" : "a[7]",
-					"strict" : false
-				},
-				{
-					"name" : "a[5]",
-					"strict" : false
-				},
-				{
-					"name" : "a[6]",
-					"strict" : false
-				},
-				{
-					"name" : "a[8]",
-=======
-					"name" : "q[0]",
-					"strict" : false
-				},
-				{
-					"name" : "q[1]",
-					"strict" : false
-				},
-				{
-					"name" : "q[2]",
-					"strict" : false
-				},
-				{
-					"name" : "q[3]",
-					"strict" : false
-				},
-				{
-					"name" : "iden[0]",
-					"strict" : false
-				},
-				{
-					"name" : "load",
-					"strict" : false
-				},
-				{
-					"name" : "iden[1]",
-					"strict" : false
-				},
-				{
-					"name" : "d[0]",
+					"name" : "a[0]",
 					"strict" : false
 				},
 				{
@@ -192,31 +93,6 @@
 				},
 				{
 					"name" : "ena",
-					"strict" : false
-				},
-				{
-					"name" : "d[1]",
-					"strict" : false
-				},
-				{
-					"name" : "d[2]",
-					"strict" : false
-				},
-				{
-					"name" : "d[3]",
->>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
-					"strict" : false
-				},
-				{
-					"name" : "a[0]",
-					"strict" : false
-				},
-				{
-					"name" : "switch[0]",
-					"strict" : false
-				},
-				{
-					"name" : "switch[1]",
 					"strict" : false
 				}
 			]

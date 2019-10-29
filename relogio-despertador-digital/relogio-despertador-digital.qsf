@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CGXFC7C7F23C8
-set_global_assignment -name TOP_LEVEL_ENTITY counterwbits
+set_global_assignment -name TOP_LEVEL_ENTITY relogiodespertador
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "07:22:50  SEPTEMBER 10, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -54,9 +54,6 @@ set_global_assignment -name VHDL_FILE decodificador.vhd
 set_global_assignment -name VHDL_FILE codificadordeteclado.vhd
 set_global_assignment -name VHDL_FILE mux_4x1.vhd
 set_global_assignment -name VHDL_FILE relogiodespertador.vhd
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name BDF_FILE codificadorteclado_esq.bdf
 set_global_assignment -name BDF_FILE mux_4x1_esq.bdf
 set_global_assignment -name BDF_FILE mux4x1_4bits.bdf
@@ -66,13 +63,14 @@ set_global_assignment -name BDF_FILE "ff-tipoD.bdf"
 set_global_assignment -name BDF_FILE registrador.bdf
 set_global_assignment -name BDF_FILE mux_2_1.bdf
 set_global_assignment -name VHDL_FILE counter.vhd
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VHDL_FILE registrador.vhd
 set_global_assignment -name VHDL_FILE fftipod.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE ff.vwf
 set_global_assignment -name VHDL_FILE counterwbits.vhd
+set_global_assignment -name VHDL_FILE mux_2x1.vhd
+set_global_assignment -name VHDL_FILE mux_2x1_Wbits.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VHDL_FILE mux_2x1.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf

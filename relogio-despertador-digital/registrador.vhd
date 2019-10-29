@@ -1,13 +1,13 @@
-ENTITY registrador IS
+ENTITY registrador2 IS
 	GENERIC( W : NATURAL := 4);
 	PORT(d	:	IN BIT_VECTOR(W-1 DOWNTO 0);
 		  clk :	IN BIT;
 		  clrn:	IN BIT;
 		  ena	:	IN BIT;
 		  q	:	OUT BIT_VECTOR(W-1	DOWNTO 0));
-END registrador;
+END registrador2;
 
-ARCHITECTURE arq_reg OF registrador IS
+ARCHITECTURE arq_reg OF registrador2 IS
 BEGIN
 	PROCESS(clk, clrn)
 	BEGIN

@@ -1,9 +1,5 @@
 Analysis & Synthesis report for relogio-despertador-digital
-<<<<<<< HEAD
-Thu Sep 26 17:18:45 2019
-=======
-Thu Oct 17 08:24:12 2019
->>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
+Tue Oct 29 10:32:19 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -18,11 +14,32 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |counterwbits
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: counterwbits:p2
+ 10. Parameter Settings for User Entity Instance: counterwbits:p3
+ 11. Parameter Settings for User Entity Instance: counterwbits:p4
+ 12. Parameter Settings for User Entity Instance: counterwbits:p5
+ 13. Parameter Settings for User Entity Instance: registrador2:p6
+ 14. Parameter Settings for User Entity Instance: registrador2:p7
+ 15. Parameter Settings for User Entity Instance: registrador2:p8
+ 16. Parameter Settings for User Entity Instance: registrador2:p9
+ 17. Parameter Settings for User Entity Instance: registrador2:p11
+ 18. Parameter Settings for User Entity Instance: registrador2:p12
+ 19. Parameter Settings for User Entity Instance: registrador2:p13
+ 20. Parameter Settings for User Entity Instance: registrador2:p14
+ 21. Parameter Settings for User Entity Instance: mux_2x1_Wbits:p15
+ 22. Parameter Settings for User Entity Instance: mux_2x1_Wbits:p16
+ 23. Parameter Settings for User Entity Instance: mux_2x1_Wbits:p17
+ 24. Parameter Settings for User Entity Instance: mux_2x1_Wbits:p18
+ 25. Port Connectivity Checks: "mux_2x1_Wbits:p18"
+ 26. Port Connectivity Checks: "mux_2x1_Wbits:p17"
+ 27. Port Connectivity Checks: "mux_2x1_Wbits:p16"
+ 28. Port Connectivity Checks: "counterwbits:p5"
+ 29. Port Connectivity Checks: "counterwbits:p4"
+ 30. Port Connectivity Checks: "counterwbits:p3"
+ 31. Port Connectivity Checks: "counterwbits:p2"
+ 32. Post-Synthesis Netlist Statistics for Top Partition
+ 33. Elapsed Time Per Partition
+ 34. Analysis & Synthesis Messages
 
 
 
@@ -48,23 +65,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-<<<<<<< HEAD
-; Analysis & Synthesis Status     ; Successful - Thu Sep 26 17:18:44 2019       ;
-=======
-; Analysis & Synthesis Status     ; Successful - Thu Oct 17 08:24:12 2019       ;
->>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
+; Analysis & Synthesis Status     ; Successful - Tue Oct 29 10:32:19 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; relogio-despertador-digital                 ;
-; Top-level Entity Name           ; counterwbits                                ;
+; Top-level Entity Name           ; relogiodespertador                          ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-<<<<<<< HEAD
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 50                                          ;
-=======
-; Total registers                 ; 4                                           ;
-; Total pins                      ; 14                                          ;
->>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
+; Total registers                 ; 12                                          ;
+; Total pins                      ; 55                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -83,7 +91,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value               ;
 +---------------------------------------------------------------------------------+--------------------+-----------------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                             ;
-; Top-level entity name                                                           ; counterwbits       ; relogio-despertador-digital ;
+; Top-level entity name                                                           ; relogiodespertador ; relogio-despertador-digital ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V                   ;
 ; Use smart compilation                                                           ; Off                ; Off                         ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                          ;
@@ -181,67 +189,19 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-<<<<<<< HEAD
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                           ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                    ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
-; decodificador.vhd                ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/decodificador.vhd        ;         ;
-; codificadordeteclado.vhd         ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd ;         ;
-; mux_4x1.vhd                      ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/mux_4x1.vhd              ;         ;
-; relogiodespertador.vhd           ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd   ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+---------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                     ;
-+---------------------------------------------+-----------------------------------+
-; Resource                                    ; Usage                             ;
-+---------------------------------------------+-----------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 41                                ;
-;                                             ;                                   ;
-; Combinational ALUT usage for logic          ; 55                                ;
-;     -- 7 input functions                    ; 0                                 ;
-;     -- 6 input functions                    ; 26                                ;
-;     -- 5 input functions                    ; 19                                ;
-;     -- 4 input functions                    ; 3                                 ;
-;     -- <=3 input functions                  ; 7                                 ;
-;                                             ;                                   ;
-; Dedicated logic registers                   ; 0                                 ;
-;                                             ;                                   ;
-; I/O pins                                    ; 50                                ;
-;                                             ;                                   ;
-; Total DSP Blocks                            ; 0                                 ;
-;                                             ;                                   ;
-; Maximum fan-out node                        ; codificadordeteclado:p1|WideOr1~2 ;
-; Maximum fan-out                             ; 30                                ;
-; Total fan-out                               ; 356                               ;
-; Average fan-out                             ; 2.30                              ;
-+---------------------------------------------+-----------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                       ;
-+------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+----------------------+--------------+
-; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name          ; Library Name ;
-+------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+----------------------+--------------+
-; |relogiodespertador          ; 55 (0)              ; 0 (0)                     ; 0                 ; 0          ; 50   ; 0            ; |relogiodespertador                         ; relogiodespertador   ; work         ;
-;    |codificadordeteclado:p1| ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|codificadordeteclado:p1 ; codificadordeteclado ; work         ;
-;    |decodificador:p3|        ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|decodificador:p3        ; decodificador        ; work         ;
-;    |decodificador:p4|        ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|decodificador:p4        ; decodificador        ; work         ;
-;    |decodificador:p5|        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|decodificador:p5        ; decodificador        ; work         ;
-;    |decodificador:p6|        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|decodificador:p6        ; decodificador        ; work         ;
-;    |mux_4x1:p2|              ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|mux_4x1:p2              ; mux_4x1              ; work         ;
-+------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+----------------------+--------------+
-=======
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                            ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
-; counterwbits.vhd                 ; yes             ; User VHDL File  ; /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                    ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                             ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------+---------+
+; decodificador.vhd                ; yes             ; User VHDL File  ; /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd        ;         ;
+; codificadordeteclado.vhd         ; yes             ; User VHDL File  ; /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd ;         ;
+; mux_4x1.vhd                      ; yes             ; User VHDL File  ; /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd              ;         ;
+; relogiodespertador.vhd           ; yes             ; User VHDL File  ; /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd   ;         ;
+; registrador.vhd                  ; yes             ; User VHDL File  ; /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd          ;         ;
+; counterwbits.vhd                 ; yes             ; User VHDL File  ; /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd         ;         ;
+; mux_2x1_Wbits.vhd                ; yes             ; User VHDL File  ; /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_2x1_Wbits.vhd        ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -249,36 +209,42 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 8         ;
+; Estimate of Logic utilization (ALMs needed) ; 20        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 11        ;
+; Combinational ALUT usage for logic          ; 33        ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 5         ;
-;     -- 5 input functions                    ; 2         ;
-;     -- 4 input functions                    ; 2         ;
-;     -- <=3 input functions                  ; 2         ;
+;     -- 6 input functions                    ; 6         ;
+;     -- 5 input functions                    ; 7         ;
+;     -- 4 input functions                    ; 14        ;
+;     -- <=3 input functions                  ; 6         ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 4         ;
+; Dedicated logic registers                   ; 12        ;
 ;                                             ;           ;
-; I/O pins                                    ; 14        ;
+; I/O pins                                    ; 55        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
-; Maximum fan-out node                        ; q[0]~reg0 ;
-; Maximum fan-out                             ; 10        ;
-; Total fan-out                               ; 88        ;
-; Average fan-out                             ; 2.05      ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 12        ;
+; Total fan-out                               ; 253       ;
+; Average fan-out                             ; 1.63      ;
 +---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
-; |counterwbits              ; 11 (11)             ; 4 (4)                     ; 0                 ; 0          ; 14   ; 0            ; |counterwbits       ; counterwbits ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+--------------+--------------+
->>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                       ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                         ; Entity Name          ; Library Name ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+----------------------+--------------+
+; |relogiodespertador          ; 33 (0)              ; 12 (0)                    ; 0                 ; 0          ; 55   ; 0            ; |relogiodespertador                         ; relogiodespertador   ; work         ;
+;    |codificadordeteclado:p1| ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|codificadordeteclado:p1 ; codificadordeteclado ; work         ;
+;    |counterwbits:p2|         ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|counterwbits:p2         ; counterwbits         ; work         ;
+;    |decodificador:p19|       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|decodificador:p19       ; decodificador        ; work         ;
+;    |mux_2x1_Wbits:p15|       ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|mux_2x1_Wbits:p15       ; mux_2x1_Wbits        ; work         ;
+;    |mux_4x1:p10|             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|mux_4x1:p10             ; mux_4x1              ; work         ;
+;    |registrador2:p11|        ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|registrador2:p11        ; registrador2         ; work         ;
+;    |registrador2:p6|         ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |relogiodespertador|registrador2:p6         ; registrador2         ; work         ;
++------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -287,33 +253,247 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4     ;
+; Total registers                              ; 12    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Clear ; 12    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Clock Enable       ; 12    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |counterwbits|q[0]~reg0    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-
-
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |counterwbits ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; W              ; 4     ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counterwbits:p2 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; w              ; 4     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counterwbits:p3 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; w              ; 4     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counterwbits:p4 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; w              ; 4     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: counterwbits:p5 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; w              ; 4     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador2:p6 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; w              ; 4     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador2:p7 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; w              ; 4     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador2:p8 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; w              ; 4     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador2:p9 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; w              ; 4     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador2:p11 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; w              ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador2:p12 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; w              ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador2:p13 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; w              ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: registrador2:p14 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; w              ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_2x1_Wbits:p15 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; w              ; 4     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_2x1_Wbits:p16 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; w              ; 4     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_2x1_Wbits:p17 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; w              ; 4     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_2x1_Wbits:p18 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; w              ; 4     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_2x1_Wbits:p18"                                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_2x1_Wbits:p17"                                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_2x1_Wbits:p16"                                                                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "counterwbits:p5" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; d    ; Input ; Info     ; Stuck at GND      ;
+; load ; Input ; Info     ; Stuck at GND      ;
+; iden ; Input ; Info     ; Stuck at VCC      ;
++------+-------+----------+-------------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "counterwbits:p4" ;
++---------+-------+----------+----------------+
+; Port    ; Type  ; Severity ; Details        ;
++---------+-------+----------+----------------+
+; d       ; Input ; Info     ; Stuck at GND   ;
+; load    ; Input ; Info     ; Stuck at GND   ;
+; iden[1] ; Input ; Info     ; Stuck at VCC   ;
+; iden[0] ; Input ; Info     ; Stuck at GND   ;
++---------+-------+----------+----------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "counterwbits:p3" ;
++---------+-------+----------+----------------+
+; Port    ; Type  ; Severity ; Details        ;
++---------+-------+----------+----------------+
+; d       ; Input ; Info     ; Stuck at GND   ;
+; load    ; Input ; Info     ; Stuck at GND   ;
+; iden[1] ; Input ; Info     ; Stuck at GND   ;
+; iden[0] ; Input ; Info     ; Stuck at VCC   ;
++---------+-------+----------+----------------+
+
+
++---------------------------------------------+
+; Port Connectivity Checks: "counterwbits:p2" ;
++------+-------+----------+-------------------+
+; Port ; Type  ; Severity ; Details           ;
++------+-------+----------+-------------------+
+; d    ; Input ; Info     ; Stuck at GND      ;
+; load ; Input ; Info     ; Stuck at GND      ;
+; iden ; Input ; Info     ; Stuck at GND      ;
++------+-------+----------+-------------------+
 
 
 +-----------------------------------------------------+
@@ -321,33 +501,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-<<<<<<< HEAD
-; arriav_lcell_comb     ; 59                          ;
-;     normal            ; 59                          ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 3                           ;
-;         5 data inputs ; 19                          ;
-;         6 data inputs ; 26                          ;
-; boundary_port         ; 50                          ;
+; arriav_ff             ; 12                          ;
+;     ENA CLR           ; 12                          ;
+; arriav_lcell_comb     ; 35                          ;
+;     normal            ; 35                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 14                          ;
+;         5 data inputs ; 7                           ;
+;         6 data inputs ; 6                           ;
+; boundary_port         ; 55                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 4.49                        ;
-=======
-; arriav_ff             ; 4                           ;
-;     ENA CLR           ; 4                           ;
-; arriav_lcell_comb     ; 11                          ;
-;     normal            ; 11                          ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 2                           ;
-;         5 data inputs ; 2                           ;
-;         6 data inputs ; 5                           ;
-; boundary_port         ; 14                          ;
-;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.76                        ;
->>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.76                        ;
 +-----------------------+-----------------------------+
 
 
@@ -356,7 +523,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -366,11 +533,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-<<<<<<< HEAD
-    Info: Processing started: Thu Sep 26 17:16:05 2019
-=======
-    Info: Processing started: Thu Oct 17 08:23:52 2019
->>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
+    Info: Processing started: Tue Oct 29 10:32:01 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio-despertador-digital -c relogio-despertador-digital
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -378,22 +541,17 @@ Info (12021): Found 2 design units, including 1 entities, in source file relogio
     Info (12022): Found design unit 1: relogiodespertador2-configuracao File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogio-despertador-digital.vhd Line: 8
     Info (12023): Found entity 1: relogiodespertador2 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogio-despertador-digital.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file decodificador.vhd
-    Info (12022): Found design unit 1: decodificador-decod File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd Line: 6
-    Info (12023): Found entity 1: decodificador File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd Line: 1
+    Info (12022): Found design unit 1: decodificador-decod File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd Line: 10
+    Info (12023): Found entity 1: decodificador File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file codificadordeteclado.vhd
-    Info (12022): Found design unit 1: codificadordeteclado-codificador File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd Line: 6
-    Info (12023): Found entity 1: codificadordeteclado File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd Line: 1
+    Info (12022): Found design unit 1: codificadordeteclado-codificador File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd Line: 10
+    Info (12023): Found entity 1: codificadordeteclado File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux_4x1.vhd
-    Info (12022): Found design unit 1: mux_4x1-structural File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd Line: 7
-    Info (12023): Found entity 1: mux_4x1 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd Line: 1
+    Info (12022): Found design unit 1: mux_4x1-structural File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd Line: 11
+    Info (12023): Found entity 1: mux_4x1 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file relogiodespertador.vhd
-<<<<<<< HEAD
-    Info (12022): Found design unit 1: relogiodespertador-configuracao File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 9
-    Info (12023): Found entity 1: relogiodespertador File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 1
-=======
-    Info (12022): Found design unit 1: relogiodespertador-configuracao File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 9
-    Info (12023): Found entity 1: relogiodespertador File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 1
->>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
+    Info (12022): Found design unit 1: relogiodespertador-configuracao File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 17
+    Info (12023): Found entity 1: relogiodespertador File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file codificadorteclado_esq.bdf
     Info (12023): Found entity 1: codificadorteclado_esq
 Info (12021): Found 1 design units, including 1 entities, in source file mux_4x1_esq.bdf
@@ -404,57 +562,88 @@ Info (12021): Found 1 design units, including 1 entities, in source file decodif
     Info (12023): Found entity 1: decodificador_esq
 Info (12021): Found 1 design units, including 1 entities, in source file completo.bdf
     Info (12023): Found entity 1: completo
-<<<<<<< HEAD
-Info (12127): Elaborating entity "relogiodespertador" for the top level hierarchy
-Info (12128): Elaborating entity "codificadordeteclado" for hierarchy "codificadordeteclado:p1" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 29
-Info (12128): Elaborating entity "mux_4x1" for hierarchy "mux_4x1:p2" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 30
-Info (12128): Elaborating entity "decodificador" for hierarchy "decodificador:p3" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 31
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 10 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "a1[0]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 5
-    Warning (15610): No output dependent on input pin "a1[1]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 5
-    Warning (15610): No output dependent on input pin "a1[2]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 5
-    Warning (15610): No output dependent on input pin "a1[3]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 5
-    Warning (15610): No output dependent on input pin "a1[4]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 5
-    Warning (15610): No output dependent on input pin "a1[5]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 5
-    Warning (15610): No output dependent on input pin "a1[6]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 5
-    Warning (15610): No output dependent on input pin "a1[7]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 5
-    Warning (15610): No output dependent on input pin "a1[8]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 5
-    Warning (15610): No output dependent on input pin "a1[9]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/Projetos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 5
-Info (21057): Implemented 105 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 22 input pins
-    Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 55 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4867 megabytes
-    Info: Processing ended: Thu Sep 26 17:18:46 2019
-    Info: Elapsed time: 00:02:41
-    Info: Total CPU time (on all processors): 00:01:20
-=======
+Info (12021): Found 1 design units, including 1 entities, in source file ff-tipoD.bdf
+    Info (12023): Found entity 1: ff-tipoD
+Info (12021): Found 1 design units, including 1 entities, in source file registrador.bdf
+    Info (12023): Found entity 1: registrador
+Info (12021): Found 1 design units, including 1 entities, in source file mux_2_1.bdf
+    Info (12023): Found entity 1: mux_2_1
+Info (12021): Found 2 design units, including 1 entities, in source file counter.vhd
+    Info (12022): Found design unit 1: counterwbits2-arch_1 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counter.vhd Line: 16
+    Info (12023): Found entity 1: counterwbits2 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counter.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
-    Info (12022): Found design unit 1: registrador-arq_reg File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 10
-    Info (12023): Found entity 1: registrador File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 1
+    Info (12022): Found design unit 1: registrador2-arq_reg File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 10
+    Info (12023): Found entity 1: registrador2 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file fftipod.vhd
     Info (12022): Found design unit 1: fftipod-arq_ff_d File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd Line: 9
     Info (12023): Found entity 1: fftipod File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd Line: 1
 Info (12021): Found 2 design units, including 1 entities, in source file counterwbits.vhd
     Info (12022): Found design unit 1: counterwbits-arch_1 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd Line: 16
     Info (12023): Found entity 1: counterwbits File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd Line: 5
-Info (12127): Elaborating entity "counterwbits" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file mux_2x1.vhd
+    Info (12022): Found design unit 1: mux_2x1-structural File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_2x1.vhd Line: 7
+    Info (12023): Found entity 1: mux_2x1 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_2x1.vhd Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file mux_2x1_Wbits.vhd
+    Info (12022): Found design unit 1: mux_2x1_Wbits-structural File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_2x1_Wbits.vhd Line: 13
+    Info (12023): Found entity 1: mux_2x1_Wbits File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_2x1_Wbits.vhd Line: 5
+Info (12127): Elaborating entity "relogiodespertador" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at relogiodespertador.vhd(13): used implicit default value for signal "o2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+Warning (10541): VHDL Signal Declaration warning at relogiodespertador.vhd(13): used implicit default value for signal "o3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+Warning (10541): VHDL Signal Declaration warning at relogiodespertador.vhd(13): used implicit default value for signal "o4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+Warning (10036): Verilog HDL or VHDL warning at relogiodespertador.vhd(62): object "a01" assigned a value but never read File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 62
+Warning (10036): Verilog HDL or VHDL warning at relogiodespertador.vhd(62): object "a02" assigned a value but never read File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 62
+Warning (10036): Verilog HDL or VHDL warning at relogiodespertador.vhd(62): object "a03" assigned a value but never read File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 62
+Info (12128): Elaborating entity "codificadordeteclado" for hierarchy "codificadordeteclado:p1" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 65
+Info (12128): Elaborating entity "counterwbits" for hierarchy "counterwbits:p2" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 66
+Info (12128): Elaborating entity "registrador2" for hierarchy "registrador2:p6" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 70
+Info (12128): Elaborating entity "mux_4x1" for hierarchy "mux_4x1:p10" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 74
+Info (12128): Elaborating entity "mux_2x1_Wbits" for hierarchy "mux_2x1_Wbits:p15" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 79
+Info (12128): Elaborating entity "decodificador" for hierarchy "decodificador:p19" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 83
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "o2[0]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o2[1]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o2[2]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o2[3]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o2[4]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o2[5]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o2[6]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o3[0]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o3[1]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o3[2]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o3[3]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o3[4]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o3[5]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o3[6]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o4[0]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o4[1]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o4[2]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o4[3]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o4[4]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o4[5]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
+    Warning (13410): Pin "o4[6]" is stuck at GND File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 13
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 11 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1066 megabytes
-    Info: Processing ended: Thu Oct 17 08:24:12 2019
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:42
->>>>>>> e6dbb6a9fec34d7283eee908f72ff143eef4e153
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "alarme" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 12
+    Warning (15610): No output dependent on input pin "a1[0]" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 14
+    Warning (15610): No output dependent on input pin "a1[1]" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 14
+    Warning (15610): No output dependent on input pin "a1[2]" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 14
+    Warning (15610): No output dependent on input pin "a1[3]" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 14
+    Warning (15610): No output dependent on input pin "a1[4]" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 14
+    Warning (15610): No output dependent on input pin "a1[5]" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 14
+    Warning (15610): No output dependent on input pin "a1[6]" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 14
+    Warning (15610): No output dependent on input pin "a1[7]" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 14
+    Warning (15610): No output dependent on input pin "a1[8]" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 14
+    Warning (15610): No output dependent on input pin "a1[9]" File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd Line: 14
+Info (21057): Implemented 92 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 27 input pins
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 37 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
+    Info: Peak virtual memory: 1075 megabytes
+    Info: Processing ended: Tue Oct 29 10:32:19 2019
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:43
 
 

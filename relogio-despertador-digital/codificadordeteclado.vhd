@@ -1,6 +1,10 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.std_logic_unsigned.ALL;
+
 ENTITY codificadordeteclado IS
-	PORT ( a : IN BIT_VECTOR(9 DOWNTO 0);
-			 o1      		 : OUT BIT_VECTOR( 3 DOWNTO 0 ));
+	PORT ( a : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+			 o1      		 : OUT STD_LOGIC_VECTOR( 3 DOWNTO 0 ));
 END codificadordeteclado;
 
 ARCHITECTURE codificador OF codificadordeteclado IS
