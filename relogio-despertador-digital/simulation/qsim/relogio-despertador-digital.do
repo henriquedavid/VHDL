@@ -1,8 +1,8 @@
 onerror {exit -code 1}
 vlib work
 vcom -work work relogio-despertador-digital.vho
-vcom -work work Waveform1.vwf.vht
-vsim -novopt -c -t 1ps -sdfmax relogiodespertador_vhd_vec_tst/i1=relogio-despertador-digital_vhd.sdo -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.relogiodespertador_vhd_vec_tst
+vcom -work work Waveform2.vwf.vht
+vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.relogiodespertador_vhd_vec_tst
 vcd file -direction relogio-despertador-digital.msim.vcd
 vcd add -internal relogiodespertador_vhd_vec_tst/*
 vcd add -internal relogiodespertador_vhd_vec_tst/i1/*

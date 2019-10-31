@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim
 Erelogiodespertador
-Z1 w1572356275
+Z1 w1572521319
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 OGn598C_0mX<WSGfCb?AK2
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 CcdNAEi>PYH4@n><]NQ]V2
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 QZo1Vh6en2ZO3=hNmAfQ>0
@@ -24,13 +24,13 @@ Z11 8relogio-despertador-digital.vho
 Z12 Frelogio-despertador-digital.vho
 l0
 L38
-Vkomc<Vgh]hozlJz0QJ`392
-!s100 1jS47<;;X<MQVA0=UdLWb3
+VoXJjkhXLi;G5:E>@6SbIR2
+!s100 BnWZ:2Ndoo7_W7OOfhhHR1
 Z13 OV;C;10.5b;63
 32
-Z14 !s110 1572356276
+Z14 !s110 1572521320
 !i10b 1
-Z15 !s108 1572356276.000000
+Z15 !s108 1572521320.000000
 Z16 !s90 -work|work|relogio-despertador-digital.vho|
 Z17 !s107 relogio-despertador-digital.vho|
 !i113 1
@@ -46,11 +46,11 @@ R7
 R8
 R9
 R10
-DEx4 work 18 relogiodespertador 0 22 komc<Vgh]hozlJz0QJ`392
-l236
-L113
-V_UE>9d<2F4Goa9og2To6n1
-!s100 DR3A[BiKBGPT7@cNm4PI30
+DEx4 work 18 relogiodespertador 0 22 oXJjkhXLi;G5:E>@6SbIR2
+l334
+L107
+VV;I;PAA0TdZG<KbHaE3:F3
+!s100 RmLCbN5f7RUZcbgHlUdIz2
 R13
 32
 R14
@@ -62,41 +62,41 @@ R17
 R18
 R19
 Erelogiodespertador_vhd_vec_tst
-Z20 w1572356272
+Z20 w1572521317
 R8
 R9
 R0
-Z21 8Waveform.vwf.vht
-Z22 FWaveform.vwf.vht
+Z21 8Waveform2.vwf.vht
+Z22 FWaveform2.vwf.vht
 l0
 L31
 VEKU=N@D]31JhlR6TZ;1RI0
 !s100 o@[b3QNm]l<db=B8zol@E3
 R13
 32
-R14
+Z23 !s110 1572521321
 !i10b 1
 R15
-Z23 !s90 -work|work|Waveform.vwf.vht|
-Z24 !s107 Waveform.vwf.vht|
+Z24 !s90 -work|work|Waveform2.vwf.vht|
+Z25 !s107 Waveform2.vwf.vht|
 !i113 1
 R18
 R19
 Arelogiodespertador_arch
 R8
 R9
-Z25 DEx4 work 30 relogiodespertador_vhd_vec_tst 0 22 EKU=N@D]31JhlR6TZ;1RI0
+Z26 DEx4 work 30 relogiodespertador_vhd_vec_tst 0 22 EKU=N@D]31JhlR6TZ;1RI0
 l64
 L33
-Vbh9X6FakGYYai=NkVj=ak0
-!s100 EzLPF^580FIi4_Y=I0>;m2
+VmRYo[O7?RzMVT02`egHVF2
+!s100 _NoXkH3_3Cd`A1G]HPY]?1
 R13
 32
-R14
+R23
 !i10b 1
 R15
-R23
 R24
+R25
 !i113 1
 R18
 R19

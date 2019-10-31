@@ -25,7 +25,10 @@ BEGIN
 					IF (load = '1') THEN
 						q <= d;
 					ELSE
-						IF ( (iden = "00" AND q = "1010" AND other = "1111") OR (iden = "01" AND q = "0110" AND other = "1001") OR (iden = "10" AND q = "0100" AND other = "0110") OR (iden = "11" AND q = "0011" AND other = "0100")) THEN
+						IF ( (iden = "00" AND q = "1010" AND other = "1111") OR
+							(iden = "01" AND q = "0110" AND other = "1001") OR 
+							(iden = "10" AND q = "0100" AND other = "0110") OR 
+							(iden = "11" AND q = "0011" AND other = "0100")) THEN
 							q <= "0000";
 						ELSE
 							q <= q+1;

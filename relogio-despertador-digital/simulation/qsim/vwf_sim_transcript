@@ -7,17 +7,17 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off relogio-despertador-digital -c relogio-despertador-digital --vector_source="/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/Waveform.vwf" --testbench_file="/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off relogio-despertador-digital -c relogio-despertador-digital --vector_source="/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/Waveform2.vwf" --testbench_file="/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim/Waveform2.vwf.vht"
 
-Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details.    Info: Processing started: Tue Oct 29 10:37:00 2019Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off relogio-despertador-digital -c relogio-despertador-digital --vector_source=/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/Waveform.vwf --testbench_file=/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim/Waveform.vwf.vhtWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details.    Info: Processing started: Thu Oct 31 08:28:35 2019Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off relogio-despertador-digital -c relogio-despertador-digital --vector_source=/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/Waveform2.vwf --testbench_file=/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim/Waveform2.vwf.vhtWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+es
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
 quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim/" relogio-despertador-digital -c relogio-despertador-digital
 
-Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details.    Info: Processing started: Tue Oct 29 10:37:03 2019Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim/ relogio-despertador-digital -c relogio-despertador-digitalWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.Info (204019): Generated file relogio-despertador-digital.vho in folder "/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning    Info: Peak virtual memory: 1140 megabytes    Info: Processing ended: Tue Oct 29 10:37:04 2019    Info: Elapsed time: 00:00:01    Info: Total CPU time (on all processors): 00:00:02
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details.    Info: Processing started: Thu Oct 31 08:28:38 2019Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim/ relogio-despertador-digital -c relogio-despertador-digitalWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.Info (204019): Generated file relogio-despertador-digital.vho in folder "/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning    Info: Peak virtual memory: 1138 megabytes    Info: Processing ended: Thu Oct 31 08:28:39 2019    Info: Elapsed time: 00:00:01    Info: Total CPU time (on all processors): 00:00:02
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
@@ -33,34 +33,39 @@ Completed successfully.
 Reading pref.tcl
 # 10.5b
 # do relogio-despertador-digital.do
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:37:08 on Oct 29,2019# vcom -work work relogio-despertador-digital.vho 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164# -- Loading package VITAL_Timing
-# -- Loading package VITAL_Primitives# -- Loading package dffeas_pack# -- Loading package altera_primitives_components
+# Start time: 08:28:40 on Oct 31,2019# vcom -work work relogio-despertador-digital.vho 
+# -- Loading package STANDARD# -- Loading package TEXTIO# -- Loading package std_logic_1164# -- Loading package VITAL_Timing# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack# -- Loading package altera_primitives_components
 # -- Loading package altera_lnsim_components
 # -- Loading package cyclonev_atom_pack
-# -- Loading package cyclonev_components# -- Compiling entity relogiodespertador
+# -- Loading package cyclonev_components
+# -- Compiling entity relogiodespertador
 # -- Compiling architecture structure of relogiodespertador
-# End time: 10:37:09 on Oct 29,2019, Elapsed time: 0:00:01# Errors: 0, Warnings: 0
+# End time: 08:28:40 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:37:09 on Oct 29,2019# vcom -work work Waveform.vwf.vht # -- Loading package STANDARD# -- Loading package TEXTIO# -- Loading package std_logic_1164# -- Compiling entity relogiodespertador_vhd_vec_tst# -- Compiling architecture relogiodespertador_arch of relogiodespertador_vhd_vec_tst
-# End time: 10:37:09 on Oct 29,2019, Elapsed time: 0:00:00# Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.relogiodespertador_vhd_vec_tst # Start time: 10:37:09 on Oct 29,2019# Loading std.standard# Loading std.textio(body)# Loading ieee.std_logic_1164(body)# Loading work.relogiodespertador_vhd_vec_tst(relogiodespertador_arch)# Loading ieee.vital_timing(body)# Loading ieee.vital_primitives(body)# Loading altera.dffeas_pack# Loading altera.altera_primitives_components# Loading altera_lnsim.altera_lnsim_components# Loading cyclonev.cyclonev_atom_pack(body)# Loading cyclonev.cyclonev_components# Loading work.relogiodespertador(structure)# Loading ieee.std_logic_arith(body)# Loading cyclonev.cyclonev_io_obuf(arch)# Loading cyclonev.cyclonev_io_ibuf(arch)# Loading cyclonev.cyclonev_clkena(behavior)# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)# Loading altera.dffeas(vital_dffeas)# ** Warning: Design size of 14557 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.# Expect performance to be adversely affected.
-# after#32
-# End time: 10:37:10 on Oct 29,2019, Elapsed time: 0:00:01# Errors: 0, Warnings: 1
+# Start time: 08:28:40 on Oct 31,2019# vcom -work work Waveform2.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity relogiodespertador_vhd_vec_tst# -- Compiling architecture relogiodespertador_arch of relogiodespertador_vhd_vec_tst
+# End time: 08:28:41 on Oct 31,2019, Elapsed time: 0:00:01# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.relogiodespertador_vhd_vec_tst # Start time: 08:28:41 on Oct 31,2019# Loading std.standard# Loading std.textio(body)# Loading ieee.std_logic_1164(body)# Loading work.relogiodespertador_vhd_vec_tst(relogiodespertador_arch)# Loading ieee.vital_timing(body)# Loading ieee.vital_primitives(body)# Loading altera.dffeas_pack# Loading altera.altera_primitives_components# Loading altera_lnsim.altera_lnsim_components# Loading cyclonev.cyclonev_atom_pack(body)# Loading cyclonev.cyclonev_components# Loading work.relogiodespertador(structure)# Loading ieee.std_logic_arith(body)# Loading cyclonev.cyclonev_io_obuf(arch)# Loading cyclonev.cyclonev_io_ibuf(arch)# Loading cyclonev.cyclonev_clkena(behavior)# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)# Loading altera.dffeas(vital_dffeas)# ** Warning: Design size of 32934 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.# Expect performance to be adversely affected.
+# after#34
+# End time: 08:28:41 on Oct 31,2019, Elapsed time: 0:00:00# Errors: 0, Warnings: 1
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/Waveform.vwf...
+Reading /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/Waveform2.vwf...
 
 Reading /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim/relogio-despertador-digital.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim/relogio-despertador-digital_20191029103710.sim.vwf
+Writing the resulting VWF to /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/qsim/relogio-despertador-digital_20191031082841.sim.vwf
 
 Finished VCD to VWF conversion.
 

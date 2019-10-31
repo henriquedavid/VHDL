@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Oct 31 08:14:58 2019
+Fitter Status : Successful - Thu Oct 31 08:26:55 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : relogio-despertador-digital
 Top-level Entity Name : relogiodespertador
 Family : Cyclone V
 Device : 5CGXFC7C7F23C8
 Timing Models : Final
-Logic utilization (in ALMs) : 52 / 56,480 ( < 1 % )
-Total registers : 44
+Logic utilization (in ALMs) : 59 / 56,480 ( < 1 % )
+Total registers : 48
 Total pins : 49 / 268 ( 18 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 7,024,640 ( 0 % )
