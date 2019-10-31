@@ -8,81 +8,331 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/simulation/modelsim
-Ecounterwbits
-Z1 w1571311747
-Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Ecodificadordeteclado
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+32
+Z5 !s110 1572519514
+!i10b 1
+Z6 w1572517578
 R0
-Z6 8/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-Z7 F/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
+Z7 8/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd
+Z8 F/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd
 l0
 L5
-Vj9ankPoO3eQ4k0Y<I5GO[0
-!s100 =GCdQFd7Fa^3fFkSnQ8QH1
-Z8 OV;C;10.5b;63
-32
-Z9 !s110 1571311756
-!i10b 1
-Z10 !s108 1571311756.000000
-Z11 !s90 -reportprogress|300|-work|work|/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd|
-Z12 !s107 /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd|
+V[8Mf`<ihf^G4=l>a43B0h1
+!s100 zUcUzSIfBnlR22ld9JnQ10
+Z9 OV;C;10.5b;63
+Z10 !s108 1572519514.000000
+Z11 !s90 -reportprogress|300|-work|work|/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd|
+Z12 !s107 /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd|
 !i113 1
 Z13 o-work work
 Z14 tExplicit 1 CvgOpt 0
-Aarch_1
+Acodificador
+R1
 R2
 R3
 R4
-R5
-Z15 DEx4 work 12 counterwbits 0 22 j9ankPoO3eQ4k0Y<I5GO[0
-l17
-L16
-V[F`JhYOeYz[e<V;hZ^Afz2
-!s100 bDc`1eDZIiUKmboRe5oOi2
-R8
+DEx4 work 20 codificadordeteclado 0 22 [8Mf`<ihf^G4=l>a43B0h1
 32
-R9
+R5
 !i10b 1
+l11
+L10
+V0a_jm=6jj63PE`GQiZ@S90
+!s100 o<;bo<FMjY47:la8E8nDz3
+R9
 R10
 R11
 R12
 !i113 1
 R13
 R14
-Efftipod
-Z16 w1571134910
+Ecounterwbits2
+R1
+R2
+R3
+R4
+32
+Z15 !s110 1572519516
+!i10b 1
+R6
 R0
-Z17 8/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd
-Z18 F/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd
+Z16 8/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counter.vhd
+Z17 F/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counter.vhd
+l0
+L5
+V6l83PhZKX74Hi9@Yz2Uk81
+!s100 h0QoAY9GIl]MXb;^n:]>N0
+R9
+Z18 !s108 1572519516.000000
+Z19 !s90 -reportprogress|300|-work|work|/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counter.vhd|
+Z20 !s107 /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counter.vhd|
+!i113 1
+R13
+R14
+Aarch_1
+R1
+R2
+R3
+R4
+DEx4 work 13 counterwbits2 0 22 6l83PhZKX74Hi9@Yz2Uk81
+32
+R15
+!i10b 1
+l17
+L16
+VZbl=NdYW2z1FMR>bdk7GQ0
+!s100 =o0d>`]3<Ion0eQY=WEQF2
+R9
+R18
+R19
+R20
+!i113 1
+R13
+R14
+Edecodificador
+R1
+R2
+R3
+R4
+32
+Z21 !s110 1572519531
+!i10b 1
+R6
+R0
+Z22 8/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd
+Z23 F/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd
+l0
+L5
+V[NWi`kDRYFF=P3=:ZI^Xc2
+!s100 eGT0@^o5NF8>=WbTMdj9A0
+R9
+Z24 !s108 1572519531.000000
+Z25 !s90 -reportprogress|300|-work|work|/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd|
+Z26 !s107 /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd|
+!i113 1
+R13
+R14
+Adecod
+R1
+R2
+R3
+R4
+DEx4 work 13 decodificador 0 22 [NWi`kDRYFF=P3=:ZI^Xc2
+32
+R21
+!i10b 1
+l11
+L10
+VaEh]N>e<ghF^d6z;9ZlJK3
+!s100 JJfje:L3`R9d?^D:_HNzG3
+R9
+R24
+R25
+R26
+!i113 1
+R13
+R14
+Efftipod
+32
+Z27 !s110 1572519534
+!i10b 1
+R6
+R0
+Z28 8/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd
+Z29 F/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd
 l0
 L1
-VhG<UWm^6dQa1[]LQ@fkaW0
+V<=Tj:_V226NQXaQd2jCZh2
 !s100 fh@OKhRgc:>?=VVfjWXPf3
-R8
-31
-Z19 !s110 1571307869
-!i10b 1
-Z20 !s108 1571307869.000000
-Z21 !s90 -reportprogress|300|-93|-work|work|/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd|
-Z22 !s107 /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd|
+R9
+Z30 !s108 1572519534.000000
+Z31 !s90 -reportprogress|300|-work|work|/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd|
+Z32 !s107 /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd|
 !i113 1
-Z23 o-93 -work work
+R13
 R14
 Aarq_ff_d
-DEx4 work 7 fftipod 0 22 hG<UWm^6dQa1[]LQ@fkaW0
+DEx4 work 7 fftipod 0 22 <=Tj:_V226NQXaQd2jCZh2
+32
+R27
+!i10b 1
 l10
 L9
-VXZc4Zihff;04XDWl6[nDG3
+Vc5EVC^:;8B3A[^2ZBJ00L0
 !s100 Vc04gAaQk^oQH8UejITBG2
-R8
-31
-R19
-!i10b 1
-R20
-R21
-R22
+R9
+R30
+R31
+R32
 !i113 1
-R23
+R13
+R14
+Emux_2x1_wbits
+R1
+R2
+R3
+R4
+32
+Z33 !s110 1572519525
+!i10b 1
+R6
+R0
+Z34 8/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_2x1_Wbits.vhd
+Z35 F/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_2x1_Wbits.vhd
+l0
+L5
+V0T4L;KCc9d=AJCOX_fcGZ0
+!s100 `A[RaHS@ADACm@ckaJb?_1
+R9
+Z36 !s108 1572519525.000000
+Z37 !s90 -reportprogress|300|-work|work|/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_2x1_Wbits.vhd|
+Z38 !s107 /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_2x1_Wbits.vhd|
+!i113 1
+R13
+R14
+Astructural
+R1
+R2
+R3
+R4
+DEx4 work 13 mux_2x1_wbits 0 22 0T4L;KCc9d=AJCOX_fcGZ0
+32
+R33
+!i10b 1
+l14
+L13
+VV0ULl23Gz[>8H1P6`JPd73
+!s100 <RE>jGCYkB=X_ZTc^3m:01
+R9
+R36
+R37
+R38
+!i113 1
+R13
+R14
+Emux_4x1
+R1
+R2
+R3
+R4
+31
+Z39 !s110 1572518470
+!i10b 1
+R6
+R0
+Z40 8/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd
+Z41 F/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd
+l0
+L5
+V]FNe:EGBRFacK`HQ5iGKE3
+!s100 JimVFzPWeU?Yla8zKe`k<3
+R9
+Z42 !s108 1572518470.000000
+Z43 !s90 -reportprogress|300|-93|-work|work|/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd|
+Z44 !s107 /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd|
+!i113 1
+Z45 o-93 -work work
+R14
+Astructural
+R1
+R2
+R3
+R4
+DEx4 work 7 mux_4x1 0 22 ]FNe:EGBRFacK`HQ5iGKE3
+31
+R39
+!i10b 1
+l12
+L11
+V>_9EKXVh;kGG@GHeGid2f2
+!s100 0SMMTiQ@[GH=H33@YL8982
+R9
+R42
+R43
+R44
+!i113 1
+R45
+R14
+Eregistrador2
+32
+Z46 !s110 1572519539
+!i10b 1
+R6
+R0
+Z47 8/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd
+Z48 F/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd
+l0
+L1
+VXH?00TMo4]PjM6<@`aYVU1
+!s100 6U6SbL45?5z=Zh7:<M2Y@0
+R9
+Z49 !s108 1572519539.000000
+Z50 !s90 -reportprogress|300|-work|work|/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd|
+Z51 !s107 /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd|
+!i113 1
+R13
+R14
+Aarq_reg
+DEx4 work 12 registrador2 0 22 XH?00TMo4]PjM6<@`aYVU1
+32
+R46
+!i10b 1
+l11
+L10
+VKMcjA7amMf>95V=d9zoEK2
+!s100 `dS[M12P5ff]ZB1AF=IUD1
+R9
+R49
+R50
+R51
+!i113 1
+R13
+R14
+Erelogiodespertador
+R1
+R2
+R3
+R4
+32
+Z52 !s110 1572519601
+!i10b 1
+Z53 w1572519592
+R0
+Z54 8/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd
+Z55 F/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd
+l0
+L5
+VbPhE@S;7LPOFSlQ=;J1d90
+!s100 H3e<dKYIV<jn3d@f<MHzc2
+R9
+Z56 !s108 1572519601.000000
+Z57 !s90 -reportprogress|300|-work|work|/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd|
+Z58 !s107 /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd|
+!i113 1
+R13
+R14
+Aconfiguracao
+R1
+R2
+R3
+R4
+DEx4 work 18 relogiodespertador 0 22 bPhE@S;7LPOFSlQ=;J1d90
+32
+R52
+!i10b 1
+l64
+L17
+V<Hd5DPPOXBJ3fcl^9hPTK0
+!s100 FTSk0=5D1oG28C?U5l?TQ3
+R9
+R56
+R57
+R58
+!i113 1
+R13
 R14

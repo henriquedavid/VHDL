@@ -4,35 +4,167 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "q[0]",
+					"name" : "o1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "q[1]",
+					"name" : "o1[1]",
 					"strict" : false
 				},
 				{
-					"name" : "q[2]",
+					"name" : "o1[2]",
 					"strict" : false
 				},
 				{
-					"name" : "q[3]",
+					"name" : "o1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "iden[0]",
+					"name" : "o1[4]",
 					"strict" : false
 				},
 				{
-					"name" : "load",
+					"name" : "o1[5]",
 					"strict" : false
 				},
 				{
-					"name" : "iden[1]",
+					"name" : "o1[6]",
 					"strict" : false
 				},
 				{
-					"name" : "d[0]",
+					"name" : "o2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sel",
+					"strict" : false
+				},
+				{
+					"name" : "a[9]",
+					"strict" : false
+				},
+				{
+					"name" : "a[6]",
+					"strict" : false
+				},
+				{
+					"name" : "a[8]",
+					"strict" : false
+				},
+				{
+					"name" : "a[0]",
+					"strict" : false
+				},
+				{
+					"name" : "a[5]",
+					"strict" : false
+				},
+				{
+					"name" : "a[7]",
+					"strict" : false
+				},
+				{
+					"name" : "a[3]",
+					"strict" : false
+				},
+				{
+					"name" : "a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "a[4]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[0]",
+					"strict" : false
+				},
+				{
+					"name" : "switch[1]",
 					"strict" : false
 				},
 				{
@@ -48,15 +180,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "d[1]",
+					"name" : "load_cont",
 					"strict" : false
 				},
 				{
-					"name" : "d[2]",
+					"name" : "init[3]",
 					"strict" : false
 				},
 				{
-					"name" : "d[3]",
+					"name" : "init[2]",
+					"strict" : false
+				},
+				{
+					"name" : "init[0]",
+					"strict" : false
+				},
+				{
+					"name" : "init[1]",
 					"strict" : false
 				}
 			]

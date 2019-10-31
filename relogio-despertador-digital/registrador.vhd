@@ -1,10 +1,15 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.std_logic_unsigned.ALL;
+
+
 ENTITY registrador2 IS
 	GENERIC( W : NATURAL := 4);
-	PORT(d	:	IN BIT_VECTOR(W-1 DOWNTO 0);
+	PORT(d	:	IN STD_LOGIC_VECTOR(W-1 DOWNTO 0);
 		  clk :	IN BIT;
 		  clrn:	IN BIT;
 		  ena	:	IN BIT;
-		  q	:	OUT BIT_VECTOR(W-1	DOWNTO 0));
+		  q	:	OUT STD_LOGIC_VECTOR(W-1	DOWNTO 0));
 END registrador2;
 
 ARCHITECTURE arq_reg OF registrador2 IS

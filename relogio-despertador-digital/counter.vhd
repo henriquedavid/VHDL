@@ -9,6 +9,7 @@ ENTITY counterwbits2 IS
 		  clrn:	IN BIT;
 		  ena	:	IN BIT;
 		  load:	IN BIT;
+		  other: IN STD_LOGIC_VECTOR(W-1 DOWNTO 0);
 		  iden:	IN STD_LOGIC_VECTOR(1 DOWNTO 0);	--identificador do local do numero
 		  q	:	BUFFER STD_LOGIC_VECTOR(W-1 DOWNTO 0));
 END counterwbits2;
@@ -24,7 +25,7 @@ BEGIN
 					IF (load = '1') THEN
 						q <= d;
 					ELSE
-						IF ( (iden = "00" AND q = "1101") OR (iden = "01" AND q = "0100") OR (iden = "10" AND q = "0011")) THEN
+						IF ( (iden = "00" AND q = "1010" AND other = "1111") OR (iden = "01" AND q = "0110" AND other = "1001") OR (iden = "10" AND q = "0100" AND other = "0110") OR (iden = "11" AND q = "0011" AND other = "0100")) THEN
 							q <= "0000";
 						ELSE
 							q <= q+1;

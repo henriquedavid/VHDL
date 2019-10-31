@@ -1,0 +1,18 @@
+# Current time Thu Oct 31 08:16:28 2019
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = linuxpe
+# 0    0x08306bdb: 'dstrcat_fullname + 0x1b' in '/opt/intelFPGA_lite/18.1/modelsim_ase/linuxaloem/vish'
+# 1    0x08319bfc: 'tclprim_WlfView + 0xf0c' in '/opt/intelFPGA_lite/18.1/modelsim_ase/linuxaloem/vish'
+# 2    0x084cc41d: '<unknown (@0x84cc41d)>'
+# 3    0x0851503a: '<unknown (@0x851503a)>'
+# 4    0x0851d9dc: '<unknown (@0x851d9dc)>'
+# 5    0x084ce59c: 'TclEvalObjEx + 0x6c' in '/opt/intelFPGA_lite/18.1/modelsim_ase/linuxaloem/vish'
+# 6    0x084cea36: 'Tcl_EvalObjEx + 0x36' in '/opt/intelFPGA_lite/18.1/modelsim_ase/linuxaloem/vish'
+# 7    0xf7800eac: 'Itcl_EvalMemberCode + 0x3cc' in '/opt/intelFPGA_lite/18.1/quartus/../modelsim_ase/linuxaloem/itcl3.4/libitcl3.4.so'
+# 8    0x0b897d4b: '<unknown (@0xb897d4b)>'
+# 9    0x09343a63: '<unknown (@0x9343a63)>'
+# 10   0x7361745c: '<unknown (@0x7361745c)>'

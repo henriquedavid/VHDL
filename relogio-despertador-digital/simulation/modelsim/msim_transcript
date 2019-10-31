@@ -9,1587 +9,776 @@
 # Copying /opt/intelFPGA_lite/18.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd}
+# vcom -93 -work work {/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:24:29 on Oct 17,2019
-# vcom -reportprogress 300 -93 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd 
+# Start time: 07:41:09 on Oct 31,2019
+# vcom -reportprogress 300 -93 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd 
 # -- Loading package STANDARD
-# -- Compiling entity fftipod
-# -- Compiling architecture arq_ff_d of fftipod
-# End time: 07:24:29 on Oct 17,2019, Elapsed time: 0:00:00
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity decodificador
+# -- Compiling architecture decod of decodificador
+# End time: 07:41:10 on Oct 31,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:41:10 on Oct 31,2019
+# vcom -reportprogress 300 -93 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity codificadordeteclado
+# -- Compiling architecture codificador of codificadordeteclado
+# End time: 07:41:10 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:41:10 on Oct 31,2019
+# vcom -reportprogress 300 -93 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_4x1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity mux_4x1
+# -- Compiling architecture structural of mux_4x1
+# End time: 07:41:10 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:41:10 on Oct 31,2019
+# vcom -reportprogress 300 -93 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity relogiodespertador
+# -- Compiling architecture configuracao of relogiodespertador
+# End time: 07:41:10 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:41:10 on Oct 31,2019
+# vcom -reportprogress 300 -93 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity counterwbits2
+# -- Compiling architecture arch_1 of counterwbits2
+# End time: 07:41:10 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:41:10 on Oct 31,2019
+# vcom -reportprogress 300 -93 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity registrador2
+# -- Compiling architecture arq_reg of registrador2
+# End time: 07:41:10 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_2x1_Wbits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:41:10 on Oct 31,2019
+# vcom -reportprogress 300 -93 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_2x1_Wbits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity mux_2x1_Wbits
+# -- Compiling architecture structural of mux_2x1_Wbits
+# End time: 07:41:10 on Oct 31,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # 
 # stdin: <EOF>
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:24:42 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(13): near "output": (vcom-1576) expecting END.
-# End time: 07:24:42 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:25:14 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# End time: 07:25:14 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:25:22 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# End time: 07:25:22 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.counterwbits
-# vsim work.counterwbits 
-# Start time: 07:25:26 on Oct 17,2019
+vsim work.relogiodespertador
+# vsim work.relogiodespertador 
+# Start time: 07:58:09 on Oct 31,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
-# Loading work.counterwbits(arch_1)
-add wave -position insertpoint  \
-sim:/counterwbits/W \
-sim:/counterwbits/d \
-sim:/counterwbits/clk \
-sim:/counterwbits/clrn \
-sim:/counterwbits/ena \
-sim:/counterwbits/load \
-sim:/counterwbits/q
-force -freeze sim:/counterwbits/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/counterwbits/clrn 1 0
-force -freeze sim:/counterwbits/ena 1 0
-force -freeze sim:/counterwbits/d 0000 0
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 100 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 100 ps  Iteration: 0  Instance: /counterwbits
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ps  Iteration: 0  Instance: /counterwbits
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 300 ps  Iteration: 0  Instance: /counterwbits
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 400 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 400 ps  Iteration: 0  Instance: /counterwbits
-force -freeze sim:/counterwbits/load 1 0
-run
-run
-run
-force -freeze sim:/counterwbits/load 0 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-quit -sim
-# End time: 07:38:04 on Oct 17,2019, Elapsed time: 0:12:38
-# Errors: 0, Warnings: 10
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:38:09 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(37): VHDL Compiler exiting
-# End time: 07:38:09 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:38:32 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(37): VHDL Compiler exiting
-# End time: 07:38:32 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:39:10 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(37): VHDL Compiler exiting
-# End time: 07:39:10 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:40:16 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(37): VHDL Compiler exiting
-# End time: 07:40:16 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:41:28 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(35): VHDL Compiler exiting
-# End time: 07:41:28 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:41:29 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(35): VHDL Compiler exiting
-# End time: 07:41:29 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:42:31 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(35): VHDL Compiler exiting
-# End time: 07:42:31 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:42:32 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(35): VHDL Compiler exiting
-# End time: 07:42:32 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:43:32 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:43:32 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:43:33 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:43:33 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:44:12 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "THEN": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:44:12 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:44:13 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "THEN": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:44:13 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:44:33 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "THEN": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:44:33 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:45:05 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# End time: 07:45:05 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:45:22 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:45:22 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:46:14 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:46:14 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:46:14 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:46:14 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:46:43 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:46:43 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:46:44 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:46:44 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:46:58 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:46:58 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:46:59 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:46:59 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:47:33 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "THEN": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:47:33 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:47:54 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:47:55 on Oct 17,2019, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:47:55 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:47:55 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:47:56 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:47:56 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:48:11 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:48:11 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:48:12 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:48:12 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:48:58 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:48:58 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:50:30 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# End time: 07:50:30 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:51:04 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(32): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:51:04 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:51:05 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(32): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:51:05 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:51:19 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(34): VHDL Compiler exiting
-# End time: 07:51:19 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:51:20 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(34): VHDL Compiler exiting
-# End time: 07:51:21 on Oct 17,2019, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:51:59 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(32): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:51:59 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:52:00 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(32): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:52:00 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:52:34 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(32): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:52:34 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:52:34 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(32): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:52:34 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:52:47 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(32): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:52:47 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:52:48 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(32): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:52:48 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:53:14 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(32): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:53:14 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:53:15 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(32): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:53:15 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:54:20 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# End time: 07:54:20 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:54:41 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# End time: 07:54:41 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:55:28 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(32): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:55:28 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:56:42 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(26): near "'": syntax error
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(32): near "IF": (vcom-1576) expecting PROCESS.
-# End time: 07:56:43 on Oct 17,2019, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:02:30 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): VHDL Compiler exiting
-# End time: 08:02:30 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:02:31 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): VHDL Compiler exiting
-# End time: 08:02:31 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:02:50 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): VHDL Compiler exiting
-# End time: 08:02:50 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:02:50 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): VHDL Compiler exiting
-# End time: 08:02:50 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:03:18 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): VHDL Compiler exiting
-# End time: 08:03:18 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:03:19 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): VHDL Compiler exiting
-# End time: 08:03:19 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:03:20 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(33): VHDL Compiler exiting
-# End time: 08:03:20 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:07:06 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(28): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): near "PROCESS": (vcom-1576) expecting IF.
-# End time: 08:07:06 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:07:06 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(28): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): near "PROCESS": (vcom-1576) expecting IF.
-# End time: 08:07:06 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:07:07 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(28): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): near "PROCESS": (vcom-1576) expecting IF.
-# End time: 08:07:07 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:10:21 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(28): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): near "PROCESS": (vcom-1576) expecting IF.
-# End time: 08:10:21 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:11:44 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): near "PROCESS": (vcom-1576) expecting IF.
-# End time: 08:11:44 on Oct 17,2019, Elapsed time: 0:00:00
+# Loading work.relogiodespertador(configuracao)
+# Loading work.codificadordeteclado(codificador)
+# Loading work.counterwbits2(arch_1)
+# Loading work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 07:58:10 on Oct 31,2019, Elapsed time: 0:00:01
 # Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
+vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:11:44 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
+# Start time: 07:58:34 on Oct 31,2019
+# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/codificadordeteclado.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
 # -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): near "PROCESS": (vcom-1576) expecting IF.
-# End time: 08:11:44 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:11:58 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): near "PROCESS": (vcom-1576) expecting IF.
-# End time: 08:11:58 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:11:59 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): near "PROCESS": (vcom-1576) expecting IF.
-# End time: 08:11:59 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:15:18 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:15:18 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:15:19 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:15:19 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:15:19 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:15:19 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:15:19 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:15:19 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:15:19 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:15:19 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:15:23 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:15:23 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:15:23 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:15:23 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:15:23 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:15:23 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:15:23 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:15:23 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:15:23 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:15:23 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:15:23 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:15:23 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:15:24 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:15:24 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:15:24 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:15:24 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:16:30 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:16:30 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:16:30 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:16:30 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:16:30 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:16:31 on Oct 17,2019, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:16:31 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:16:31 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:16:32 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:16:32 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:16:32 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(27): Illegal sequential statement.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:16:32 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:22:17 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# End time: 08:22:17 on Oct 17,2019, Elapsed time: 0:00:00
+# -- Compiling entity codificadordeteclado
+# -- Compiling architecture codificador of codificadordeteclado
+# End time: 07:58:34 on Oct 31,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
+vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counter.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:22:55 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
+# Start time: 07:58:36 on Oct 31,2019
+# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
 # -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(28): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(39): VHDL Compiler exiting
-# End time: 08:22:55 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:23:16 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# End time: 08:23:16 on Oct 17,2019, Elapsed time: 0:00:00
+# -- Compiling entity counterwbits2
+# -- Compiling architecture arch_1 of counterwbits2
+# End time: 07:58:36 on Oct 31,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
+vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_2x1_Wbits.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:23:45 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
+# Start time: 07:58:45 on Oct 31,2019
+# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/mux_2x1_Wbits.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
 # -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# End time: 08:23:45 on Oct 17,2019, Elapsed time: 0:00:00
+# -- Compiling entity mux_2x1_Wbits
+# -- Compiling architecture structural of mux_2x1_Wbits
+# End time: 07:58:45 on Oct 31,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
+vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:25:01 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
+# Start time: 07:58:47 on Oct 31,2019
+# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
 # -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(28): near "=>": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:25:01 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:25:12 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(28): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:25:12 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:25:12 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(28): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
-# ** Error: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd(36): VHDL Compiler exiting
-# End time: 08:25:12 on Oct 17,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:25:33 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# End time: 08:25:33 on Oct 17,2019, Elapsed time: 0:00:00
+# -- Compiling entity relogiodespertador
+# -- Compiling architecture configuracao of relogiodespertador
+# End time: 07:58:47 on Oct 31,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.counterwbits
-# vsim work.counterwbits 
-# Start time: 08:25:35 on Oct 17,2019
+vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:58:51 on Oct 31,2019
+# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/decodificador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity decodificador
+# -- Compiling architecture decod of decodificador
+# End time: 07:58:51 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:58:54 on Oct 31,2019
+# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/fftipod.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity fftipod
+# -- Compiling architecture arq_ff_d of fftipod
+# End time: 07:58:54 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:58:59 on Oct 31,2019
+# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity registrador2
+# -- Compiling architecture arq_reg of registrador2
+# End time: 07:58:59 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.relogiodespertador
+# vsim work.relogiodespertador 
+# Start time: 07:59:05 on Oct 31,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
-# Loading work.counterwbits(arch_1)
-add wave -position insertpoint  \
-sim:/counterwbits/W \
-sim:/counterwbits/d \
-sim:/counterwbits/clk \
-sim:/counterwbits/clrn \
-sim:/counterwbits/ena \
-sim:/counterwbits/load \
-sim:/counterwbits/iden \
-sim:/counterwbits/q
-force -freeze sim:/counterwbits/clk 1 0, 0 {50 ps} -r 100
-# Can't move the Now cursor.
-force -freeze sim:/counterwbits/clrn 1 0
-force -freeze sim:/counterwbits/ena 1 0
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 100 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 100 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 100 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 100 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 100 ps  Iteration: 0  Instance: /counterwbits
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ps  Iteration: 0  Instance: /counterwbits
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 200 ps  Iteration: 0  Instance: /counterwbits
-force -freeze sim:/counterwbits/load 1 0
-run
-run
-force -freeze sim:/counterwbits/iden 11 0
-run
-run
-force -freeze sim:/counterwbits/clk 0 0
-run
-force -freeze sim:/counterwbits/d 0000 0
-run
-run
-force -freeze sim:/counterwbits/clrn 0 0
-run
-force -freeze sim:/counterwbits/clrn 1 0
-run
-force -freeze sim:/counterwbits/load 0 0
-run
-run
-run
-run
-force -freeze sim:/counterwbits/iden 00 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-quit -sim
-# End time: 08:29:13 on Oct 17,2019, Elapsed time: 0:03:38
-# Errors: 1, Warnings: 15
-vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd
+# Loading work.relogiodespertador(configuracao)
+# Loading work.codificadordeteclado(codificador)
+# Loading work.counterwbits2(arch_1)
+# Loading work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 07:59:05 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 08:29:16 on Oct 17,2019
-# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/counterwbits.vhd 
+# Start time: 08:00:01 on Oct 31,2019
+# vcom -reportprogress 300 -work work /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/relogiodespertador.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
 # -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity counterwbits
-# -- Compiling architecture arch_1 of counterwbits
-# End time: 08:29:16 on Oct 17,2019, Elapsed time: 0:00:00
+# -- Compiling entity relogiodespertador
+# -- Compiling architecture configuracao of relogiodespertador
+# End time: 08:00:01 on Oct 31,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.counterwbits
-# vsim work.counterwbits 
-# Start time: 08:29:18 on Oct 17,2019
+vsim work.relogiodespertador
+# vsim work.relogiodespertador 
+# Start time: 08:00:03 on Oct 31,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
-# Loading work.counterwbits(arch_1)
-add wave -position end  sim:/counterwbits/W
-add wave -position end  sim:/counterwbits/d
-add wave -position end  sim:/counterwbits/clk
-add wave -position end  sim:/counterwbits/clrn
-add wave -position end  sim:/counterwbits/ena
-add wave -position end  sim:/counterwbits/load
-add wave -position end  sim:/counterwbits/iden
-add wave -position end  sim:/counterwbits/q
-force -freeze sim:/counterwbits/d 0000 0
-force -freeze sim:/counterwbits/iden 00 0
-run
-run
-force -freeze sim:/counterwbits/clk 1 0, 0 {50 ps} -r 100
-run
-run
-force -freeze sim:/counterwbits/ena 1 0
-run
-force -freeze sim:/counterwbits/load 1 0
-run
-force -freeze sim:/counterwbits/clrn 1 0
-run
-run
-run
-run
-run
-add wave -position end  sim:/counterwbits/W
-add wave -position end  sim:/counterwbits/d
-add wave -position end  sim:/counterwbits/clk
-add wave -position end  sim:/counterwbits/clrn
-add wave -position end  sim:/counterwbits/ena
-add wave -position end  sim:/counterwbits/load
-add wave -position end  sim:/counterwbits/iden
-add wave -position end  sim:/counterwbits/q
-quit -sim
-# End time: 08:30:48 on Oct 17,2019, Elapsed time: 0:01:30
-# Errors: 0, Warnings: 0
-vsim work.counterwbits
-# vsim work.counterwbits 
-# Start time: 08:30:49 on Oct 17,2019
+# Loading work.relogiodespertador(configuracao)
+# Loading work.codificadordeteclado(codificador)
+# Loading work.counterwbits2(arch_1)
+# Loading work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:00:03 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.relogiodespertador
+# vsim work.relogiodespertador 
+# Start time: 08:01:45 on Oct 31,2019
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
-# Loading work.counterwbits(arch_1)
-add wave -position end  sim:/counterwbits/W
-add wave -position end  sim:/counterwbits/clk
-add wave -position end  sim:/counterwbits/clrn
-add wave -position end  sim:/counterwbits/d
-add wave -position end  sim:/counterwbits/ena
-add wave -position end  sim:/counterwbits/iden
-add wave -position end  sim:/counterwbits/load
-add wave -position end  sim:/counterwbits/q
-# Can't move the Now cursor.
-# Can't move the Now cursor.
-force -freeze sim:/counterwbits/d 0000 0
-force -freeze sim:/counterwbits/iden 00 0
-force -freeze sim:/counterwbits/load 1 0
-run
-run
-force -freeze sim:/counterwbits/ena 1 0
-force -freeze sim:/counterwbits/clrn 1 0, 0 {50 ps} -r 100
-run
-force -freeze sim:/counterwbits/clk 1 0, 0 {50 ps} -r 100
-run
-run
-force -freeze sim:/counterwbits/clrn 0 0
-run
-run
-# End time: 08:31:48 on Oct 17,2019, Elapsed time: 0:00:59
-# Errors: 2, Warnings: 0
+# Loading work.relogiodespertador(configuracao)
+# Loading work.codificadordeteclado(codificador)
+# Loading work.counterwbits2(arch_1)
+# Loading work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:01:45 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.relogiodespertador
+# vsim work.relogiodespertador 
+# Start time: 08:01:48 on Oct 31,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.relogiodespertador(configuracao)
+# Loading work.codificadordeteclado(codificador)
+# Loading work.counterwbits2(arch_1)
+# Loading work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:01:48 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:01:54 on Oct 31,2019
+# vlog -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Skipping entity codificadordeteclado
+# -- Skipping entity counterwbits2
+# -- Skipping entity decodificador
+# -- Skipping entity fftipod
+# -- Skipping entity mux_2x1_wbits
+# -- Skipping entity mux_4x1
+# -- Skipping entity registrador2
+# -- Skipping entity relogiodespertador
+# End time: 08:01:54 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:01:54 on Oct 31,2019
+# vcom -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity codificadordeteclado
+# -- Compiling architecture codificador of codificadordeteclado
+# -- Compiling entity counterwbits2
+# -- Compiling architecture arch_1 of counterwbits2
+# -- Compiling entity decodificador
+# -- Compiling architecture decod of decodificador
+# -- Compiling entity fftipod
+# -- Compiling architecture arq_ff_d of fftipod
+# -- Compiling entity mux_2x1_Wbits
+# -- Compiling architecture structural of mux_2x1_Wbits
+# -- Compiling entity mux_4x1
+# -- Compiling architecture structural of mux_4x1
+# -- Compiling entity registrador2
+# -- Compiling architecture arq_reg of registrador2
+# -- Compiling entity relogiodespertador
+# -- Compiling architecture configuracao of relogiodespertador
+# End time: 08:01:54 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:01:59 on Oct 31,2019
+# vlog -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Skipping entity codificadordeteclado
+# -- Skipping entity counterwbits2
+# -- Skipping entity decodificador
+# -- Skipping entity fftipod
+# -- Skipping entity mux_2x1_wbits
+# -- Skipping entity mux_4x1
+# -- Skipping entity registrador2
+# -- Skipping entity relogiodespertador
+# End time: 08:01:59 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:01:59 on Oct 31,2019
+# vcom -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity codificadordeteclado
+# -- Compiling architecture codificador of codificadordeteclado
+# -- Compiling entity counterwbits2
+# -- Compiling architecture arch_1 of counterwbits2
+# -- Compiling entity decodificador
+# -- Compiling architecture decod of decodificador
+# -- Compiling entity fftipod
+# -- Compiling architecture arq_ff_d of fftipod
+# -- Compiling entity mux_2x1_Wbits
+# -- Compiling architecture structural of mux_2x1_Wbits
+# -- Compiling entity mux_4x1
+# -- Compiling architecture structural of mux_4x1
+# -- Compiling entity registrador2
+# -- Compiling architecture arq_reg of registrador2
+# -- Compiling entity relogiodespertador
+# -- Compiling architecture configuracao of relogiodespertador
+# End time: 08:01:59 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim rtl_work.relogiodespertador
+# vsim rtl_work.relogiodespertador 
+# Start time: 08:02:10 on Oct 31,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading rtl_work.relogiodespertador(configuracao)
+# Loading rtl_work.codificadordeteclado(codificador)
+# Loading rtl_work.counterwbits2(arch_1)
+# Loading rtl_work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:02:10 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.relogiodespertador
+# vsim work.relogiodespertador 
+# Start time: 08:02:12 on Oct 31,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.relogiodespertador(configuracao)
+# Loading work.codificadordeteclado(codificador)
+# Loading work.counterwbits2(arch_1)
+# Loading work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:02:12 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.relogiodespertador
+# vsim work.relogiodespertador 
+# Start time: 08:02:15 on Oct 31,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.relogiodespertador(configuracao)
+# Loading work.codificadordeteclado(codificador)
+# Loading work.counterwbits2(arch_1)
+# Loading work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:02:15 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.relogiodespertador
+# vsim work.relogiodespertador 
+# Start time: 08:02:27 on Oct 31,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.relogiodespertador(configuracao)
+# Loading work.codificadordeteclado(codificador)
+# Loading work.counterwbits2(arch_1)
+# Loading work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:02:27 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.relogiodespertador
+# vsim work.relogiodespertador 
+# Start time: 08:03:41 on Oct 31,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.relogiodespertador(configuracao)
+# Loading work.codificadordeteclado(codificador)
+# Loading work.counterwbits2(arch_1)
+# Loading work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:03:41 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:04:45 on Oct 31,2019
+# vlog -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Skipping entity codificadordeteclado
+# -- Skipping entity counterwbits2
+# -- Skipping entity decodificador
+# -- Skipping entity fftipod
+# -- Skipping entity mux_2x1_wbits
+# -- Skipping entity mux_4x1
+# -- Skipping entity registrador2
+# -- Skipping entity relogiodespertador
+# End time: 08:04:46 on Oct 31,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:04:46 on Oct 31,2019
+# vcom -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity codificadordeteclado
+# -- Compiling architecture codificador of codificadordeteclado
+# -- Compiling entity counterwbits2
+# -- Compiling architecture arch_1 of counterwbits2
+# -- Compiling entity decodificador
+# -- Compiling architecture decod of decodificador
+# -- Compiling entity fftipod
+# -- Compiling architecture arq_ff_d of fftipod
+# -- Compiling entity mux_2x1_Wbits
+# -- Compiling architecture structural of mux_2x1_Wbits
+# -- Compiling entity mux_4x1
+# -- Compiling architecture structural of mux_4x1
+# -- Compiling entity registrador2
+# -- Compiling architecture arq_reg of registrador2
+# -- Compiling entity relogiodespertador
+# -- Compiling architecture configuracao of relogiodespertador
+# End time: 08:04:46 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.relogiodespertador
+# vsim work.relogiodespertador 
+# Start time: 08:04:47 on Oct 31,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.relogiodespertador(configuracao)
+# Loading work.codificadordeteclado(codificador)
+# Loading work.counterwbits2(arch_1)
+# Loading work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:04:47 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:06:07 on Oct 31,2019
+# vlog -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Skipping entity codificadordeteclado
+# -- Skipping entity counterwbits2
+# -- Skipping entity decodificador
+# -- Skipping entity fftipod
+# -- Skipping entity mux_2x1_wbits
+# -- Skipping entity mux_4x1
+# -- Skipping entity registrador2
+# -- Skipping entity relogiodespertador
+# End time: 08:06:07 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:06:07 on Oct 31,2019
+# vcom -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity codificadordeteclado
+# -- Compiling architecture codificador of codificadordeteclado
+# -- Compiling entity counterwbits2
+# -- Compiling architecture arch_1 of counterwbits2
+# -- Compiling entity decodificador
+# -- Compiling architecture decod of decodificador
+# -- Compiling entity fftipod
+# -- Compiling architecture arq_ff_d of fftipod
+# -- Compiling entity mux_2x1_Wbits
+# -- Compiling architecture structural of mux_2x1_Wbits
+# -- Compiling entity mux_4x1
+# -- Compiling architecture structural of mux_4x1
+# -- Compiling entity registrador2
+# -- Compiling architecture arq_reg of registrador2
+# -- Compiling entity relogiodespertador
+# -- Compiling architecture configuracao of relogiodespertador
+# End time: 08:06:07 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.relogiodespertador
+# vsim work.relogiodespertador 
+# Start time: 08:06:09 on Oct 31,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.relogiodespertador(configuracao)
+# Loading work.codificadordeteclado(codificador)
+# Loading work.counterwbits2(arch_1)
+# Loading work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:06:09 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.relogiodespertador
+# vsim work.relogiodespertador 
+# Start time: 08:10:02 on Oct 31,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.relogiodespertador(configuracao)
+# Loading work.codificadordeteclado(codificador)
+# Loading work.counterwbits2(arch_1)
+# Loading work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:10:02 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:10:05 on Oct 31,2019
+# vlog -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Skipping entity codificadordeteclado
+# -- Skipping entity counterwbits2
+# -- Skipping entity decodificador
+# -- Skipping entity fftipod
+# -- Skipping entity mux_2x1_wbits
+# -- Skipping entity mux_4x1
+# -- Skipping entity registrador2
+# -- Skipping entity relogiodespertador
+# End time: 08:10:05 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work rtl_work -refresh -force_refresh
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:10:05 on Oct 31,2019
+# vcom -reportprogress 300 -work rtl_work -refresh -force_refresh 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity codificadordeteclado
+# -- Compiling architecture codificador of codificadordeteclado
+# -- Compiling entity counterwbits2
+# -- Compiling architecture arch_1 of counterwbits2
+# -- Compiling entity decodificador
+# -- Compiling architecture decod of decodificador
+# -- Compiling entity fftipod
+# -- Compiling architecture arq_ff_d of fftipod
+# -- Compiling entity mux_2x1_Wbits
+# -- Compiling architecture structural of mux_2x1_Wbits
+# -- Compiling entity mux_4x1
+# -- Compiling architecture structural of mux_4x1
+# -- Compiling entity registrador2
+# -- Compiling architecture arq_reg of registrador2
+# -- Compiling entity relogiodespertador
+# -- Compiling architecture configuracao of relogiodespertador
+# End time: 08:10:05 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.relogiodespertador
+# vsim work.relogiodespertador 
+# Start time: 08:10:08 on Oct 31,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.relogiodespertador(configuracao)
+# Loading work.codificadordeteclado(codificador)
+# Loading work.counterwbits2(arch_1)
+# Loading work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:10:08 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim rtl_work.relogiodespertador
+# vsim rtl_work.relogiodespertador 
+# Start time: 08:10:14 on Oct 31,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading rtl_work.relogiodespertador(configuracao)
+# Loading rtl_work.codificadordeteclado(codificador)
+# Loading rtl_work.counterwbits2(arch_1)
+# Loading rtl_work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:10:14 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim rtl_work.relogiodespertador
+# vsim rtl_work.relogiodespertador 
+# Start time: 08:10:17 on Oct 31,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading rtl_work.relogiodespertador(configuracao)
+# Loading rtl_work.codificadordeteclado(codificador)
+# Loading rtl_work.counterwbits2(arch_1)
+# Loading rtl_work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:10:17 on Oct 31,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+wave create -pattern none -portmode in -language vhdl -range 9 0 /relogiodespertador/a
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+# relogiodespertador
+wave create -pattern none -portmode in -language vhdl -range 3 0 /relogiodespertador/init
+# relogiodespertador
+wave create -pattern none -portmode in -language vhdl /relogiodespertador/load_cont
+# relogiodespertador
+wave create -pattern none -portmode in -language vhdl -range 1 0 /relogiodespertador/switch
+# relogiodespertador
+wave create -pattern none -portmode in -language vhdl /relogiodespertador/clrn
+# relogiodespertador
+wave create -pattern none -portmode in -language vhdl /relogiodespertador/clk
+# relogiodespertador
+wave create -pattern none -portmode in -language vhdl /relogiodespertador/ena
+# relogiodespertador
+wave create -pattern none -portmode in -language vhdl /relogiodespertador/sel
+# relogiodespertador
+wave create -pattern none -portmode out -language vhdl -range 6 0 /relogiodespertador/o1
+# relogiodespertador
+wave create -pattern none -portmode out -language vhdl -range 6 0 /relogiodespertador/o2
+# relogiodespertador
+wave create -pattern none -portmode out -language vhdl -range 6 0 /relogiodespertador/o3
+# relogiodespertador
+wave create -pattern none -portmode out -language vhdl -range 6 0 /relogiodespertador/o4
+# relogiodespertador
+force -freeze NewSig:/relogiodespertador/clk 1 0, 0 {50 ps} -r 100
+# ** Warning: (vish-168) The time value, 100, is smaller than the simulator resolution so no run occurred.
+# ** Error: (vish-4004) The -repeat option requires a time period argument.
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+vsim rtl_work.relogiodespertador
+# vsim rtl_work.relogiodespertador 
+# Start time: 08:10:39 on Oct 31,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading rtl_work.relogiodespertador(configuracao)
+# Loading rtl_work.codificadordeteclado(codificador)
+# Loading rtl_work.counterwbits2(arch_1)
+# Loading rtl_work.registrador2(arq_reg)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "d".
+#    Time: 0 ps  Iteration: 0  Instance: /relogiodespertador/p6 File: /home/henriquedavid/Documentos/VHDL/relogio-despertador-digital/registrador.vhd Line: 3
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 08:10:42 on Oct 31,2019, Elapsed time: 0:00:03
+# Errors: 1, Warnings: 0
+add wave -position insertpoint NewSig:/relogiodespertador/*
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# checkArgs: WlfValueId has no logfile info.
+# Break key hit
