@@ -4,83 +4,35 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "o1[0]",
+					"name" : "q[0]",
 					"strict" : false
 				},
 				{
-					"name" : "o1[1]",
+					"name" : "q[1]",
 					"strict" : false
 				},
 				{
-					"name" : "o1[2]",
+					"name" : "q[2]",
 					"strict" : false
 				},
 				{
-					"name" : "o1[3]",
+					"name" : "q[3]",
 					"strict" : false
 				},
 				{
-					"name" : "o1[4]",
+					"name" : "iden[0]",
 					"strict" : false
 				},
 				{
-					"name" : "o1[5]",
+					"name" : "load",
 					"strict" : false
 				},
 				{
-					"name" : "o1[6]",
+					"name" : "iden[1]",
 					"strict" : false
 				},
 				{
-					"name" : "sel",
-					"strict" : false
-				},
-				{
-					"name" : "switch[0]",
-					"strict" : false
-				},
-				{
-					"name" : "switch[1]",
-					"strict" : false
-				},
-				{
-					"name" : "a[9]",
-					"strict" : false
-				},
-				{
-					"name" : "a[5]",
-					"strict" : false
-				},
-				{
-					"name" : "a[7]",
-					"strict" : false
-				},
-				{
-					"name" : "a[6]",
-					"strict" : false
-				},
-				{
-					"name" : "a[8]",
-					"strict" : false
-				},
-				{
-					"name" : "a[1]",
-					"strict" : false
-				},
-				{
-					"name" : "a[2]",
-					"strict" : false
-				},
-				{
-					"name" : "a[4]",
-					"strict" : false
-				},
-				{
-					"name" : "a[3]",
-					"strict" : false
-				},
-				{
-					"name" : "a[0]",
+					"name" : "d[0]",
 					"strict" : false
 				},
 				{
@@ -93,6 +45,18 @@
 				},
 				{
 					"name" : "ena",
+					"strict" : false
+				},
+				{
+					"name" : "d[1]",
+					"strict" : false
+				},
+				{
+					"name" : "d[2]",
+					"strict" : false
+				},
+				{
+					"name" : "d[3]",
 					"strict" : false
 				}
 			]

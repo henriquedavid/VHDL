@@ -4,14 +4,14 @@ USE IEEE.std_logic_unsigned.ALL;
 
 ENTITY relogiodespertador IS
 	PORT ( a				  	 :  IN STD_LOGIC_VECTOR( 9 DOWNTO 0);
+			 init				 :  IN STD_LOGIC_VECTOR( 3 DOWNTO 0);
+			 load_cont		 :  IN BIT;
 			 switch			 :  IN STD_LOGIC_VECTOR( 1 DOWNTO 0);
 			 clrn				 :  IN BIT;
 			 clk				 :	 IN BIT;
 			 ena				 :  IN BIT;
 			 sel				 :	 IN STD_LOGIC;
-			 alarme			 :  IN BIT;
-			 o1,o2,o3,o4 	 :  OUT STD_LOGIC_VECTOR(  6 DOWNTO 0 );
-			 a1				 :  IN STD_LOGIC_VECTOR( 9 DOWNTO 0));
+			 o1,o2,o3,o4 	 :  OUT STD_LOGIC_VECTOR(  6 DOWNTO 0 ));
 END relogiodespertador;
 
 ARCHITECTURE configuracao OF relogiodespertador IS
@@ -40,7 +40,7 @@ ARCHITECTURE configuracao OF relogiodespertador IS
 		  q	:	OUT STD_LOGIC_VECTOR(W-1	DOWNTO 0));
 	END COMPONENT;
 	
-	COMPONENT counterwbits
+	COMPONENT counterwbits2
 		GENERIC(W : NATURAL := 4);
 		PORT(d	:	IN STD_LOGIC_VECTOR(W-1 DOWNTO 0);
 		  clk	:	IN BIT;
@@ -63,10 +63,10 @@ ARCHITECTURE configuracao OF relogiodespertador IS
 
 BEGIN
 	p1 	: codificadordeteclado PORT MAP (a, w0); -- entra o numero que o usuarios clicou e sai o valor em 4 bits
-	p2 	: counterwbits PORT MAP("0000", clk, clrn, ena, '0', "00", s0);
-	p3 	: counterwbits PORT MAP("0000", clk, clrn, ena, '0', "01", s1);
-	p4 	: counterwbits PORT MAP("0000", clk, clrn, ena, '0', "10", s2);
-	p5 	: counterwbits PORT MAP("0000", clk, clrn, ena, '0', "11", s3);
+	p2 	: counterwbits2 PORT MAP(init, clk, clrn, ena, load_cont, "00", s0);
+	p3 	: counterwbits2 PORT MAP(init, clk, clrn, ena, load_cont, "01", s1);
+	p4 	: counterwbits2 PORT MAP(init, clk, clrn, ena, load_cont, "10", s2);
+	p5 	: counterwbits2 PORT MAP(init, clk, clrn, ena, load_cont, "11", s3);
 	p6		: registrador2	PORT MAP(s0, clk, clrn, ena, k0);
 	p7		: registrador2	PORT MAP(s1, clk, clrn, ena, k1);
 	p8		: registrador2	PORT MAP(s2, clk, clrn, ena, k2);
@@ -81,6 +81,9 @@ BEGIN
 	p17	: mux_2x1_Wbits PORT MAP(k2, l2, sel, a02);
 	p18	: mux_2x1_Wbits PORT MAP(k3, l3, sel, a03);
 	p19 	: decodificador PORT MAP (a00(3), a00(2), a00(1), a00(0), o1);
+	p20 	: decodificador PORT MAP (a01(3), a01(2), a01(1), a01(0), o2);
+	p21 	: decodificador PORT MAP (a02(3), a02(2), a02(1), a02(0), o3);
+	p22 	: decodificador PORT MAP (a03(3), a03(2), a03(1), a03(0), o4);
 	
 	
 	
