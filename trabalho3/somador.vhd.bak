@@ -1,0 +1,24 @@
+ENTITY adderwbits IS
+GENERIC(W : NATURAL := 4);
+
+PORT (a,b	:	IN BIT;		-- data input
+		cin	:	IN BIT; 		-- carry in
+		s		:	OUT BIT;		-- data output
+		cout	:	OUT BIT);	-- carry out
+END adderwbits;
+
+ARCHITECTURE arch1 OF adderwbits IS
+	SIGNAL carry: BIT_VECTOR(W DOWNTO 0);	-- internal carry in
+	
+BEGIN
+	carry(0) <= cin;
+	
+	f0: FOR i IN (W-1) DOWNTO 0 GENERATE
+		s(i)				<= a(i) XOR b(i) XOR carry(i);
+		carry(i+1)		<= (a(i) AND b(i))
+								OR (a(i) and carry(i))
+								OR (b(i) and carry(i));
+		END GENERATE f0;
+		
+	cout <= carry(W);
+END arch1;

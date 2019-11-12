@@ -9,7 +9,7 @@ ENTITY comparadorwbits IS
 			eq		: OUT STD_LOGIC;		-- a = b
 			gt		: OUT STD_LOGIC;		-- a > b
 			lt		: OUT STD_LOGIC);		-- a < b
-END comparador_Wbits;
+END comparadorWbits;
 
 ARCHITECTURE behavior OF comparadorwbits IS
 BEGIN

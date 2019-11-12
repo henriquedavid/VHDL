@@ -1,0 +1,15 @@
+# do trabalho3.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:15:22 on Nov 12,2019
+# vcom -work work trabalho3.vho 
+# -- Loading package STANDARD
+# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/simulation/qsim/work/_lib.qdb): unable to open database file
+# mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+# ** Fatal: (vcom-9) Problem while writing token file "C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/simulation/qsim/work/_temp/vcomnvbmqg".
+# O sistema não pode encontrar o caminho especificado. (GetLastError() = 3)
+# ** Error: trabalho3.vho(29): VHDL Compiler exiting
+# End time: 15:15:22 on Nov 12,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: c:/intelfpga_lite/18.1/modelsim_ase/win32aloem/vcom failed.
+# Executing ONERROR command at macro ./trabalho3.do line 3
