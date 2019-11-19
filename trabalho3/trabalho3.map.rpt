@@ -1,5 +1,5 @@
 Analysis & Synthesis report for trabalho3
-Tue Nov 12 15:07:23 2019
+Tue Nov 19 17:29:21 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,14 +10,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |comparadorwbits
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -40,27 +33,22 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 12 15:07:23 2019       ;
-; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                   ; trabalho3                                   ;
-; Top-level Entity Name           ; comparadorwbits                             ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 11                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Tue Nov 19 17:29:20 2019           ;
+; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name               ; trabalho3                                   ;
+; Top-level Entity Name       ; po                                          ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -69,7 +57,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; comparadorwbits    ; trabalho3          ;
+; Top-level entity name                                                           ; po                 ; trabalho3          ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -166,109 +154,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                           ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                    ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
-; comparadorwbits.vhd              ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/comparadorwbits.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
-
-
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimate of Logic utilization (ALMs needed) ; 3          ;
-;                                             ;            ;
-; Combinational ALUT usage for logic          ; 6          ;
-;     -- 7 input functions                    ; 0          ;
-;     -- 6 input functions                    ; 0          ;
-;     -- 5 input functions                    ; 3          ;
-;     -- 4 input functions                    ; 3          ;
-;     -- <=3 input functions                  ; 0          ;
-;                                             ;            ;
-; Dedicated logic registers                   ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 11         ;
-;                                             ;            ;
-; Total DSP Blocks                            ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; a[0]~input ;
-; Maximum fan-out                             ; 3          ;
-; Total fan-out                               ; 41         ;
-; Average fan-out                             ; 1.46       ;
-+---------------------------------------------+------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                        ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name     ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-----------------+--------------+
-; |comparadorwbits           ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 11   ; 0            ; |comparadorwbits    ; comparadorwbits ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-----------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+---------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |comparadorwbits ;
-+----------------+-------+--------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                   ;
-+----------------+-------+--------------------------------------------------------+
-; W              ; 4     ; Signed Integer                                         ;
-+----------------+-------+--------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 6                           ;
-;     normal            ; 6                           ;
-;         4 data inputs ; 3                           ;
-;         5 data inputs ; 3                           ;
-; boundary_port         ; 11                          ;
-;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 2.00                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov 12 15:06:51 2019
+    Info: Processing started: Tue Nov 19 17:28:38 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off trabalho3 -c trabalho3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -279,20 +171,18 @@ Info (12021): Found 2 design units, including 1 entities, in source file subtrat
     Info (12022): Found design unit 1: subtrator-behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/subtrator.vhd Line: 12
     Info (12023): Found entity 1: subtrator File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/subtrator.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file somador.vhd
-    Info (12022): Found design unit 1: somador-arch1 File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somador.vhd Line: 10
-    Info (12023): Found entity 1: somador File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somador.vhd Line: 1
-Info (12127): Elaborating entity "comparadorwbits" for the top level hierarchy
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 6 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4872 megabytes
-    Info: Processing ended: Tue Nov 12 15:07:23 2019
-    Info: Elapsed time: 00:00:32
-    Info: Total CPU time (on all processors): 00:01:03
+    Info (12022): Found design unit 1: somador-arch1 File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somador.vhd Line: 14
+    Info (12023): Found entity 1: somador File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somador.vhd Line: 5
+Error (10500): VHDL syntax error at po.vhd(62) near text "PORT";  expecting "(", or "'", or "." File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/po.vhd Line: 62
+Error (10500): VHDL syntax error at po.vhd(62) near text ";";  expecting ":=", or "<=" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/po.vhd Line: 62
+Info (12021): Found 0 design units, including 0 entities, in source file po.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file trabalho3.vhd
+    Info (12022): Found design unit 1: trabalho3-arch File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 5
+    Info (12023): Found entity 1: trabalho3 File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 1
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
+    Error: Peak virtual memory: 4852 megabytes
+    Error: Processing ended: Tue Nov 19 17:29:21 2019
+    Error: Elapsed time: 00:00:43
+    Error: Total CPU time (on all processors): 00:01:13
 
 

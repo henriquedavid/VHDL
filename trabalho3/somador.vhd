@@ -1,14 +1,18 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.ALL;
+USE IEEE.std_logic_unsigned.ALL;
+
 ENTITY somador IS
 GENERIC(W : NATURAL := 4);
 
-PORT (a,b	:	IN BIT_VECTOR(W-1 DOWNTO 0);		-- data input
-		cin	:	IN BIT; 		-- carry in
-		s		:	OUT BIT_VECTOR(W-1 DOWNTO 0);		-- data output
-		cout	:	OUT BIT);	-- carry out
+PORT (a,b	:	IN STD_LOGIC_VECTOR(W-1 DOWNTO 0);		-- data input
+		cin	:	IN STD_LOGIC; 		-- carry in
+		s		:	OUT STD_LOGIC_VECTOR(W-1 DOWNTO 0);		-- data output
+		cout	:	OUT STD_LOGIC);	-- carry out
 END somador;
 
 ARCHITECTURE arch1 OF somador IS
-	SIGNAL carry: BIT_VECTOR(W DOWNTO 0);	-- internal carry in
+	SIGNAL carry: STD_LOGIC_VECTOR(W DOWNTO 0);	-- internal carry in
 	
 BEGIN
 	carry(0) <= cin;
