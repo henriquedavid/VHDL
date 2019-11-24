@@ -1,5 +1,5 @@
 Analysis & Synthesis report for trabalho3
-Tue Nov 19 17:29:21 2019
+Sun Nov 24 18:04:54 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,25 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: somador:p2
+ 10. Parameter Settings for User Entity Instance: comparadorwbits:p3
+ 11. Parameter Settings for User Entity Instance: subtrator:p4
+ 12. Parameter Settings for User Entity Instance: somadormaisum:p5
+ 13. Parameter Settings for User Entity Instance: demux:p6
+ 14. Parameter Settings for User Entity Instance: pc:p7
+ 15. Port Connectivity Checks: "pc:p7"
+ 16. Port Connectivity Checks: "demux:p6"
+ 17. Port Connectivity Checks: "somadormaisum:p5"
+ 18. Port Connectivity Checks: "comparadorwbits:p3"
+ 19. Port Connectivity Checks: "somador:p2"
+ 20. Port Connectivity Checks: "memoria:p1"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
 
 
 
@@ -33,22 +51,27 @@ refer to the applicable agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Tue Nov 19 17:29:20 2019           ;
-; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name               ; trabalho3                                   ;
-; Top-level Entity Name       ; po                                          ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Nov 24 18:04:54 2019       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; trabalho3                                   ;
+; Top-level Entity Name           ; trabalho3                                   ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 11                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -57,7 +80,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; po                 ; trabalho3          ;
+; Top-level entity name                                                           ; trabalho3          ; trabalho3          ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -154,13 +177,219 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                           ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                    ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
+; comparadorwbits.vhd              ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/comparadorwbits.vhd ;         ;
+; subtrator.vhd                    ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/subtrator.vhd       ;         ;
+; somador.vhd                      ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somador.vhd         ;         ;
+; trabalho3.vhd                    ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd       ;         ;
+; demux.vhd                        ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/demux.vhd           ;         ;
+; pc.vhd                           ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd              ;         ;
+; somadormaisum.vhd                ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somadormaisum.vhd   ;         ;
+; memoria.vhd                      ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd         ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 0           ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 0           ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 0           ;
+;     -- 5 input functions                    ; 0           ;
+;     -- 4 input functions                    ; 0           ;
+;     -- <=3 input functions                  ; 0           ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 11          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; controle[0] ;
+; Maximum fan-out                             ; 1           ;
+; Total fan-out                               ; 11          ;
+; Average fan-out                             ; 0.50        ;
++---------------------------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+; |trabalho3                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 11   ; 0            ; |trabalho3          ; trabalho3   ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somador:p2 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; w              ; 4     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparadorwbits:p3 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; W              ; 4     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: subtrator:p4 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; w              ; 4     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: somadormaisum:p5 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; w              ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: demux:p6 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; w              ; 4     ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------+
+; Parameter Settings for User Entity Instance: pc:p7 ;
++----------------+-------+---------------------------+
+; Parameter Name ; Value ; Type                      ;
++----------------+-------+---------------------------+
+; w              ; 4     ; Signed Integer            ;
++----------------+-------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pc:p7"                                                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "demux:p6"                                                                           ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "somadormaisum:p5"                                                                   ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparadorwbits:p3"                                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; eq   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "somador:p2"                                                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "memoria:p1"                                                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+; boundary_port         ; 11                          ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov 19 17:28:38 2019
+    Info: Processing started: Sun Nov 24 18:04:05 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off trabalho3 -c trabalho3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -173,16 +402,112 @@ Info (12021): Found 2 design units, including 1 entities, in source file subtrat
 Info (12021): Found 2 design units, including 1 entities, in source file somador.vhd
     Info (12022): Found design unit 1: somador-arch1 File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somador.vhd Line: 14
     Info (12023): Found entity 1: somador File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somador.vhd Line: 5
-Error (10500): VHDL syntax error at po.vhd(62) near text "PORT";  expecting "(", or "'", or "." File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/po.vhd Line: 62
-Error (10500): VHDL syntax error at po.vhd(62) near text ";";  expecting ":=", or "<=" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/po.vhd Line: 62
-Info (12021): Found 0 design units, including 0 entities, in source file po.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file trabalho3.vhd
-    Info (12022): Found design unit 1: trabalho3-arch File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 5
-    Info (12023): Found entity 1: trabalho3 File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 1
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 4852 megabytes
-    Error: Processing ended: Tue Nov 19 17:29:21 2019
-    Error: Elapsed time: 00:00:43
-    Error: Total CPU time (on all processors): 00:01:13
+    Info (12022): Found design unit 1: trabalho3-arch File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 14
+    Info (12023): Found entity 1: trabalho3 File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file demux.vhd
+    Info (12022): Found design unit 1: demux-structural File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/demux.vhd Line: 13
+    Info (12023): Found entity 1: demux File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/demux.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
+    Info (12022): Found design unit 1: pc-structural File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 19
+    Info (12023): Found entity 1: pc File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file somadormaisum.vhd
+    Info (12022): Found design unit 1: somadormaisum-behavior1 File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somadormaisum.vhd Line: 12
+    Info (12023): Found entity 1: somadormaisum File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somadormaisum.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file memoria.vhd
+    Info (12022): Found design unit 1: memoria-arch_m File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 13
+    Info (12023): Found entity 1: memoria File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 5
+Info (12127): Elaborating entity "trabalho3" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at trabalho3.vhd(9): used implicit default value for signal "s" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(76): object "carryout0" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 76
+Warning (10541): VHDL Signal Declaration warning at trabalho3.vhd(76): used implicit default value for signal "carryin1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 76
+Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(77): object "igual" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 77
+Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(78): object "posicaoesp" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 78
+Warning (10541): VHDL Signal Declaration warning at trabalho3.vhd(80): used implicit default value for signal "numero1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 80
+Warning (10541): VHDL Signal Declaration warning at trabalho3.vhd(80): used implicit default value for signal "numero2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 80
+Warning (10541): VHDL Signal Declaration warning at trabalho3.vhd(80): used implicit default value for signal "s0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 80
+Warning (10541): VHDL Signal Declaration warning at trabalho3.vhd(80): used implicit default value for signal "s1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 80
+Warning (10541): VHDL Signal Declaration warning at trabalho3.vhd(80): used implicit default value for signal "s4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 80
+Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(80): object "s5" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 80
+Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(80): object "s6" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 80
+Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(80): object "s_m" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 80
+Info (12128): Elaborating entity "memoria" for hierarchy "memoria:p1" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 83
+Warning (10492): VHDL Process Statement warning at memoria.vhd(27): signal "mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at memoria.vhd(27): signal "posicao" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at memoria.vhd(28): signal "valor" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 28
+Warning (10492): VHDL Process Statement warning at memoria.vhd(28): signal "posicao" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 28
+Info (12128): Elaborating entity "somador" for hierarchy "somador:p2" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 84
+Info (12128): Elaborating entity "comparadorwbits" for hierarchy "comparadorwbits:p3" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 85
+Info (12128): Elaborating entity "subtrator" for hierarchy "subtrator:p4" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 86
+Info (12128): Elaborating entity "somadormaisum" for hierarchy "somadormaisum:p5" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 87
+Info (12128): Elaborating entity "demux" for hierarchy "demux:p6" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 88
+Info (12128): Elaborating entity "pc" for hierarchy "pc:p7" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 89
+Warning (10631): VHDL Process Statement warning at pc.vhd(23): inferring latch(es) for signal or variable "sel_m", which holds its previous value in one or more paths through the process File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Warning (10631): VHDL Process Statement warning at pc.vhd(23): inferring latch(es) for signal or variable "pe", which holds its previous value in one or more paths through the process File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Warning (10631): VHDL Process Statement warning at pc.vhd(23): inferring latch(es) for signal or variable "posicao1", which holds its previous value in one or more paths through the process File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Warning (10631): VHDL Process Statement warning at pc.vhd(23): inferring latch(es) for signal or variable "s", which holds its previous value in one or more paths through the process File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "s[0]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "s[1]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "s[2]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "s[3]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[0]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[1]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[2]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[3]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[4]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[5]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[6]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[7]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[8]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[9]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[10]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[11]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[12]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[13]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[14]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[15]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[16]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[17]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[18]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[19]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[20]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[21]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[22]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[23]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[24]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[25]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[26]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[27]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[28]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[29]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[30]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "posicao1[31]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "pe[0]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "pe[1]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "pe[2]" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Info (10041): Inferred latch for "sel_m" at pc.vhd(23) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 23
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "s[0]" is stuck at GND File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (13410): Pin "s[1]" is stuck at GND File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (13410): Pin "s[2]" is stuck at GND File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (13410): Pin "s[3]" is stuck at GND File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 7 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "controle[0]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 7
+    Warning (15610): No output dependent on input pin "controle[1]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 7
+    Warning (15610): No output dependent on input pin "controle[2]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 7
+    Warning (15610): No output dependent on input pin "controle[3]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 7
+    Warning (15610): No output dependent on input pin "sel[0]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+    Warning (15610): No output dependent on input pin "sel[1]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+    Warning (15610): No output dependent on input pin "sel[2]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Info (21057): Implemented 11 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 4 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
+    Info: Peak virtual memory: 4866 megabytes
+    Info: Processing ended: Sun Nov 24 18:04:54 2019
+    Info: Elapsed time: 00:00:49
+    Info: Total CPU time (on all processors): 00:01:09
 
 

@@ -2,52 +2,7 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : [
-				{
-					"name" : "eq",
-					"strict" : false
-				},
-				{
-					"name" : "gt",
-					"strict" : false
-				},
-				{
-					"name" : "lt",
-					"strict" : false
-				},
-				{
-					"name" : "a[0]",
-					"strict" : false
-				},
-				{
-					"name" : "b[0]",
-					"strict" : false
-				},
-				{
-					"name" : "a[1]",
-					"strict" : false
-				},
-				{
-					"name" : "b[1]",
-					"strict" : false
-				},
-				{
-					"name" : "a[2]",
-					"strict" : false
-				},
-				{
-					"name" : "b[2]",
-					"strict" : false
-				},
-				{
-					"name" : "a[3]",
-					"strict" : false
-				},
-				{
-					"name" : "b[3]",
-					"strict" : false
-				}
-			]
+			"pins" : []
 		}
 	]
 }
