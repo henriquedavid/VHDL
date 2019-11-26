@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Sun Nov 24 18:04:54 2019
+Analysis & Synthesis Status : Successful - Mon Nov 25 21:11:16 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : trabalho3
 Top-level Entity Name : trabalho3
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 0
-Total pins : 11
+Total pins : 12
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0
