@@ -46,7 +46,7 @@ BEGIN
 							  pe <= "0101";
 							  ---------------------------------------------------------
 			WHEN "0101" => sel_c <= '0';						-- realizar leitura na memoria
-							  posicaoesp <= posicao1;			-- para nao perder o valor
+							  posicaoesp <= posicao1;			-- para nao perder o valor inicial dos elementos do vetor
 							  IF (maior = '1') THEN				-- verifica se é maior
 									pe <= "0110";					-- estado referente a atribuicao do maior
 							  END IF;
@@ -69,9 +69,33 @@ BEGIN
 								pe <= "1001";						-- proximo estado
 							  ---------------------------------------------------------
 			WHEN "1001" => sel_m <= '1';						-- realiza a escrita na memoria
+								troca <= '0';
 								pe <= "1010";						-- proximo estado
 							  ---------------------------------------------------------
-			WHEN "1010" => sel_m <= '0';						-- volta para ser leitura na memoria
+			WHEN "1010" => posicao1 <= 2;						-- vai para a posicao referente a soma
+								troca <= '0';						-- troca os valores
+								pe <= "1011";						-- troca para o proximo estado
+								--------------------------------------------------------
+			WHEN "1011" => posicao1 <= 2;						-- leva para a soma
+								pe <= "1100";						-- troca para o proximo estado realizando a divisao
+								--------------------------------------------------------
+			WHEN "1100" => -- referente ao estado soma mais um
+							  sel_c <= '1';						-- avanca a posicao na memoria
+							  pe <= "1101";
+							  ---------------------------------------------------------
+			WHEN "1101" => IF (maior = '1') THEN			-- verifica a comparacao
+									posicao1 <= 3;					--	posicao referente a quantidade maior que a media
+									sel_m <= '0';					-- realiza a escrita
+									troca <= '1';					-- troca o numero1 para numero2.
+									-- realizando a soma
+								END IF;
+								pe <= "1100";
+								
+								IF (posicao1 = 9 OR posicao1 = 10) THEN
+									pe <= "1110";
+								END IF;
+								--------------------------------------------------------
+			WHEN "1110" => sel_m <= '0';						-- volta para ser leitura na memoria
 								posicao1 <= posicaoesp;			-- retorna de onde estava
 								pe <= "0100";						-- volta para o estado de soma mais um
 			WHEN OTHERS => s <= "0000";

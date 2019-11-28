@@ -1,5 +1,5 @@
 Flow report for trabalho3
-Mon Nov 25 21:14:26 2019
+Wed Nov 27 18:39:20 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,16 +40,16 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Nov 25 21:14:03 2019       ;
+; Flow Status                     ; Successful - Wed Nov 27 18:38:57 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; trabalho3                                   ;
 ; Top-level Entity Name           ; trabalho3                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 1 / 56,480 ( < 1 % )                        ;
+; Logic utilization (in ALMs)     ; 165 / 56,480 ( < 1 % )                      ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 12 / 268 ( 4 % )                            ;
+; Total pins                      ; 49 / 268 ( 18 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                       ;
 ; Total DSP Blocks                ; 0 / 156 ( 0 % )                             ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/25/2019 21:10:20 ;
+; Start date & time ; 11/27/2019 18:33:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; trabalho3           ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 255332403068681.157472701912748        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 255332403068681.157489038408892        ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -90,11 +90,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:55     ; 1.0                     ; 4871 MB             ; 00:01:14                           ;
-; Fitter               ; 00:02:03     ; 1.0                     ; 6281 MB             ; 00:02:36                           ;
-; Assembler            ; 00:00:29     ; 1.0                     ; 4831 MB             ; 00:00:26                           ;
-; Timing Analyzer      ; 00:00:19     ; 1.0                     ; 5100 MB             ; 00:00:17                           ;
-; Total                ; 00:03:46     ; --                      ; --                  ; 00:04:33                           ;
+; Analysis & Synthesis ; 00:00:58     ; 1.0                     ; 4875 MB             ; 00:01:21                           ;
+; Fitter               ; 00:04:18     ; 1.0                     ; 6354 MB             ; 00:05:09                           ;
+; Assembler            ; 00:00:25     ; 1.0                     ; 4836 MB             ; 00:00:20                           ;
+; Timing Analyzer      ; 00:00:20     ; 1.2                     ; 5156 MB             ; 00:00:20                           ;
+; Total                ; 00:06:01     ; --                      ; --                  ; 00:07:10                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

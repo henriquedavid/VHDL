@@ -6,10 +6,10 @@ USE IEEE.NUMERIC_STD.ALL;
 ENTITY divisor IS
   GENERIC (size: natural := 4);
   PORT ( 
-    A: in std_logic_vector(size-1 DOWNTO 0);
-    B: in std_logic_vector(size-1 DOWNTO 0);
-    Q: out std_logic_vector(size-1 DOWNTO 0);
-    R: out std_logic_vector(size-1 DOWNTO 0));
+    A: IN STD_LOGIC_VECTOR(size-1 DOWNTO 0);
+    B: IN STD_LOGIC_VECTOR(size-1 DOWNTO 0);
+    Q: OUT STD_LOGIC_VECTOR(size-1 DOWNTO 0);
+    R: OUT STD_LOGIC_VECTOR(size-1 DOWNTO 0));
 END divisor;
 
 ARCHITECTURE arch_div OF divisor IS

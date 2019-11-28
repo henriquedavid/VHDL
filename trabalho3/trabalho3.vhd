@@ -4,9 +4,12 @@ USE IEEE.std_logic_unsigned.ALL;
 
 ENTITY trabalho3 IS
 	PORT (
-		controle	: 	IN 	STD_LOGIC_VECTOR(3 DOWNTO 0);
-		sel		:	IN		STD_LOGIC_VECTOR(3 DOWNTO 0);
-		s			:	OUT	STD_LOGIC_VECTOR(3 DOWNTO 0)
+		valor_manual	:	IN		STD_LOGIC_VECTOR(3 DOWNTO 0);
+		sel_manual		:	IN 	STD_LOGIC;
+		posicao_manual	:	IN 	INTEGER;
+		maior_out				:	OUT 	STD_LOGIC_VECTOR(3 DOWNTO 0);
+		menor_out				: 	OUT 	STD_LOGIC_VECTOR(3 DOWNTO 0);
+		qnt				: 	OUT 	STD_LOGIC_VECTOR(3 DOWNTO 0)
 	);
 
 END trabalho3;
@@ -14,10 +17,16 @@ END trabalho3;
 ARCHITECTURE arch OF trabalho3 IS
 
 	COMPONENT memoria IS
-	PORT(	valor		:		IN		STD_LOGIC_VECTOR(3 DOWNTO 0);
-			sel		:		IN		STD_LOGIC;				-- 0 = ler | 1 = escrita
-			posicao	:		IN		INTEGER;
-			s			:		OUT	STD_LOGIC_VECTOR(3 DOWNTO 0));
+	PORT(	valor					:	_	IN		STD_LOGIC_VECTOR(3 DOWNTO 0);
+			valor_manual		:		IN		STD_LOGIC_VECTOR(3 DOWNTO 0);
+			sel					:		IN		STD_LOGIC;				-- 0 = ler | 1 = escrita
+			sel_manual			:		IN		STD_LOGIC;
+			posicao_manual	:		IN		INTEGER;
+			posicao				:		IN		INTEGER;
+			s						:		OUT	STD_LOGIC_VECTOR(3 DOWNTO 0);
+			maior					:		OUT	STD_LOGIC_VECTOR(3 DOWNTO 0);
+			menor					:		OUT	STD_LOGIC_VECTOR(3 DOWNTO 0);
+			qnt					:		OUT	STD_LOGIC_VECTOR(3 DOWNTO 0));
 	END COMPONENT;
 	
 	COMPONENT somador IS
@@ -48,7 +57,7 @@ ARCHITECTURE arch OF trabalho3 IS
 	COMPONENT demux IS
 		GENERIC (W: NATURAL := 4);
 
-		PORT (a, b, c, d, e : IN STD_LOGIC_VECTOR (W-1 DOWNTO 0);
+		PORT (a, b, c : IN STD_LOGIC_VECTOR (W-1 DOWNTO 0);
 			sel : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 			s	 : OUT STD_LOGIC_VECTOR (W-1 DOWNTO 0));
 	END COMPONENT;
@@ -84,21 +93,29 @@ ARCHITECTURE arch OF trabalho3 IS
 	);
 	END COMPONENT;
 	
+	COMPONENT divisor IS
+  GENERIC (size: natural := 4);
+  PORT ( 
+    A			: IN STD_LOGIC_VECTOR(size-1 DOWNTO 0);
+    B			: IN STD_LOGIC_VECTOR(size-1 DOWNTO 0);
+    Q			: OUT STD_LOGIC_VECTOR(size-1 DOWNTO 0);
+    R			: OUT STD_LOGIC_VECTOR(size-1 DOWNTO 0));
+END COMPONENT;
+	
 	SIGNAL carryout0, carryin1 : STD_LOGIC;
 	SIGNAL igual, menor, maior, sel_m, sel_c, troca : STD_LOGIC;
 	SIGNAL posicaoesp, posicao1	: INTEGER;
-	SIGNAL ea1, pe1 : STD_LOGIC_VECTOR(3 DOWNTO 0);
-	SIGNAL numero1, numero2, aux, soma1, s0, s1, s2, s3, s4, s5, s6, s_m : STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL ea1, pe1, resto : STD_LOGIC_VECTOR(3 DOWNTO 0);
+	SIGNAL numero1, numero2, aux, soma1, s0, s1, s2, s3, s4, s5, s6, s_m, s_d : STD_LOGIC_VECTOR(3 DOWNTO 0);
 	
 BEGIN
-	p1 : memoria PORT MAP (numero1, sel_m, posicao1, s_m);
+	p1 : memoria PORT MAP (numero1, valor_manual, sel_m, sel_manual, posicao_manual, posicao1, s_m, maior_out, menor_out, qnt);
 	p2 : somador PORT MAP (numero1, numero2, carryin1, s2, carryout0);
 	p3 : comparadorwbits PORT MAP (numero1, numero2, igual, maior, menor);
-	p4 : subtrator PORT MAP(numero1, numero2, s3);
-	p5	: somadormaisum PORT MAP(posicao1, sel_c, posicaoesp);
+	p4	: somadormaisum PORT MAP(posicao1, sel_c, posicao1);
 	p6 : trocador PORT MAP(numero1, numero2, troca);
-	--p7 : demux PORT MAP(s0, s1, s2, s3, s4, pe1, s5);
-	p7 : pc PORT MAP(pe1, pe1, sel_m, posicao1, sel_c, troca, maior, menor, s6);
-	
+	p7 : demux PORT MAP(s_m, s2, s_d, pe1, numero1);
+	p8 : pc PORT MAP(pe1, pe1, sel_m, posicao1, sel_c, troca, maior, menor, s6);
+	p9 : divisor PORT MAP(numero1, numero2, s_d, resto);
 	
 END arch;

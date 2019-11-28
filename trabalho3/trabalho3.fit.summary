@@ -1,13 +1,13 @@
-Fitter Status : Successful - Mon Nov 25 21:13:27 2019
+Fitter Status : Successful - Wed Nov 27 18:38:25 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : trabalho3
 Top-level Entity Name : trabalho3
 Family : Cyclone V
 Device : 5CGXFC7C7F23C8
 Timing Models : Final
-Logic utilization (in ALMs) : 1 / 56,480 ( < 1 % )
+Logic utilization (in ALMs) : 165 / 56,480 ( < 1 % )
 Total registers : 0
-Total pins : 12 / 268 ( 4 % )
+Total pins : 49 / 268 ( 18 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 7,024,640 ( 0 % )
 Total RAM Blocks : 0 / 686 ( 0 % )

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for trabalho3
-Mon Nov 25 21:11:16 2019
+Wed Nov 27 18:34:03 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,21 +13,25 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: somador:p2
- 10. Parameter Settings for User Entity Instance: comparadorwbits:p3
- 11. Parameter Settings for User Entity Instance: subtrator:p4
- 12. Parameter Settings for User Entity Instance: somadormaisum:p5
- 13. Parameter Settings for User Entity Instance: pc:p7
- 14. Port Connectivity Checks: "pc:p7"
- 15. Port Connectivity Checks: "somadormaisum:p5"
- 16. Port Connectivity Checks: "subtrator:p4"
- 17. Port Connectivity Checks: "comparadorwbits:p3"
- 18. Port Connectivity Checks: "somador:p2"
- 19. Port Connectivity Checks: "memoria:p1"
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. Logic Cells Representing Combinational Loops
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: somador:p2
+ 13. Parameter Settings for User Entity Instance: comparadorwbits:p3
+ 14. Parameter Settings for User Entity Instance: somadormaisum:p4
+ 15. Parameter Settings for User Entity Instance: demux:p7
+ 16. Parameter Settings for User Entity Instance: pc:p8
+ 17. Parameter Settings for User Entity Instance: divisor:p9
+ 18. Parameter Settings for Inferred Entity Instance: divisor:p9|lpm_divide:Div0
+ 19. Port Connectivity Checks: "divisor:p9"
+ 20. Port Connectivity Checks: "pc:p8"
+ 21. Port Connectivity Checks: "somadormaisum:p4"
+ 22. Port Connectivity Checks: "comparadorwbits:p3"
+ 23. Port Connectivity Checks: "somador:p2"
+ 24. Post-Synthesis Netlist Statistics for Top Partition
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
 
 
 
@@ -53,14 +57,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 25 21:11:16 2019       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 27 18:34:03 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; trabalho3                                   ;
 ; Top-level Entity Name           ; trabalho3                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 12                                          ;
+; Total pins                      ; 49                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -169,27 +173,36 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                           ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                    ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
-; comparadorwbits.vhd              ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/comparadorwbits.vhd ;         ;
-; subtrator.vhd                    ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/subtrator.vhd       ;         ;
-; somador.vhd                      ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somador.vhd         ;         ;
-; trabalho3.vhd                    ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd       ;         ;
-; pc.vhd                           ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd              ;         ;
-; somadormaisum.vhd                ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somadormaisum.vhd   ;         ;
-; memoria.vhd                      ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd         ;         ;
-; trocador.vhd                     ; yes             ; User VHDL File  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trocador.vhd        ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                               ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                           ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------+---------+
+; comparadorwbits.vhd              ; yes             ; User VHDL File               ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/comparadorwbits.vhd        ;         ;
+; somador.vhd                      ; yes             ; User VHDL File               ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somador.vhd                ;         ;
+; trabalho3.vhd                    ; yes             ; User VHDL File               ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd              ;         ;
+; demux.vhd                        ; yes             ; User VHDL File               ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/demux.vhd                  ;         ;
+; pc.vhd                           ; yes             ; User VHDL File               ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd                     ;         ;
+; somadormaisum.vhd                ; yes             ; User VHDL File               ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somadormaisum.vhd          ;         ;
+; memoria.vhd                      ; yes             ; User VHDL File               ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd                ;         ;
+; trocador.vhd                     ; yes             ; User VHDL File               ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trocador.vhd               ;         ;
+; divisor.vhd                      ; yes             ; User VHDL File               ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/divisor.vhd                ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf                                  ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc                                 ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc                             ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                  ;         ;
+; db/lpm_divide_1am.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/db/lpm_divide_1am.tdf      ;         ;
+; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/db/sign_div_unsign_7kh.tdf ;         ;
+; db/alt_u_div_kse.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/db/alt_u_div_kse.tdf       ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -197,36 +210,170 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 0           ;
+; Estimate of Logic utilization (ALMs needed) ; 164         ;
 ;                                             ;             ;
-; Combinational ALUT usage for logic          ; 0           ;
-;     -- 7 input functions                    ; 0           ;
-;     -- 6 input functions                    ; 0           ;
-;     -- 5 input functions                    ; 0           ;
-;     -- 4 input functions                    ; 0           ;
-;     -- <=3 input functions                  ; 0           ;
+; Combinational ALUT usage for logic          ; 292         ;
+;     -- 7 input functions                    ; 1           ;
+;     -- 6 input functions                    ; 35          ;
+;     -- 5 input functions                    ; 41          ;
+;     -- 4 input functions                    ; 45          ;
+;     -- <=3 input functions                  ; 170         ;
 ;                                             ;             ;
 ; Dedicated logic registers                   ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 12          ;
+; I/O pins                                    ; 49          ;
 ;                                             ;             ;
 ; Total DSP Blocks                            ; 0           ;
 ;                                             ;             ;
-; Maximum fan-out node                        ; controle[0] ;
-; Maximum fan-out                             ; 1           ;
-; Total fan-out                               ; 12          ;
-; Average fan-out                             ; 0.50        ;
+; Maximum fan-out node                        ; pc:p8|pe[1] ;
+; Maximum fan-out                             ; 53          ;
+; Total fan-out                               ; 1153        ;
+; Average fan-out                             ; 2.96        ;
 +---------------------------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |trabalho3                 ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 12   ; 0            ; |trabalho3          ; trabalho3   ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                             ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                   ; Entity Name         ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |trabalho3                                ; 292 (0)             ; 0 (0)                     ; 0                 ; 0          ; 49   ; 0            ; |trabalho3                                                                                                            ; trabalho3           ; work         ;
+;    |comparadorwbits:p3|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |trabalho3|comparadorwbits:p3                                                                                         ; comparadorwbits     ; work         ;
+;    |demux:p7|                             ; 27 (27)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |trabalho3|demux:p7                                                                                                   ; demux               ; work         ;
+;    |divisor:p9|                           ; 23 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |trabalho3|divisor:p9                                                                                                 ; divisor             ; work         ;
+;       |lpm_divide:Div0|                   ; 23 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |trabalho3|divisor:p9|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_1am:auto_generated|  ; 23 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |trabalho3|divisor:p9|lpm_divide:Div0|lpm_divide_1am:auto_generated                                                   ; lpm_divide_1am      ; work         ;
+;             |sign_div_unsign_7kh:divider| ; 23 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |trabalho3|divisor:p9|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
+;                |alt_u_div_kse:divider|    ; 23 (23)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |trabalho3|divisor:p9|lpm_divide:Div0|lpm_divide_1am:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_kse:divider ; alt_u_div_kse       ; work         ;
+;    |memoria:p1|                           ; 112 (112)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |trabalho3|memoria:p1                                                                                                 ; memoria             ; work         ;
+;    |pc:p8|                                ; 124 (124)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |trabalho3|pc:p8                                                                                                      ; pc                  ; work         ;
+;    |trocador:p6|                          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |trabalho3|trocador:p6                                                                                                ; trocador            ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                  ;
++------------------------------------------------------+----------------------+------------------------+
+; Latch Name                                           ; Latch Enable Signal  ; Free of Timing Hazards ;
++------------------------------------------------------+----------------------+------------------------+
+; memoria:p1|mem[0][0]                                 ; memoria:p1|mem[0][3] ; yes                    ;
+; memoria:p1|mem[0][1]                                 ; memoria:p1|mem[0][3] ; yes                    ;
+; memoria:p1|mem[0][2]                                 ; memoria:p1|mem[0][3] ; yes                    ;
+; memoria:p1|mem[0][3]                                 ; memoria:p1|mem[0][3] ; yes                    ;
+; memoria:p1|mem[1][0]                                 ; memoria:p1|mem[1][3] ; yes                    ;
+; memoria:p1|mem[1][1]                                 ; memoria:p1|mem[1][3] ; yes                    ;
+; memoria:p1|mem[1][2]                                 ; memoria:p1|mem[1][3] ; yes                    ;
+; memoria:p1|mem[1][3]                                 ; memoria:p1|mem[1][3] ; yes                    ;
+; memoria:p1|mem[3][0]                                 ; memoria:p1|mem[3][3] ; yes                    ;
+; memoria:p1|mem[3][1]                                 ; memoria:p1|mem[3][3] ; yes                    ;
+; memoria:p1|mem[3][2]                                 ; memoria:p1|mem[3][3] ; yes                    ;
+; memoria:p1|mem[3][3]                                 ; memoria:p1|mem[3][3] ; yes                    ;
+; pc:p8|posicao1[0]                                    ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[1]                                    ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[2]                                    ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[3]                                    ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|sel_m                                          ; pc:p8|Mux78          ; yes                    ;
+; pc:p8|pe[0]                                          ; pc:p8|Mux76          ; yes                    ;
+; pc:p8|pe[1]                                          ; pc:p8|Mux76          ; yes                    ;
+; pc:p8|pe[2]                                          ; pc:p8|Mux76          ; yes                    ;
+; pc:p8|pe[3]                                          ; pc:p8|Mux76          ; yes                    ;
+; memoria:p1|mem[2][0]                                 ; memoria:p1|mem[2][0] ; yes                    ;
+; memoria:p1|mem[4][0]                                 ; memoria:p1|mem[4][0] ; yes                    ;
+; memoria:p1|mem[5][0]                                 ; memoria:p1|mem[5][0] ; yes                    ;
+; memoria:p1|mem[6][0]                                 ; memoria:p1|mem[6][0] ; yes                    ;
+; memoria:p1|mem[7][0]                                 ; memoria:p1|mem[7][0] ; yes                    ;
+; memoria:p1|mem[9][0]                                 ; memoria:p1|mem[9][3] ; yes                    ;
+; memoria:p1|mem[8][0]                                 ; memoria:p1|mem[8][1] ; yes                    ;
+; pc:p8|posicaoesp[0]                                  ; pc:p8|Mux5           ; yes                    ;
+; trocador:p6|numero2[3]                               ; pc:p8|troca          ; yes                    ;
+; trocador:p6|numero2[2]                               ; pc:p8|troca          ; yes                    ;
+; trocador:p6|numero2[1]                               ; pc:p8|troca          ; yes                    ;
+; trocador:p6|numero2[0]                               ; pc:p8|troca          ; yes                    ;
+; pc:p8|posicaoesp[1]                                  ; pc:p8|Mux5           ; yes                    ;
+; pc:p8|posicaoesp[2]                                  ; pc:p8|Mux5           ; yes                    ;
+; pc:p8|posicaoesp[3]                                  ; pc:p8|Mux5           ; yes                    ;
+; memoria:p1|mem[2][1]                                 ; memoria:p1|mem[2][0] ; yes                    ;
+; memoria:p1|mem[4][1]                                 ; memoria:p1|mem[4][0] ; yes                    ;
+; memoria:p1|mem[5][1]                                 ; memoria:p1|mem[5][0] ; yes                    ;
+; memoria:p1|mem[6][1]                                 ; memoria:p1|mem[6][0] ; yes                    ;
+; memoria:p1|mem[7][1]                                 ; memoria:p1|mem[7][0] ; yes                    ;
+; memoria:p1|mem[9][1]                                 ; memoria:p1|mem[9][3] ; yes                    ;
+; memoria:p1|mem[8][1]                                 ; memoria:p1|mem[8][1] ; yes                    ;
+; memoria:p1|mem[2][2]                                 ; memoria:p1|mem[2][0] ; yes                    ;
+; memoria:p1|mem[4][2]                                 ; memoria:p1|mem[4][0] ; yes                    ;
+; memoria:p1|mem[5][2]                                 ; memoria:p1|mem[5][0] ; yes                    ;
+; memoria:p1|mem[6][2]                                 ; memoria:p1|mem[6][0] ; yes                    ;
+; memoria:p1|mem[7][2]                                 ; memoria:p1|mem[7][0] ; yes                    ;
+; memoria:p1|mem[9][2]                                 ; memoria:p1|mem[9][3] ; yes                    ;
+; memoria:p1|mem[8][2]                                 ; memoria:p1|mem[8][1] ; yes                    ;
+; memoria:p1|mem[2][3]                                 ; memoria:p1|mem[2][0] ; yes                    ;
+; memoria:p1|mem[4][3]                                 ; memoria:p1|mem[4][0] ; yes                    ;
+; memoria:p1|mem[5][3]                                 ; memoria:p1|mem[5][0] ; yes                    ;
+; memoria:p1|mem[6][3]                                 ; memoria:p1|mem[6][0] ; yes                    ;
+; memoria:p1|mem[7][3]                                 ; memoria:p1|mem[7][0] ; yes                    ;
+; memoria:p1|mem[9][3]                                 ; memoria:p1|mem[9][3] ; yes                    ;
+; memoria:p1|mem[8][3]                                 ; memoria:p1|mem[8][1] ; yes                    ;
+; pc:p8|posicao1[4]                                    ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[5]                                    ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[6]                                    ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[7]                                    ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[8]                                    ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[9]                                    ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[10]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[11]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[12]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[13]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[14]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[15]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[16]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[17]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[18]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[19]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[20]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[21]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[22]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[23]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[24]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[25]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[26]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[27]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[28]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[29]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[30]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|posicao1[31]                                   ; pc:p8|Mux71          ; yes                    ;
+; pc:p8|troca                                          ; pc:p8|Mux3           ; yes                    ;
+; pc:p8|posicaoesp[4]                                  ; pc:p8|Mux5           ; yes                    ;
+; pc:p8|posicaoesp[5]                                  ; pc:p8|Mux5           ; yes                    ;
+; pc:p8|posicaoesp[6]                                  ; pc:p8|Mux5           ; yes                    ;
+; pc:p8|posicaoesp[7]                                  ; pc:p8|Mux5           ; yes                    ;
+; pc:p8|posicaoesp[8]                                  ; pc:p8|Mux5           ; yes                    ;
+; pc:p8|posicaoesp[9]                                  ; pc:p8|Mux5           ; yes                    ;
+; pc:p8|posicaoesp[10]                                 ; pc:p8|Mux5           ; yes                    ;
+; pc:p8|posicaoesp[11]                                 ; pc:p8|Mux5           ; yes                    ;
+; pc:p8|posicaoesp[12]                                 ; pc:p8|Mux5           ; yes                    ;
+; pc:p8|posicaoesp[13]                                 ; pc:p8|Mux5           ; yes                    ;
+; pc:p8|posicaoesp[14]                                 ; pc:p8|Mux5           ; yes                    ;
+; pc:p8|posicaoesp[15]                                 ; pc:p8|Mux5           ; yes                    ;
+; pc:p8|posicaoesp[16]                                 ; pc:p8|Mux5           ; yes                    ;
+; pc:p8|posicaoesp[17]                                 ; pc:p8|Mux5           ; yes                    ;
+; Number of user-specified and inferred latches = 114  ;                      ;                        ;
++------------------------------------------------------+----------------------+------------------------+
+Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops               ;
++--------------------------------------------------------+---+
+; Logic Cell Name                                        ;   ;
++--------------------------------------------------------+---+
+; demux:p7|s[0]~0                                        ;   ;
+; demux:p7|s[1]~3                                        ;   ;
+; demux:p7|s[2]~2                                        ;   ;
+; demux:p7|s[3]~1                                        ;   ;
+; Number of logic cells representing combinational loops ; 4 ;
++--------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -242,6 +389,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 11:1               ; 32 bits   ; 224 LEs       ; 192 LEs              ; 32 LEs                 ; No         ; |trabalho3|pc:p8|Mux65     ;
+; 1:1                ; 32 bits   ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |trabalho3|pc:p8|Mux21     ;
+; 11:1               ; 4 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; No         ; |trabalho3|memoria:p1|s[1] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +---------------------------------------------------------+
@@ -264,18 +422,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: subtrator:p4 ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; w              ; 4     ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: somadormaisum:p5 ;
+; Parameter Settings for User Entity Instance: somadormaisum:p4 ;
 +----------------+-------+--------------------------------------+
 ; Parameter Name ; Value ; Type                                 ;
 +----------------+-------+--------------------------------------+
@@ -284,8 +432,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------+
+; Parameter Settings for User Entity Instance: demux:p7 ;
++----------------+-------+------------------------------+
+; Parameter Name ; Value ; Type                         ;
++----------------+-------+------------------------------+
+; w              ; 4     ; Signed Integer               ;
++----------------+-------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------+
-; Parameter Settings for User Entity Instance: pc:p7 ;
+; Parameter Settings for User Entity Instance: pc:p8 ;
 +----------------+-------+---------------------------+
 ; Parameter Name ; Value ; Type                      ;
 +----------------+-------+---------------------------+
@@ -294,8 +452,50 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: divisor:p9 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; size           ; 4     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: divisor:p9|lpm_divide:Div0 ;
++------------------------+----------------+-----------------------------------+
+; Parameter Name         ; Value          ; Type                              ;
++------------------------+----------------+-----------------------------------+
+; LPM_WIDTHN             ; 4              ; Untyped                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                           ;
+; CBXI_PARAMETER         ; lpm_divide_1am ; Untyped                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                    ;
++------------------------+----------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "pc:p7"                                                                              ;
+; Port Connectivity Checks: "divisor:p9"                                                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; r    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pc:p8"                                                                              ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -304,16 +504,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "somadormaisum:p5"                                                                   ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "subtrator:p4"                                                                       ;
+; Port Connectivity Checks: "somadormaisum:p4"                                                                   ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -335,17 +526,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
-; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "memoria:p1"                                                                         ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; s    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -354,13 +535,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
-; boundary_port         ; 12                          ;
+; arriav_lcell_comb     ; 292                         ;
+;     arith             ; 6                           ;
+;         0 data inputs ; 2                           ;
+;         2 data inputs ; 1                           ;
+;         5 data inputs ; 3                           ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 276                         ;
+;         2 data inputs ; 12                          ;
+;         3 data inputs ; 149                         ;
+;         4 data inputs ; 42                          ;
+;         5 data inputs ; 38                          ;
+;         6 data inputs ; 35                          ;
+;     shared            ; 9                           ;
+;         0 data inputs ; 3                           ;
+;         2 data inputs ; 3                           ;
+;         4 data inputs ; 3                           ;
+; boundary_port         ; 49                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 6.30                        ;
+; Average LUT depth     ; 3.17                        ;
 +-----------------------+-----------------------------+
 
 
@@ -369,7 +564,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:08     ;
 +----------------+--------------+
 
 
@@ -379,7 +574,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Nov 25 21:10:17 2019
+    Info: Processing started: Wed Nov 27 18:33:01 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off trabalho3 -c trabalho3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -393,7 +588,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file somador
     Info (12022): Found design unit 1: somador-arch1 File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somador.vhd Line: 14
     Info (12023): Found entity 1: somador File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somador.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file trabalho3.vhd
-    Info (12022): Found design unit 1: trabalho3-arch File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 14
+    Info (12022): Found design unit 1: trabalho3-arch File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 17
     Info (12023): Found entity 1: trabalho3 File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file demux.vhd
     Info (12022): Found design unit 1: demux-structural File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/demux.vhd Line: 13
@@ -405,7 +600,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file somador
     Info (12022): Found design unit 1: somadormaisum-behavior1 File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somadormaisum.vhd Line: 13
     Info (12023): Found entity 1: somadormaisum File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/somadormaisum.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoria.vhd
-    Info (12022): Found design unit 1: memoria-arch_m File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 13
+    Info (12022): Found design unit 1: memoria-arch_m File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 19
     Info (12023): Found entity 1: memoria File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file trocador.vhd
     Info (12022): Found design unit 1: trocador-arc File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trocador.vhd Line: 13
@@ -413,35 +608,79 @@ Info (12021): Found 2 design units, including 1 entities, in source file trocado
 Info (12021): Found 2 design units, including 1 entities, in source file divisor.vhd
     Info (12022): Found design unit 1: divisor-arch_div File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/divisor.vhd Line: 15
     Info (12023): Found entity 1: divisor File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/divisor.vhd Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file trabalho3blocos.bdf
+    Info (12023): Found entity 1: trabalho3blocos
 Info (12127): Elaborating entity "trabalho3" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at trabalho3.vhd(9): used implicit default value for signal "s" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
-Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(87): object "carryout0" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 87
-Warning (10541): VHDL Signal Declaration warning at trabalho3.vhd(87): used implicit default value for signal "carryin1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 87
-Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(88): object "igual" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 88
-Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(89): object "posicaoesp" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 89
-Warning (10541): VHDL Signal Declaration warning at trabalho3.vhd(91): used implicit default value for signal "numero1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 91
-Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(91): object "s2" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 91
-Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(91): object "s3" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 91
-Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(91): object "s6" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 91
-Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(91): object "s_m" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 91
-Info (12128): Elaborating entity "memoria" for hierarchy "memoria:p1" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 94
-Warning (10492): VHDL Process Statement warning at memoria.vhd(27): signal "mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 27
-Warning (10492): VHDL Process Statement warning at memoria.vhd(27): signal "posicao" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 27
-Warning (10492): VHDL Process Statement warning at memoria.vhd(28): signal "valor" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 28
-Warning (10492): VHDL Process Statement warning at memoria.vhd(28): signal "posicao" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 28
-Info (12128): Elaborating entity "somador" for hierarchy "somador:p2" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 95
-Info (12128): Elaborating entity "comparadorwbits" for hierarchy "comparadorwbits:p3" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 96
-Info (12128): Elaborating entity "subtrator" for hierarchy "subtrator:p4" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 97
-Info (12128): Elaborating entity "somadormaisum" for hierarchy "somadormaisum:p5" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 98
-Info (12128): Elaborating entity "trocador" for hierarchy "trocador:p6" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 99
+Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(105): object "carryout0" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 105
+Warning (10541): VHDL Signal Declaration warning at trabalho3.vhd(105): used implicit default value for signal "carryin1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 105
+Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(106): object "igual" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 106
+Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(107): object "posicaoesp" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 107
+Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(108): object "resto" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 108
+Warning (10036): Verilog HDL or VHDL warning at trabalho3.vhd(109): object "s6" assigned a value but never read File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 109
+Info (12128): Elaborating entity "memoria" for hierarchy "memoria:p1" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 112
+Warning (10492): VHDL Process Statement warning at memoria.vhd(33): signal "mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at memoria.vhd(33): signal "posicao" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at memoria.vhd(34): signal "valor" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 34
+Warning (10492): VHDL Process Statement warning at memoria.vhd(34): signal "posicao" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 34
+Warning (10492): VHDL Process Statement warning at memoria.vhd(40): signal "mem" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 40
+Warning (10492): VHDL Process Statement warning at memoria.vhd(40): signal "posicao" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 40
+Warning (10492): VHDL Process Statement warning at memoria.vhd(41): signal "valor_manual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 41
+Warning (10492): VHDL Process Statement warning at memoria.vhd(41): signal "posicao_manual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 41
+Warning (10631): VHDL Process Statement warning at memoria.vhd(30): inferring latch(es) for signal or variable "mem", which holds its previous value in one or more paths through the process File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[9][0]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[9][1]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[9][2]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[9][3]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[8][0]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[8][1]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[8][2]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[8][3]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[7][0]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[7][1]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[7][2]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[7][3]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[6][0]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[6][1]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[6][2]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[6][3]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[5][0]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[5][1]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[5][2]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[5][3]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[4][0]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[4][1]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[4][2]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[4][3]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[3][0]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[3][1]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[3][2]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[3][3]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[2][0]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[2][1]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[2][2]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[2][3]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[1][0]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[1][1]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[1][2]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[1][3]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[0][0]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[0][1]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[0][2]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (10041): Inferred latch for "mem[0][3]" at memoria.vhd(30) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+Info (12128): Elaborating entity "somador" for hierarchy "somador:p2" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 113
+Info (12128): Elaborating entity "comparadorwbits" for hierarchy "comparadorwbits:p3" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 114
+Info (12128): Elaborating entity "somadormaisum" for hierarchy "somadormaisum:p4" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 115
+Info (12128): Elaborating entity "trocador" for hierarchy "trocador:p6" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 116
 Warning (10631): VHDL Process Statement warning at trocador.vhd(15): inferring latch(es) for signal or variable "numero2", which holds its previous value in one or more paths through the process File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trocador.vhd Line: 15
 Info (10041): Inferred latch for "numero2[0]" at trocador.vhd(15) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trocador.vhd Line: 15
 Info (10041): Inferred latch for "numero2[1]" at trocador.vhd(15) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trocador.vhd Line: 15
 Info (10041): Inferred latch for "numero2[2]" at trocador.vhd(15) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trocador.vhd Line: 15
 Info (10041): Inferred latch for "numero2[3]" at trocador.vhd(15) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trocador.vhd Line: 15
-Info (12128): Elaborating entity "pc" for hierarchy "pc:p7" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 101
+Info (12128): Elaborating entity "demux" for hierarchy "demux:p7" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 117
+Info (12128): Elaborating entity "pc" for hierarchy "pc:p8" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 118
 Warning (10492): VHDL Process Statement warning at pc.vhd(49): signal "posicao1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 49
-Warning (10492): VHDL Process Statement warning at pc.vhd(75): signal "posicaoesp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 75
+Warning (10492): VHDL Process Statement warning at pc.vhd(94): signal "posicao1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 94
+Warning (10492): VHDL Process Statement warning at pc.vhd(99): signal "posicaoesp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 99
 Warning (10631): VHDL Process Statement warning at pc.vhd(25): inferring latch(es) for signal or variable "sel_m", which holds its previous value in one or more paths through the process File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
 Warning (10631): VHDL Process Statement warning at pc.vhd(25): inferring latch(es) for signal or variable "pe", which holds its previous value in one or more paths through the process File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
 Warning (10631): VHDL Process Statement warning at pc.vhd(25): inferring latch(es) for signal or variable "posicao1", which holds its previous value in one or more paths through the process File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
@@ -524,29 +763,217 @@ Info (10041): Inferred latch for "pe[1]" at pc.vhd(25) File: C:/Users/Henrique/D
 Info (10041): Inferred latch for "pe[2]" at pc.vhd(25) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
 Info (10041): Inferred latch for "pe[3]" at pc.vhd(25) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
 Info (10041): Inferred latch for "sel_m" at pc.vhd(25) File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "s[0]" is stuck at GND File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
-    Warning (13410): Pin "s[1]" is stuck at GND File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
-    Warning (13410): Pin "s[2]" is stuck at GND File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
-    Warning (13410): Pin "s[3]" is stuck at GND File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+Info (12128): Elaborating entity "divisor" for hierarchy "divisor:p9" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 119
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "divisor:p9|Div0" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/divisor.vhd Line: 24
+Info (12130): Elaborated megafunction instantiation "divisor:p9|lpm_divide:Div0" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/divisor.vhd Line: 24
+Info (12133): Instantiated megafunction "divisor:p9|lpm_divide:Div0" with the following parameter: File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/divisor.vhd Line: 24
+    Info (12134): Parameter "LPM_WIDTHN" = "4"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_1am.tdf
+    Info (12023): Found entity 1: lpm_divide_1am File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/db/lpm_divide_1am.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_7kh File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/db/sign_div_unsign_7kh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_kse.tdf
+    Info (12023): Found entity 1: alt_u_div_kse File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/db/alt_u_div_kse.tdf Line: 22
+Warning (13012): Latch memoria:p1|mem[0][0] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[0][1] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[0][2] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[0][3] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[1][0] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[1][1] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[1][2] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[1][3] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[3][0] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[3][1] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[3][2] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[3][3] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch pc:p8|posicao1[0] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[2] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[1] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[3] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[2] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[2] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[3] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|sel_m has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 10
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[0] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|pe[0] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[0] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|pe[1] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[2] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|pe[2] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[0] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|pe[3] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[0] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch memoria:p1|mem[2][0] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[4][0] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[5][0] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[6][0] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[7][0] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[9][0] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[8][0] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[2][1] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[4][1] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[5][1] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[6][1] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[7][1] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[9][1] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[8][1] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[2][2] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[4][2] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[5][2] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[6][2] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[7][2] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[9][2] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[8][2] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[2][3] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[4][3] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[5][3] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[6][3] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[7][3] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[9][3] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch memoria:p1|mem[8][3] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/memoria.vhd Line: 30
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal sel_manual File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
+Warning (13012): Latch pc:p8|posicao1[4] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[5] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[6] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[7] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[8] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[9] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[10] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[11] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[12] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[13] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[14] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[15] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[16] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[17] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[18] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[19] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[20] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[21] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[22] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[23] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[24] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[25] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[26] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[27] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[28] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[29] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[30] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|posicao1[31] has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Warning (13012): Latch pc:p8|troca has unsafe behavior File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 13
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal pc:p8|pe[1] File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/pc.vhd Line: 25
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "controle[0]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 7
-    Warning (15610): No output dependent on input pin "controle[1]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 7
-    Warning (15610): No output dependent on input pin "controle[2]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 7
-    Warning (15610): No output dependent on input pin "controle[3]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 7
-    Warning (15610): No output dependent on input pin "sel[0]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
-    Warning (15610): No output dependent on input pin "sel[1]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
-    Warning (15610): No output dependent on input pin "sel[2]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
-    Warning (15610): No output dependent on input pin "sel[3]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 8
-Info (21057): Implemented 12 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 4 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 39 warnings
-    Info: Peak virtual memory: 4871 megabytes
-    Info: Processing ended: Mon Nov 25 21:11:16 2019
-    Info: Elapsed time: 00:00:59
-    Info: Total CPU time (on all processors): 00:01:15
+Warning (21074): Design contains 28 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "posicao_manual[4]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[5]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[6]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[7]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[8]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[9]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[10]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[11]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[12]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[13]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[14]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[15]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[16]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[17]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[18]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[19]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[20]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[21]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[22]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[23]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[24]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[25]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[26]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[27]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[28]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[29]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[30]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+    Warning (15610): No output dependent on input pin "posicao_manual[31]" File: C:/Users/Henrique/Desktop/UFRN/6º  Período/Circuitos Lógicos/VHDL/trabalho3/trabalho3.vhd Line: 9
+Info (21057): Implemented 341 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 37 input pins
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 292 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 212 warnings
+    Info: Peak virtual memory: 4875 megabytes
+    Info: Processing ended: Wed Nov 27 18:34:03 2019
+    Info: Elapsed time: 00:01:02
+    Info: Total CPU time (on all processors): 00:01:22
 
 

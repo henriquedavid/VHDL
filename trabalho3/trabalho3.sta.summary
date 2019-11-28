@@ -2,4 +2,148 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1100mV 85C Model Setup 'posicao_manual[0]'
+Slack : -26.079
+TNS   : -924.138
+
+Type  : Slow 1100mV 85C Model Setup 'pc:p8|pe[0]'
+Slack : -22.163
+TNS   : -1042.522
+
+Type  : Slow 1100mV 85C Model Setup 'pc:p8|troca'
+Slack : -19.296
+TNS   : -75.443
+
+Type  : Slow 1100mV 85C Model Hold 'pc:p8|pe[0]'
+Slack : -3.290
+TNS   : -100.232
+
+Type  : Slow 1100mV 85C Model Hold 'posicao_manual[0]'
+Slack : 1.184
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'pc:p8|troca'
+Slack : 1.194
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pc:p8|pe[0]'
+Slack : -11.217
+TNS   : -2708.179
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'posicao_manual[0]'
+Slack : 0.012
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pc:p8|troca'
+Slack : 0.223
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'posicao_manual[0]'
+Slack : -25.521
+TNS   : -903.679
+
+Type  : Slow 1100mV 0C Model Setup 'pc:p8|pe[0]'
+Slack : -21.721
+TNS   : -1009.711
+
+Type  : Slow 1100mV 0C Model Setup 'pc:p8|troca'
+Slack : -18.927
+TNS   : -73.971
+
+Type  : Slow 1100mV 0C Model Hold 'pc:p8|pe[0]'
+Slack : -3.622
+TNS   : -108.861
+
+Type  : Slow 1100mV 0C Model Hold 'posicao_manual[0]'
+Slack : 0.820
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'pc:p8|troca'
+Slack : 1.096
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pc:p8|pe[0]'
+Slack : -10.764
+TNS   : -2570.337
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'posicao_manual[0]'
+Slack : -0.131
+TNS   : -0.169
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pc:p8|troca'
+Slack : 0.205
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'posicao_manual[0]'
+Slack : -13.391
+TNS   : -466.509
+
+Type  : Fast 1100mV 85C Model Setup 'pc:p8|pe[0]'
+Slack : -11.559
+TNS   : -525.109
+
+Type  : Fast 1100mV 85C Model Setup 'pc:p8|troca'
+Slack : -9.117
+TNS   : -35.675
+
+Type  : Fast 1100mV 85C Model Hold 'pc:p8|pe[0]'
+Slack : -2.075
+TNS   : -62.746
+
+Type  : Fast 1100mV 85C Model Hold 'pc:p8|troca'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'posicao_manual[0]'
+Slack : 0.550
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pc:p8|pe[0]'
+Slack : -5.793
+TNS   : -1259.990
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'posicao_manual[0]'
+Slack : -0.326
+TNS   : -5.671
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pc:p8|troca'
+Slack : 0.287
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'posicao_manual[0]'
+Slack : -11.659
+TNS   : -402.158
+
+Type  : Fast 1100mV 0C Model Setup 'pc:p8|pe[0]'
+Slack : -9.987
+TNS   : -453.013
+
+Type  : Fast 1100mV 0C Model Setup 'pc:p8|troca'
+Slack : -7.951
+TNS   : -31.137
+
+Type  : Fast 1100mV 0C Model Hold 'pc:p8|pe[0]'
+Slack : -1.803
+TNS   : -53.713
+
+Type  : Fast 1100mV 0C Model Hold 'pc:p8|troca'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'posicao_manual[0]'
+Slack : 0.412
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pc:p8|pe[0]'
+Slack : -5.000
+TNS   : -1084.778
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'posicao_manual[0]'
+Slack : -0.286
+TNS   : -4.659
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pc:p8|troca'
+Slack : 0.324
+TNS   : 0.000
+
 ------------------------------------------------------------

@@ -2,7 +2,92 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "maior_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "maior_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "maior_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "maior_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "menor_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "menor_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "menor_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "menor_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "qnt[0]",
+					"strict" : false
+				},
+				{
+					"name" : "qnt[1]",
+					"strict" : false
+				},
+				{
+					"name" : "qnt[2]",
+					"strict" : false
+				},
+				{
+					"name" : "qnt[3]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_manual[0]",
+					"strict" : false
+				},
+				{
+					"name" : "posicao_manual[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sel_manual",
+					"strict" : false
+				},
+				{
+					"name" : "posicao_manual[3]",
+					"strict" : false
+				},
+				{
+					"name" : "posicao_manual[1]",
+					"strict" : false
+				},
+				{
+					"name" : "posicao_manual[2]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_manual[1]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_manual[2]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_manual[3]",
+					"strict" : false
+				}
+			]
 		}
 	]
 }
